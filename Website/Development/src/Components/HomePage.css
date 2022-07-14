@@ -1,0 +1,113 @@
+.homepage-main-container{
+    /* background-color: gray; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.homepage-service-header{
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 5%;
+}
+
+.homepage-service-header:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.homepage-service-header-line{
+    height: 3px;
+    width: 50px;
+    background-color: red;
+}
+
+.homepage-service-header:hover .homepage-service-header-line {
+    width: 100px;
+}
+
+.homepage-services-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     margin-top: 5%;
+}
+
+.homepage-services-items {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homepage-project-items{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.homepage-project-item-image {
+    height: 50%;
+    width: 75%;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.hompage-banner-container {
+    height: 175px;
+    margin-top: 2%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage-banner-container-left {
+    background-color: rgb(255, 65, 65);
+    flex: 10;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-banner-container-right {
+    flex: 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.homepage-banner-right-header{
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 5%;
+}
+
+.homepage-banner-right-header-line{
+    height: 3px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.homepage-banner-right-header:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.homepage-banner-right-header:hover .homepage-banner-right-header-line {
+    width: 100px;
+}
+
+
+

@@ -48,7 +48,7 @@ const ImageCorousal = () => {
 
                     <div style={{"height": "350px", "display": "flex", "flex-direction": "column", "alignItems": "center", "margin-top": "5%"}}>
                         <div><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "450%", "color": "graywhite"}}>We Build</span></div>
-                        <div style={{"margin-top": "-5%"}}><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "500", "font-size": "600%", "color": "b"}}>Your Dreams</span></div>
+                        <div style={{"margin-top": "-5%"}}><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "500", "font-size": "600%", "color": "red"}}>Your Dreams</span></div>
                         <div style={{"margin-top": "10%"}}><button className="imgCor-content-area-button" style={{"background-color": "black"}}>GET STARTED</button></div>
                     </div>
 
@@ -67,7 +67,7 @@ const ImageCorousal = () => {
                     <button className="imgCor-slider-button" onClick={() => setActive("SecondCard")}>&lt;</button>
 
                     <div style={{"height": "360px", "display": "flex", "flex-direction": "column", "alignItems": "flex-start", "margin-top": "10%", "margin-left": "-25%"}}>
-                        <div><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "400%", "color": "yellow"}}>HELPING YOU</span></div>
+                        <div><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "500", "font-size": "400%", "color": "red"}}>HELPING YOU</span></div>
                         <div style={{"margin-top": "-5%"}}><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "400%", "color": "white"}}>AND YOUR PROJECT</span></div>
                         <div style={{"margin-top": "-5%"}}><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "400%", "color": "white"}}>BECOME BETTER</span></div>
                         <div style={{"margin-top": "-5%"}}><span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "400%", "color": "white"}}>AQUAINTED</span></div>
@@ -106,10 +106,10 @@ const ImageCorousal = () => {
 
     return(
         <div>
-            {Active === "FirstCard" && <Corousal_1 />}
-            {Active === "SecondCard" && <Corousal_2 />}
-            {Active === "ThirdCard" && <Corousal_3 />}
-            {Active === "FourthCard" && <Corousal_4 />}
+            { Active === "FirstCard" && <Corousal_1 /> }
+            { Active === "SecondCard" && <Corousal_2 /> }
+            { Active === "ThirdCard" && <Corousal_3 /> }
+            { Active === "FourthCard" && <Corousal_4 /> }
         </div>
     );
 }
