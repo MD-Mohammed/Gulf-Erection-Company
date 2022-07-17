@@ -1,9 +1,23 @@
 .imgCor-main-container{
     display: flex;
     flex-direction: row;
-    height: 625px;
+    height: 630px;
     background-repeat: no-repeat;
     background-size: 100%;
+    animation-name: slide-top;
+    animation-duration: 0.5s;
+    animation-fill-mode:both;
+}
+
+@keyframes slide-top {
+    0% {
+                transform: translateX(100%);
+                opacity: 0;
+    }
+    100% {
+                transform: translateX(0%);
+                opacity: 1;
+    }
 }
 
 .imgCor-left-container{
@@ -64,4 +78,44 @@
     cursor: pointer;
 }
 
+.imgCor-cor1-header1{
+    animation-name: drop-appear-header1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
 
+.imgCor-cor1-header2{
+    animation-name: drop-appear-header2;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop-appear-header1 {
+    0% {
+                transform: translateY(-40px);
+                opacity: 0;
+                visibility: visible;
+    }
+    100% {
+                transform: translateY(0px);
+                opacity: 1;
+                visibility: visible;
+    }
+}
+
+@keyframes drop-appear-header2 {
+    0% {
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: visible;
+    }
+    100% {
+                transform: translateY(0px);
+                opacity: 1;
+                visibility: visible;
+    }
+}

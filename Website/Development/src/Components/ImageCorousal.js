@@ -18,8 +18,8 @@ const ImageCorousal = () => {
                     </div>
                     <div className="imgCor-right-container">
                         <div className="imgCor-content-area">
-                            <span style={{"margin-top": "-15%","font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "450%"}}>Construction</span>
-                            <span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "500", "font-size": "450%", "margin-top": "-5%"}}>you can count on!</span>
+                            <span style={{"margin-top": "-15%","font-family": "'Montserrat', sans-serif", "font-weight": "300", "font-size": "450%"}} className="imgCor-cor1-header1">Construction</span>
+                            <span style={{"font-family": "'Montserrat', sans-serif", "font-weight": "500", "font-size": "450%", "margin-top": "-5%"}} className="imgCor-cor1-header2">you can count on!</span>
                             <div style={{"width": "70%", "margin-top": "2%", "font-size": "120%", "font-family": "'Montserrat', sans-serif", "font-weight": "300"}}>
                                 <span>
                                     We are professionals in the field on steel structure builidings and precast buildings constructions...
@@ -105,7 +105,7 @@ const ImageCorousal = () => {
     }
 
     return(
-        <div>
+        <div className="imgCor-slide-top">
             { Active === "FirstCard" && <Corousal_1 /> }
             { Active === "SecondCard" && <Corousal_2 /> }
             { Active === "ThirdCard" && <Corousal_3 /> }

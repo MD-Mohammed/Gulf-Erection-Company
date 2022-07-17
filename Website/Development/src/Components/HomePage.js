@@ -15,7 +15,7 @@ function HomePage() {
                 
                 <div style={{"display": "flex", "flex-direction": "row", "justifyContent": "center", "alignItems": "center", "margin": "2%"}}>
                     <img style={{"height": "40%", "width": "40%"}} src="/images/Image1.png" />
-                    <div style={{"height": "200px", "width": "300px", "margin-left": "10%", "display": "flex", "flex-direction": "column", "justify-content": "center", "align-items": "center", "margin-top": "2%"}}>
+                    <div className="homepage-quote-request-main-container" >
                         <img style={{"height": "70%", "width": "50%"}} src="/images/request-icon.png" />
                         <p style={{"textAlign": "center", "margin-top": "5%", "color": "gray"}}>Looking for a quality and affordable constructor for your next project?</p>
                         <p style={{"textAlign": "center"}} ><a href="#" style={{"textAlign": "center", "color": "red"}}>Request Quote Now !</a></p>
@@ -37,7 +37,7 @@ function HomePage() {
                     </div>
 
                     <div className="homepage-services-items">
-                        <img style={{"height": "50%", "width": "65%", "filter": "drop-shadow(5px 5px 10px #000)"}} src="/images/service-image-b.png" />
+                        <img style={{"height": "50%", "width": "65%", "filter": "drop-shadow(5px 5px 10px #000)", "margin-bottom": "6%"}} src="/images/service-image-b.png" />
                         <h3 style={{"margin-top": "5%"}}>Building Renovation</h3>
                         <p style={{"margin-left": "5%", "margin-right": "5%", "textAlign": "center"}}>Depending on the scope of your project, we design your renovation in-house or partner with Builder ‘s finest architects to design, budget and build.</p>
                     </div>
