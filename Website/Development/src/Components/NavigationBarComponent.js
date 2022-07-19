@@ -24,10 +24,10 @@ function NavigationBarComponent() {
                         <a href="#" className="navbar-buttons-style" >PROJECTS</a>
                         <a href="#" className="navbar-buttons-style" >GALLERY</a>
                         <a href="#" className="navbar-buttons-style" >CLIENT</a>
-                        <a href="#" className="navbar-buttons-style" >CONTACT US</a>
+                        <a href="/contact" className="navbar-buttons-style" >CONTACT US</a>
                     </div>
                 </div>
-                <div style={{"background-color": "black", "width" : "1%"}}>Button</div>
+                <div style={{"background-color": "black", "width" : "1%"}}></div>
             </div>
         </>
     );

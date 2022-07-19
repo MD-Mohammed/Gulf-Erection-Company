@@ -1,0 +1,206 @@
+.imgCor-main-container{
+    display: flex;
+    flex-direction: row;
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+    0% {
+                transform: translateX(-100%);
+                opacity: 0;
+    }
+    100% {
+                transform: translateX(0%);
+                opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+                transform: translateX(100%);
+                opacity: 0;
+    }
+    100% {
+                transform: translateX(0%);
+                opacity: 1;
+    }
+}
+
+.imgCor-left-container{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imgCor-right-container{
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgCor-slider-button{
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    border: 0;
+}
+.imgCor-slider-button:active{
+    outline: none;
+}
+
+.imgCor-slider-button:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+    color: gray;
+    cursor: pointer;
+}
+
+.imgCor-content-area{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.imgCor-content-area-button{
+    width: 180px;
+    height: 40px;
+    color: white;
+    border: 0;
+    font-size: 110%;
+    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s forwards;
+    visibility: hidden;
+}
+
+.imgCor-content-area-button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.imgCor-cor1-header1{
+    margin-top: -15%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 450%;
+
+    animation-name: drop-and-appear;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.imgCor-cor1-header2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 450%;
+    margin-top: -5%;
+
+    animation-name: drop-and-appear;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop-and-appear {
+    0% {
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: visible;
+    }
+    100% {
+                transform: translateY(0px);
+                opacity: 1;
+                visibility: visible;
+    }
+}
+
+.imgCor-cor1-content{
+    width: 70%;
+    margin-top: 2%;
+    font-size: 120%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s forwards;
+    visibility: hidden;
+}
+
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+              opacity: 0;
+              visibility: visible;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+              opacity: 1;
+              visibility: visible;
+    }
+}
+
+.imgCor-cor2-header1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 450%;
+    color: graywhite;
+
+    animation-name: drop-and-appear;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.imgCor-cor2-header2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 600%;
+    color: red;
+
+    visibility: hidden;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s forwards;
+}
+
+.imgCor-cor3-content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 400%;
+    color: white;
+
+    animation-name: drop-and-appear;
+    animation-duration: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-text-right {
+    0% {
+      -webkit-transform: translateX(-400px);
+              transform: translateX(-400px);
+              visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+              visibility: visible;
+    }
+  }
