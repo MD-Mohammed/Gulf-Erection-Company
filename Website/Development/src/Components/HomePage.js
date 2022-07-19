@@ -5,7 +5,7 @@ import ImageCorousal from "./ImageCorousal";
 import FooterComponent from "./FooterComponent";
 import './HomePage.css';
 
-import ProjectData from "./ProjectDetails.json";
+import ProjectData from "../Data/ProjectDetails.json";
 
 function HomePage() {
 
