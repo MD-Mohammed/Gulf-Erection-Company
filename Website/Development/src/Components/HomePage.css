@@ -48,6 +48,7 @@
 
 .homepage-service-header:hover .homepage-service-header-line {
     width: 100px;
+    transition: 0.5s ease;
 }
 
 .homepage-services-container {
@@ -132,6 +133,7 @@
 
 .homepage-banner-right-header:hover .homepage-banner-right-header-line {
     width: 100px;
+    transition: 0.5s ease;
 }
 
 

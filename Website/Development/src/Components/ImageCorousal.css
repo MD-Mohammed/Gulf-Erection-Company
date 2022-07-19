@@ -4,12 +4,22 @@
     height: 630px;
     background-repeat: no-repeat;
     background-size: 100%;
-    animation-name: slide-top;
     animation-duration: 0.5s;
-    animation-fill-mode:both;
+    animation-fill-mode: forwards;
 }
 
-@keyframes slide-top {
+@keyframes slide-left {
+    0% {
+                transform: translateX(-100%);
+                opacity: 0;
+    }
+    100% {
+                transform: translateX(0%);
+                opacity: 1;
+    }
+}
+
+@keyframes slide-right {
     0% {
                 transform: translateX(100%);
                 opacity: 0;
@@ -71,6 +81,8 @@
     color: white;
     border: 0;
     font-size: 110%;
+    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s forwards;
+    visibility: hidden;
 }
 
 .imgCor-content-area-button:hover {
@@ -79,7 +91,12 @@
 }
 
 .imgCor-cor1-header1{
-    animation-name: drop-appear-header1;
+    margin-top: -15%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 450%;
+
+    animation-name: drop-and-appear;
     animation-duration: 1s;
     animation-delay: 0.5s;
     visibility: hidden;
@@ -87,27 +104,19 @@
 }
 
 .imgCor-cor1-header2{
-    animation-name: drop-appear-header2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 450%;
+    margin-top: -5%;
+
+    animation-name: drop-and-appear;
     animation-duration: 1s;
     animation-delay: 1.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
 
-@keyframes drop-appear-header1 {
-    0% {
-                transform: translateY(-40px);
-                opacity: 0;
-                visibility: visible;
-    }
-    100% {
-                transform: translateY(0px);
-                opacity: 1;
-                visibility: visible;
-    }
-}
-
-@keyframes drop-appear-header2 {
+@keyframes drop-and-appear {
     0% {
                 transform: translateY(-10px);
                 opacity: 0;
@@ -119,3 +128,79 @@
                 visibility: visible;
     }
 }
+
+.imgCor-cor1-content{
+    width: 70%;
+    margin-top: 2%;
+    font-size: 120%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s forwards;
+    visibility: hidden;
+}
+
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+              opacity: 0;
+              visibility: visible;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+              opacity: 1;
+              visibility: visible;
+    }
+}
+
+.imgCor-cor2-header1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 450%;
+    color: graywhite;
+
+    animation-name: drop-and-appear;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.imgCor-cor2-header2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 600%;
+    color: red;
+
+    visibility: hidden;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s forwards;
+}
+
+.imgCor-cor3-content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 400%;
+    color: white;
+
+    animation-name: drop-and-appear;
+    animation-duration: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-text-right {
+    0% {
+      -webkit-transform: translateX(-400px);
+              transform: translateX(-400px);
+              visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+              visibility: visible;
+    }
+  }
