@@ -5,6 +5,8 @@ import ImageCorousal from "./ImageCorousal";
 import FooterComponent from "./FooterComponent";
 import './HomePage.css';
 
+import ProjectData from "./ProjectDetails.json";
+
 function HomePage() {
 
     return(
@@ -57,58 +59,15 @@ function HomePage() {
 
                 <div className="homepage-project-container">
 
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-a.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>EMC Showroom Mussafah, Abu Dhabi</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-b.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>Abu Dhabi International Private School</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-c.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>Al Ittihad Private National School</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-d.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>Honda Showroom</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-e.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>EMC used car showroom</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-f.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>MC WANE GULF LLC</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-g.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>ITTIHAD Engineering</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-h.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>Shopping Mall</h2>
-                        <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
-                    </div>
-                                        
-                    <div className="homepage-project-items" >
-                        <img className="homepage-project-item-image" src="/images/project-image-i.jpg" />
-                        <h2 style={{"margin-top": "5%"}}>Emirates Steel</h2>
-                    </div>
+                    {
+                        ProjectData.map((project) => (
+                            <div className="homepage-project-items" >
+                                <img className="homepage-project-item-image" src={project.ProjectImage} />
+                                <h2 style={{"margin-top": "5%"}}>{project.ProjectName}</h2>
+                                <div style={{"background-color": "gray", "height": "1px", "width": "60%", "margin-top": "5%"}}></div>
+                            </div>
+                        ))
+                    }
 
                 </div>
 
