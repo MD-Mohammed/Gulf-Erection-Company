@@ -5,6 +5,8 @@
 # Development Hosting in GitHub
 
   - Find GitHub Live Deployment Website here : https://md-mohammed.github.io/Gulf-Erection-Company/
+  - How to Deploy : 
+    - Run this command from the Development Environment : npm run deploy
 
 # Web Design
 
