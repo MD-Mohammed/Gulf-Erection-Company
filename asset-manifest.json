@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Gulf-Erection-Company/static/css/main.073c9b0a.css",
-    "main.js": "/Gulf-Erection-Company/static/js/main.35847380.js",
+    "main.js": "/Gulf-Erection-Company/static/js/main.46b38e6f.js",
     "index.html": "/Gulf-Erection-Company/index.html",
     "main.073c9b0a.css.map": "/Gulf-Erection-Company/static/css/main.073c9b0a.css.map",
-    "main.35847380.js.map": "/Gulf-Erection-Company/static/js/main.35847380.js.map"
+    "main.46b38e6f.js.map": "/Gulf-Erection-Company/static/js/main.46b38e6f.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.35847380.js"
+    "static/js/main.46b38e6f.js"
   ]
 }
