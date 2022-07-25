@@ -6,7 +6,7 @@ function SampleComponent() {
     return(
         <>
 
-            <div>Hello man</div>
+            <div>Hello from Alcodithm</div>
 
         </>
     );
