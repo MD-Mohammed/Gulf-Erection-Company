@@ -1,0 +1,77 @@
+.aboutPage-main-container
+{
+    /* background-color: rgb(69, 64, 64); */
+    height:850px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+.aboutpage-main-container-block
+{
+    display: flex;
+    flex-direction: row;
+    
+    /* background-color: rgb(133, 58, 58); */
+   
+   
+}
+.aboutpage-sub-container-details
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(103, 102, 28);
+     */
+}
+.aboutPage-sub-container-gridBox-text
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #EAC435; ;
+    width: 250px;
+    height: 153px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+.aboutPage-img-prop
+{
+    width: 90%;
+  height: 90%;
+  margin-top: 30px;
+  
+  box-shadow: -10px 10px #FF4343;
+  border-radius: 5px;
+}
+
+.aboutPage-badge-text
+{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    color: #EAC435;
+    border-radius: 5px;
+    
+
+}
+.aboutPage-badge-img-prop
+{
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 28px;
+    width: 31px;
+}
+.aboutPage-button
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: #16262E;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
