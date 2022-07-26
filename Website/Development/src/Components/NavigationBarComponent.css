@@ -1,23 +1,23 @@
-.navbar-main-container{
-    height: 125px;
+.desktop-navbar-main-container{
+    height: 100px;
     background-color: gray;
     display: flex;
 }
 
-.navbar-logo-main-container{
+.desktop-navbar-logo-main-container{
     background-color: #16262E;
     width: 25%;
     display: flex;
 }
 
-.navbar-logo-icon-container{
+.desktop-navbar-logo-icon-container{
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar-logo-text-container{
+.desktop-navbar-logo-text-container{
     margin-left: -5%;
     width: 75%;
     display: flex;
@@ -26,20 +26,20 @@
     align-items: center;
 }
 
-.navbar-logo-text-H1{
+.desktop-navbar-logo-text-H1{
     font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 700;
     font-size: 199%;
 }
 
-.navbar-logo-text-H2{
+.desktop-navbar-logo-text-H2{
     margin-top: -4%;
     font-weight: 500;
     font-size: 180%;
 }
 
-.navbar-buttons-main-container{
+.desktop-navbar-buttons-main-container{
     background-color: #FF4343;
     width: 60%;
     display: flex;
@@ -47,7 +47,7 @@
     align-items: center;
 }
 
-.navbar-button-containers{
+.desktop-navbar-button-containers{
     height: 50px;
     width: 125px;
     background-color: #FF4343;
@@ -56,7 +56,7 @@
     align-items: center;
 }
 
-.navbar-button-style, .navbar-button-style:link, .navbar-button-style:visited, .navbar-button-style:active{
+.desktop-navbar-button-style, .desktop-navbar-button-style:link, .desktop-navbar-button-style:visited, .desktop-navbar-button-style:active{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -64,12 +64,12 @@
     color: #16262E;
 }
 
-.navbar-button-style:hover{
+.desktop-navbar-button-style:hover{
     color: white;
     filter: drop-shadow(-6px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
-.navbar-quote-button-main-container{
+.desktop-navbar-quote-button-main-container{
     background-color: #FF4343;
     width: 15%;
     display: flex;
@@ -77,7 +77,7 @@
     align-items: center;
 }
 
-.navbar-quote-button{
+.desktop-navbar-quote-button{
     background-color: #16262E;
     height: 40%;
     width: 75%;
@@ -86,9 +86,117 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: box-shadow 0.5s 0s ease-in-out;
 }
 
-.navbar-quote-button:hover{
+.desktop-navbar-quote-button:hover{
     filter: drop-shadow(-6px 6px 6px rgba(0, 0, 0, 0.25));
     cursor: pointer;
+}
+
+.mobile-navbar-main-container{
+    height: 90px;
+    background-color: gray;
+    display: flex;
+}
+
+.mobile-navbar-logo-main-container{
+    background-color: #16262E;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navbar-buttons-main-container{
+    background-color: #FF4343;
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobile-navbar-quote-button{
+    background-color: #16262E;
+    height: 45%;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navbar-quote-button:active{
+    opacity: 0.8;
+}
+
+.mobile-menu-button{
+    background-color: #16262E;
+    height: 45%;
+    width: 22%;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-button:active{
+    opacity: 0.9;
+}
+
+.mobile-navbar-logo-text-container{
+    width: 100%;
+    margin-left: -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navbar-logo-text-H1{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 80%;
+}
+
+.mobile-navbar-logo-text-H2{
+    font-weight: 500;
+    font-size: 80%;
+}
+
+.mobile-menu-list-container{
+    background-color: #FF4343;
+    height: 300px;
+    width: 52.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    border-radius: 0px 0px 0px 15px;
+}
+
+.mobile-navbar-button-containers{
+    margin-block-start: -5%;
+    height: 12%;
+    width: 88%;
+    background-color: #16262E;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-navbar-button-containers:active{
+    opacity: 0.9;
+}
+
+.mobile-navbar-button-style, .mobile-navbar-button-style:link, .mobile-navbar-button-style:visited, .mobile-navbar-button-style:active{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: white;
+    margin-left: 10%;
 }
