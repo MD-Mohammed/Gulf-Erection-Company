@@ -1,0 +1,48 @@
+.ProjectPage-main-Container
+{
+   
+    height: auto;
+    background-image: url('/public/images/GEC-ImageCor4.jpg');
+    background-repeat: no-repeat;
+    background-size: auto auto;
+   
+    
+
+}
+.ProjectPage-container
+{
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ProjectPage-main-header
+{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content:center;
+    align-items: center;
+    
+    
+    
+}
+.ProjectPage-project-items{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ProjectPage-project-item-image {
+    height: 50%;
+    width: 50%;
+    filter: drop-shadow(5px 5px 10px #000);
+    margin-top: 5%;
+}
