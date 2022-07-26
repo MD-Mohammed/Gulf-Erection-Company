@@ -1,9 +1,6 @@
 import { render } from "@testing-library/react";
 import React, {Fragment} from "react";
 import './AboutUsPage.css';
-import img1 from './images/aboutus-icon.png'
-import img2 from './images/aboutus-image.jpg'
-import img3 from './images/medal.png'
 
 function AboutUsPage() {
 
@@ -15,7 +12,7 @@ function AboutUsPage() {
                  <div className="aboutpage-main-container-block" style={{"flex":"1","flexDirection":"column"}}>
                      
                      <div style={{"display":"flex"}}>  
-                        <img style={{"marginLeft":"20px","marginTop":"18px","height": "28px", "width": "31px"}} src={img1} alt=""/>
+                        <img style={{"marginLeft":"20px","marginTop":"18px","height": "28px", "width": "31px"}} src={ process.env.PUBLIC_URL + "/images/aboutus-icon.png" }/>
                         
                         <h1 style={{"marginLeft":"20px","marginTop":"5px"}}>
                             ABOUT US
@@ -28,7 +25,7 @@ function AboutUsPage() {
                      
                      <div className="aboutpage-sub-container-details" style={{"flex":"1"}}>
                          
-                         <img className="aboutPage-img-prop" src ={img2}>
+                         <img className="aboutPage-img-prop" src={ process.env.PUBLIC_URL + "/images/aboutus-image.jpg" }>
                          </img>
                      </div>
                      <div className="aboutpage-sub-container-details" style={{"flex":"1", "flexDirection":"column","marginLeft":"50px","display":"flex","marginRight":"50px","marginTop":"50px"}}>
@@ -41,15 +38,15 @@ function AboutUsPage() {
                          </a>
                          <div style={{"display":"flex","flexDirection":"row","flex":"1"}}>
                             <div style={{"display":"flex","flexDirection":"row","flex":"1"}}>
-                                <img  className="aboutPage-badge-img-prop" src= {img3} />
+                                <img  className="aboutPage-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
                                 <h2 className="aboutPage-badge-text">Trade License</h2>
                             </div>
                             <div style={{"display":"flex","flexDirection":"row","flex":"1"}}>
-                                <img  className="aboutPage-badge-img-prop" src= {img3} />
+                                <img  className="aboutPage-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
                                 <h2 className="aboutPage-badge-text">Trade License</h2>
                             </div>
                             <div style={{"display":"flex","flexDirection":"row","flex":"1"}}>
-                                <img  className="aboutPage-badge-img-prop" src= {img3} />
+                                <img  className="aboutPage-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
                                 <h2 className="aboutPage-badge-text">Trade License</h2>
                             </div>
                          </div>
