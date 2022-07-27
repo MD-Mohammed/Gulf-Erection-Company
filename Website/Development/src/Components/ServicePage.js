@@ -88,7 +88,7 @@ function ServicePage() {
 
                     <div className="ServicePage-desk-services-container-blocks">
                          <div style={{"display":"flex","flex":1,"justifyContent":"center","alignItems":"center"}}>
-                            <img className="ServicePage-desk-services-img" src={ process.env.PUBLIC_URL + "/images/green-building-service-icon.png" }/>
+                            <img className="ServicePage-desk-services-img" src={ process.env.PUBLIC_URL + "/images/consultancy-service-icon.png" }/>
                          </div>
                          <div className="ServicePage-desk-services-text" style={{"flex":0.5}}>
                              <h3 >Green Building</h3>
