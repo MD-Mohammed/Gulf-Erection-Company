@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 75px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .aboutpage-main-container-block
 {
@@ -55,6 +56,7 @@
     margin-top: 5px;
     color: #EAC435;
     border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
     
 
 }
