@@ -6,11 +6,14 @@
     flex-direction: column;
     margin-left: 75px;
     font-family: 'Ubuntu', sans-serif;
+    
+    
 }
 .aboutpage-main-container-block
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: ;
     
     /* background-color: rgb(133, 58, 58); */
    
@@ -20,6 +23,7 @@
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     /* background-color: rgb(103, 102, 28);
      */
 }
@@ -38,6 +42,7 @@
     align-content: center;
     align-items: center;
     border-radius: 10px; 
+    flex-wrap: wrap;
 }
 .aboutPage-img-prop
 {
@@ -80,4 +85,5 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    flex-wrap: wrap;
 }
