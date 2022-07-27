@@ -54,13 +54,14 @@ function AboutUsPage() {
                             </div>
                          </div>
                          <div style={{"display":"flex","flexDirection":"row","margin":"2%"}}>
-                            <div style={{"justifyContent":"center"}} className="aboutPage-button">
+                                <div className="aboutPage-button">
                                     
-                                    <h2 style={{"justifyContent":"center"}}className="aboutPage-badge-text">Read More</h2>
+                                <a href="#" className="aboutPage-badge-text">Read More</a>
                                 </div>
-                                <div style={{"backgroundColor":"#FF0000","justifyContent":"center"}}className="aboutPage-button">
-                                    
-                                    <h2 className="aboutPage-badge-text">Download Brochure</h2>
+                                <div style={{"backgroundColor":"#FF0000"}}className="aboutPage-button">
+                                    <>
+                                        <a href="#" className="aboutPage-badge-text">Download Brochure</a>
+                                    </>
                                 </div>
                                 
                             
