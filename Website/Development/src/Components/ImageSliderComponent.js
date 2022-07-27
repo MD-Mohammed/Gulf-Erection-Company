@@ -7,71 +7,156 @@ import imgD from "./images/GEC-ImageCor4.jpg"
 
 function ImageSlider() {
 
+    const [Active, setActive] = useState("SlideA");
+
+    const [SlideTransition, setSlideTransition] = useState("slide-right");
+
+    const ChangeSlideRight = () => {
+
+        setSlideTransition("slide-right");
+
+        if ({Active}['Active'] == "SlideA")
+        {
+            setActive("SlideB")
+        }
+
+        if ({Active}['Active'] == "SlideB")
+        {
+            setActive("SlideC")
+        }
+
+        if ({Active}['Active'] == "SlideC")
+        {
+            setActive("SlideD")
+        }
+
+        if ({Active}['Active'] == "SlideD")
+        {
+            setActive("SlideA")
+        }
+    
+    }
+
+    const ChangeSlideLeft = () => {
+
+        setSlideTransition("slide-left");
+
+        if ({Active}['Active'] == "SlideA")
+        {
+            setActive("SlideD")
+        }
+
+        if ({Active}['Active'] == "SlideB")
+        {
+            setActive("SlideA")
+        }
+
+        if ({Active}['Active'] == "SlideC")
+        {
+            setActive("SlideB")
+        }
+
+        if ({Active}['Active'] == "SlideD")
+        {
+            setActive("SlideC")
+        }
+    }
+
     function MobileComponent() {
+
+        function ImageSlide_A () {
+            return(
+                <>
+                
+                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <div className="mobile-imgsliderA-container">
+                            <h1 style={{"font-weight": "400", "font-size": "150%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                            <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        </div>
+
+                    </div>
+                
+                </>
+            );
+        }
+
+        function ImageSlide_B () {
+            return(
+                <>
+                
+                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <div className="mobile-imgsliderA-container">
+                                <h1 style={{"font-weight": "400", "font-size": "150%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        </div>
+
+                    </div>
+                
+                </>
+            );
+        }
+
+        function ImageSlide_C () {
+            return(
+                <>
+                
+                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgC})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <div className="mobile-imgsliderA-container">
+                                    <h1 style={{"font-weight": "400", "font-size": "150%", "color": "red"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                    <h2 style={{"font-weight": "400", "font-size": "80%", "color": "red"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        </div>
+
+                    </div>
+                
+                </>
+            );
+        }
+
+        function ImageSlide_D () {
+            return(
+                <>
+                
+                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgD})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <div className="mobile-imgsliderA-container">
+                                    <h1 style={{"font-weight": "400", "font-size": "150%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                    <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        </div>
+
+                    </div>
+                
+                </>
+            );
+        }
+
         return(
             <>
             
+                <div className="mobile-imgslider-main-container">
+
+                    <button className="mobile-imgslider-button-container" onClick={() => {
+                        ChangeSlideLeft();
+                    }}>&lt;</button>
+
+                    <button className="mobile-imgslider-button-container" onClick={() => {
+                        ChangeSlideRight();
+                    }}>&gt;</button>
+
+                    { Active === "SlideA" && <ImageSlide_A /> }
+                    { Active === "SlideB" && <ImageSlide_B /> }
+                    { Active === "SlideC" && <ImageSlide_C /> }
+                    { Active === "SlideD" && <ImageSlide_D /> }
+
+                </div>
 
             </>
         );
     }
 
     function DesktopComponent() {
-
-        const [Active, setActive] = useState("SlideA");
-
-        const [SlideTransition, setSlideTransition] = useState("slide-right");
-
-        const ChangeSlideRight = () => {
-
-            setSlideTransition("slide-right");
-
-            if ({Active}['Active'] == "SlideA")
-            {
-                setActive("SlideB")
-            }
-
-            if ({Active}['Active'] == "SlideB")
-            {
-                setActive("SlideC")
-            }
-
-            if ({Active}['Active'] == "SlideC")
-            {
-                setActive("SlideD")
-            }
-
-            if ({Active}['Active'] == "SlideD")
-            {
-                setActive("SlideA")
-            }
-        
-        }
-
-        const ChangeSlideLeft = () => {
-
-            setSlideTransition("slide-left");
-
-            if ({Active}['Active'] == "SlideA")
-            {
-                setActive("SlideD")
-            }
-
-            if ({Active}['Active'] == "SlideB")
-            {
-                setActive("SlideA")
-            }
-
-            if ({Active}['Active'] == "SlideC")
-            {
-                setActive("SlideB")
-            }
-
-            if ({Active}['Active'] == "SlideD")
-            {
-                setActive("SlideC")
-            }
-        }
 
         function ImageSlide_A () {
             return(
@@ -97,7 +182,8 @@ function ImageSlider() {
                     <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "0px -200px", "animation-name": {SlideTransition}['SlideTransition']}}>
 
                         <div className="desktop-imgsliderA-container">
-                                    SLIDE B
+                                <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
                         </div>
 
                     </div>
@@ -113,7 +199,8 @@ function ImageSlider() {
                     <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgC})`, "animation-name": {SlideTransition}['SlideTransition']}}>
 
                         <div className="desktop-imgsliderA-container">
-                            SLIDE C
+                                    <h1 style={{"font-weight": "400", "color": "red"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                    <h2 style={{"font-weight": "400", "color": "red"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
                         </div>
 
                     </div>
@@ -129,7 +216,8 @@ function ImageSlider() {
                     <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgD})`, "background-position": "0px -200px", "animation-name": {SlideTransition}['SlideTransition']}}>
 
                         <div className="desktop-imgsliderA-container">
-                            SLIDE D   
+                                    <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                    <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
                         </div>
 
                     </div>
