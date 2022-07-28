@@ -2,16 +2,16 @@ import './App.css';
 import React, {Fragment, useState} from 'react';
 import { Routes,Route } from 'react-router-dom';
 
-import SampleComponent from './Components/SampleComponent.js'
 import AboutUsPage from './Components/AboutUsPage.js'
-
+import NavigationBar from './Components/NavigationBarComponent';
 
 function App() {
 
   return (
-
+  
       <AboutUsPage/>
 
+      <NavigationBar />
     );
 }
 
