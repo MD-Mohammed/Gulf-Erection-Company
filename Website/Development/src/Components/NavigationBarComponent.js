@@ -42,7 +42,7 @@ function NavigationBar() {
 
                 {
                     DropMenu &&
-                        <div style={{"display":"flex", "justifyContent": "flex-end", "position": "absolute","width": "100%"}}>
+                        <div style={{"display":"flex", "justifyContent": "flex-end", "position": "absolute","width": "100%", "z-index": "3"}}>
                             <div className="mobile-menu-list-container">
                                 <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">Home</a></div>
                                 <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">About us</a></div>
