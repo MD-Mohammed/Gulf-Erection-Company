@@ -84,3 +84,104 @@
     width: 96.5%;
     justify-content: space-between;
 }
+
+.aboutPage-mobile-main-container
+{
+    /* background-color: #FF4343;  */
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.aboutPage-mobile-container
+{
+    /* background-color: #EAC435; */
+    display: flex;
+}
+.aboutPage-mobile-img-cert
+{
+    /* background-color: #5035ea; */
+    display: flex;
+    flex-direction: column;
+}
+.aboutPage-mobile-img-prop
+{
+    width: 95%;
+    height: 80%;
+    margin-top: 30px;
+  
+    box-shadow: -10px 10px #FF4343;
+    border-radius: 5px;
+}
+.aboutPage-mobile-img-cert
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.aboutPage-mobile-img-cert div
+{
+    display: flex;
+    flex: 1;
+    margin-top: 25%;
+}
+
+.aboutPage-mobile-badge-img-prop
+{
+    height: 28px;
+    width: 31px;
+    margin-right: 2%;
+}
+
+.aboutPage-mobile-badge-text
+{
+    font-size: 15px;
+    color: #EAC435;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutPage-mobile-button
+{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #16262E;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.aboutpage-mobile-gridBox-main-container{
+    display: flex;
+    width: 96.5%;
+    justify-content: space-between;
+}
+.aboutpage-mobile-gridBox-main-container div
+{
+    flex: 1;
+    margin-bottom: 5%;
+}
+
+.aboutPage-mobile-sub-container-gridBox-text
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #EAC435; ;
+    width: 250px;
+    height: 153px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    margin-right: 5%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
