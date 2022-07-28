@@ -8,10 +8,13 @@ import NavigationBar from './Components/NavigationBarComponent';
 function App() {
 
   return (
-  
-      <AboutUsPage/>
+      <>
 
-      <NavigationBar />
+        <NavigationBar />
+
+        <AboutUsPage />
+
+      </>
     );
 }
 
