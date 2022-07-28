@@ -115,9 +115,8 @@ function MobileComponent() {
 
                 </div>
 
-                <div className="aboutPage-mobile-container" style={{"height":"15%","marginLeft":"5%"}}>
-
-                <h2 style={{"fontSize":"28px","lineHeight":"35px"}}>We meet your build expectations with exceptional quality</h2>
+                <div className="aboutPage-mobile-container" style={{"marginLeft":"5%"}}>
+                    <h2 style={{"font-size":"140%", "font-family": "'Ubuntu', sans-serif"}}>We meet your build expectations with exceptional quality</h2>
                 </div>
 
                 <div className="aboutPage-mobile-container" style={{"height":"30%","marginLeft":"2%"}}>
@@ -125,25 +124,25 @@ function MobileComponent() {
                         <img className="aboutPage-mobile-img-prop" src={ process.env.PUBLIC_URL + "/images/aboutus-image.jpg" } />
                     </div>
 
-                    <div className="aboutPage-mobile-img-cert" style={{"width":"150px"}}>
+                    <div className="aboutPage-mobile-img-cert" style={{"width":"25%", "margin-left": "-1%", "margin-top": "8%", "height": "70%", "justify-content": "space-between"}}>
                        
-                        <div>
+                        <div style={{"display": "flex", "flex-direction": "column", "align-items": "center"}}>
                             <img  className="aboutPage-mobile-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
-                            <h2 className="aboutPage-mobile-badge-text" style={{"margin-top": "2%"}}>Trade License</h2>
+                            <h2 className="aboutPage-mobile-badge-text" style={{"margin-top": "10%"}}>Trade License</h2>
                         </div>
-                        <div>
+                        <div style={{"display": "flex", "flex-direction": "column", "align-items": "center"}}>
                             <img  className="aboutPage-mobile-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
-                            <h2 className="aboutPage-mobile-badge-text" style={{"margin-top": "2%"}}>Trade License</h2>
+                            <h2 className="aboutPage-mobile-badge-text" style={{"margin-top": "10%"}}>ISO Certificate</h2>
                         </div>
-                        <div>
-                           <img  className="aboutPage-mobile-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
-                            <h2 className="aboutPage-mobile-badge-text" style={{"margin-top": "2%"}}>Trade License</h2>
+                        <div style={{"display": "flex", "flex-direction": "column", "align-items": "center"}}>
+                            <img  className="aboutPage-mobile-badge-img-prop" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
+                            <h2 className="aboutPage-mobile-badge-text" style={{"margin-top": "10%"}}>ICV Certificate</h2>
                         </div>
                     </div>
                 </div>
 
                 <div className="aboutPage-mobile-container" style={{"height":"20%","marginLeft":"5%", "marginRight":"5%"}}>
-                    <a style={{"textAlign":"justify","fontSize":"20px","lineHeight":"23px"}}>
+                    <a style={{"textAlign":"justify","fontSize":"100%","lineHeight":"23px", "font-family": "'Ubuntu', sans-serif"}}>
                          Being professionals with decades of experience competing in the space of steel structure buildings, we have maintained growth and prominence with the leading infrastructure and technology to meet the developing demands of the country.
                          </a>
                 </div>
