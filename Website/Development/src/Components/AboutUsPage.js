@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import React, {Fragment} from "react";
 import './AboutUsPage.css';
+import './main.css';
 
 function AboutUsPage() {
 
@@ -11,17 +12,17 @@ function AboutUsPage() {
  
     <div className="desktop-aboutus-page-main-container">
                     
-        <div className="desktop-aboutus-page-header-container">
+        <div className="desktop-header-container">
             
             <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
                 <img style={{"height": "12.5%", "width": "12.5%", "margin-top": "-2%"}} src={ process.env.PUBLIC_URL + "/images/aboutus-icon.png" }/>
                 
                 <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>
-                    ABOUT US
+                    About us
                 </h1>
             </div>
 
-            <div className="desktop-aboutus-page-header-line" />
+            <div className="desktop-header-line" />
 
         </div>
 
