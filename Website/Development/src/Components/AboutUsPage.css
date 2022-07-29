@@ -1,15 +1,34 @@
-.aboutPage-main-container
+.desktop-aboutus-page-main-container
 {
     /* background-color: rgb(69, 64, 64); */
-    height:850px;
     display: flex;
     flex-direction: column;
-    margin-left: 75px;
     font-family: 'Ubuntu', sans-serif;
-    
-    
 }
-.aboutpage-main-container-block
+
+.desktop-aboutus-page-header-container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.desktop-aboutus-page-header-line{
+    background-color:#FF4343;
+    width : 40%;
+    height: 5px;
+}
+
+.desktop-aboutus-page-header-container:hover .desktop-aboutus-page-header-line {
+    width : 80%;
+}
+
+.desktop-aboutus-page-content-block{
+    display: flex;
+}
+
+.desktop-aboutus-page-main-container-block
 {
     display: flex;
     flex-direction: row;
@@ -17,22 +36,60 @@
     /* background-color: rgb(133, 58, 58); */ 
 }
 
-.aboutpage-sub-container-details
+.desktop-aboutus-page-image-container
 {
+    flex: 1;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* background-color: rgb(103, 102, 28);
-     */
+    justify-content: center;
+    align-items: center;
 }
 
-.aboutPage-sub-container-gridBox-text
+.desktop-aboutus-page-content-container
+{
+    flex: 1;
+}
+
+.desktop-aboutus-page-text-box{
+    margin-top: 5%;
+    height: 42.5%;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desktop-aboutus-page-certificate-container{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.desktop-aboutus-page-badges{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.desktop-aboutus-page-badges:hover .desktop-aboutus-page-badge-icon {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.20));
+    cursor: pointer;
+}
+
+.desktop-aboutus-page-badges:hover .desktop-aboutus-page-badge-text {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.20));
+    cursor: pointer;
+}
+
+.desktop-abutus-page-sub-container-gridBox-text
 {
     display: flex;
     flex-direction: column;
+    height: 175px;
     background-color: #EAC435; ;
-    width: 250px;
-    height: 153px;
+    width: 22%;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -40,48 +97,68 @@
     flex-wrap: wrap;
 }
 
-.aboutPage-img-prop
+.desktop-aboutus-page-img-prop
 {
-    width: 95%;
-    height: 80%;
-    margin-top: 30px;
-  
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
     box-shadow: -10px 10px #FF4343;
     border-radius: 5px;
 }
 
-.aboutPage-badge-text
-{
-    font-size: 20px;
+.desktop-aboutus-page-badge-text{
+    font-size: 125%;
     color: #EAC435;
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-.aboutPage-badge-img-prop
-{
-    height: 28px;
-    width: 31px;
+.desktop-aboutus-page-badge-icon{
+    height: 20%;
+    width: 20%;
     margin-right: 2%;
 }
 
-.aboutPage-button
-{
+.desktop-aboutus-page-buttons-container{
+    margin-top: 4%;
+    height: 12%;
     display: flex;
-    width: 25%;
-    flex-direction: row;
-    background-color: #16262E;
-    border-radius: 5px;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.aboutpage-gridBox-main-container{
+.desktop-aboutus-page-buttons
+{
     display: flex;
-    width: 96.5%;
+    width: 30%;
+    height: 90%;
+    background-color: #16262E;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 110%;
+    color: white;
+    border: none;
+    font-weight: 400;
+}
+
+.desktop-aboutus-page-buttons:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.20));
+}
+
+.desktop-aboutus-page-grids-main-container{
+    height: 30%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.desktop-aboutus-page-grids-inner-container{
+    width: 96%;
+    display: flex;
     justify-content: space-between;
 }
 
