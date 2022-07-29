@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-    /* margin-left: 3%;
-    margin-right: 3%; */
 }
 
 .desktop-servicepage-content-main-container
@@ -36,7 +34,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: -10px 10px 0px #FF4343;
 }
 
   .desktop-servicepage-card-img
@@ -63,17 +61,6 @@
   font-size: 200%;  
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
-}
-
-.mobile-service-page-main-container
-{
-    background-color: #D9D9D9;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    
-    /* margin-left: 3%;
-    margin-right: 3%; */
 }
 
 .ServicePage-mobile-main-container
@@ -136,4 +123,63 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
 
+.mobile-service-page-main-container
+{
+  margin-top: 10%; 
+  background-color:#16262E;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.mobile-servicepage-content-main-container
+{ 
+  margin-top: 10%;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-servicepage-content-cards {
+  width: 85%;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -10px 10px 0px #FF4343;
+}
+
+.mobile-servicepage-card-img
+{
+  margin-top: 10%;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.mobile-servicepage-card-header 
+{
+  margin-top: 10%;
+  font-size: 150%;  
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.mobile-servicepage-card-text
+{
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5%;
+}
