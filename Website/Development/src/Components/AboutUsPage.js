@@ -176,24 +176,24 @@ function MobileComponent() {
 
                     <div className="mobile-aboutus-page-grids-main-container">
                         
-                        <div className="mobile-abutus-page-sub-container-gridBox-text">
-                            <h1>20+</h1>
-                            <a style={{"font-weight": "200", "font-size": "110%"}}>Years of experience</a>
+                        <div className="mobile-aboutus-page-sub-container-gridBox-text">
+                            <h2>20+</h2>
+                            <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Years of experience</a>
                         </div>
 
-                        <div className="mobile-abutus-page-sub-container-gridBox-text">
-                            <h1>100+</h1>
-                            <a style={{"font-weight": "200", "font-size": "110%"}}>Projects completed</a>
+                        <div className="mobile-aboutus-page-sub-container-gridBox-text">
+                            <h2>100+</h2>
+                            <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Projects completed</a>
                         </div>
 
-                        <div className="mobile-abutus-page-sub-container-gridBox-text">
-                            <h1>25+</h1>
-                            <a style={{"font-weight": "200", "font-size": "110%"}}>Satisified clients</a>
+                        <div className="mobile-aboutus-page-sub-container-gridBox-text">
+                            <h2>25+</h2>
+                            <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Satisified clients</a>
                         </div>
 
-                        <div className="mobile-abutus-page-sub-container-gridBox-text">
-                            <h1>300+</h1>
-                            <a style={{"font-weight": "200", "font-size": "110%"}}>Active workers</a>
+                        <div className="mobile-aboutus-page-sub-container-gridBox-text">
+                            <h2>300+</h2>
+                            <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Active workers</a>
                         </div>   
 
                     </div>

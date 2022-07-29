@@ -253,23 +253,20 @@
 .mobile-aboutus-page-grids-main-container{
     margin-top: 10%;
     display: flex;
-    height: 950px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2%;
-
+    justify-content: space-evenly;
+    column-gap: 5%;
+    height: 375px;
+    flex-wrap: wrap;
 }
 
-.mobile-abutus-page-sub-container-gridBox-text
+.mobile-aboutus-page-sub-container-gridBox-text
 {
     display: flex;
     flex-direction: column;
     background-color: #EAC435;
     justify-content: center;
-    align-content: center;
     align-items: center;
     border-radius: 10px; 
-    width: 80%;
-    height: 200px;
+    width: 40%;
+    height: 150px;
 }
