@@ -118,7 +118,7 @@
 
 .mobile-navbar-quote-button{
     background-color: #16262E;
-    height: 45%;
+    height: 50%;
     width: 60%;
     border-radius: 10px;
     border: none;
@@ -133,7 +133,7 @@
 
 .mobile-menu-button{
     background-color: #16262E;
-    height: 45%;
+    height: 50%;
     width: 22%;
     border-radius: 10px;
     border: none;
@@ -169,7 +169,7 @@
 
 .mobile-menu-list-container{
     background-color: #FF4343;
-    height: 300px;
+    height: 350px;
     width: 52.5%;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@
 
 .mobile-navbar-button-containers{
     margin-block-start: -5%;
-    height: 12%;
+    height: 13%;
     width: 88%;
     background-color: #16262E;
     border-radius: 8px;

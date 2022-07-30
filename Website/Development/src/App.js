@@ -11,13 +11,15 @@ function App() {
 
   return (
       <>
-     
+        
         <div className="navigationbar-position">
           <NavigationBar />
         </div>
-        
+
         <ImageSlider />
+
         <AboutUsPage />
+
         <ServicePage/>
 
       </>

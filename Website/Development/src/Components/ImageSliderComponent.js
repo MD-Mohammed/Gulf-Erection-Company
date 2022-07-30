@@ -68,14 +68,21 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                    <div className="mobile-imgslider-corousal-container">
 
-                        <div className="mobile-imgsliderA-container">
-                            <h1 style={{"font-weight": "400", "font-size": "150%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                            <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor2.jpg" } />
+                            
+                            <div className="mobile-imgslider-container">
+                                <h1 style={{"font-weight": "400", "font-size": "150%", "margin-top": "50%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                            </div>
+
                         </div>
-
+                        
                     </div>
+
                 
                 </>
             );
@@ -85,15 +92,21 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                    <div className="mobile-imgslider-corousal-container">
 
-                        <div className="mobile-imgsliderA-container">
-                                <h1 style={{"font-weight": "400", "font-size": "150%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                        <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor3.jpg" } />
+                            
+                            <div className="mobile-imgslider-container">
+                                <h1 style={{"font-weight": "400", "font-size": "150%", "margin-top": "50%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
                                 <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                            </div>
+
                         </div>
 
                     </div>
-                
+
                 </>
             );
         }
@@ -102,15 +115,21 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgC})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                    <div className="mobile-imgslider-corousal-container">
 
-                        <div className="mobile-imgsliderA-container">
-                                    <h1 style={{"font-weight": "400", "font-size": "150%", "color": "red"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                                    <h2 style={{"font-weight": "400", "font-size": "80%", "color": "red"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor4.jpg" } />
+                            
+                            <div className="mobile-imgslider-container">
+                                <h1 style={{"font-weight": "400", "font-size": "150%", "margin-top": "50%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                            </div>
+
                         </div>
 
                     </div>
-                
+
                 </>
             );
         }
@@ -119,15 +138,21 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="mobile-imgslider-corousal-container" style={{"backgroundImage": `url(${imgD})`, "background-position": "-175px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                    <div className="mobile-imgslider-corousal-container">
 
-                        <div className="mobile-imgsliderA-container">
-                                    <h1 style={{"font-weight": "400", "font-size": "150%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                                    <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                        <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor1.jpg" } />
+                            
+                            <div className="mobile-imgslider-container">
+                                <h1 style={{"font-weight": "400", "font-size": "150%", "margin-top": "50%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                <h2 style={{"font-weight": "400", "font-size": "80%"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                            </div>
+
                         </div>
 
                     </div>
-                
+
                 </>
             );
         }
@@ -135,7 +160,9 @@ function ImageSlider() {
         return(
             <>
             
-                <div className="mobile-imgslider-main-container">
+                <div style={{"height": "90px"}} />
+                
+                <div className="mobile-imgslider-main-container" style={{"background-color": "gray"}}>
 
                     <button className="mobile-imgslider-button-container" onClick={() => {
                         ChangeSlideLeft();
@@ -162,12 +189,18 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "0px -200px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                    <div className="desktop-imgslider-corousal-container">
 
-                        <div className="desktop-imgsliderA-container">
-                            <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                            <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
-                        </div>
+                            <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                                <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor2.jpg" } />
+                                
+                                <div className="desktop-imgslider-container">
+                                    <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                                    <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                                </div>
+
+                            </div>
 
                     </div>
                 
@@ -179,14 +212,20 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgA})`, "background-position": "0px -200px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                <div className="desktop-imgslider-corousal-container">
 
-                        <div className="desktop-imgsliderA-container">
-                                <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                                <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                    <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor3.jpg" } />
+                        
+                        <div className="desktop-imgslider-container">
+                            <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                            <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
                         </div>
 
                     </div>
+
+                </div>
                 
                 </>
             );
@@ -196,14 +235,21 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgC})`, "animation-name": {SlideTransition}['SlideTransition']}}>
+                <div className="desktop-imgslider-corousal-container">
 
-                        <div className="desktop-imgsliderA-container">
-                                    <h1 style={{"font-weight": "400", "color": "red"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                                    <h2 style={{"font-weight": "400", "color": "red"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                    <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor4.jpg" } />
+                        
+                        <div className="desktop-imgslider-container">
+                            <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                            <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
                         </div>
 
                     </div>
+
+                </div>
+ 
                 
                 </>
             );
@@ -213,14 +259,21 @@ function ImageSlider() {
             return(
                 <>
                 
-                    <div className="desktop-imgslider-corousal-container" style={{"backgroundImage": `url(${imgD})`, "background-position": "0px -200px", "animation-name": {SlideTransition}['SlideTransition']}}>
+                <div className="desktop-imgslider-corousal-container">
 
-                        <div className="desktop-imgsliderA-container">
-                                    <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
-                                    <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
+                    <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
+
+                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor1.jpg" } />
+                        
+                        <div className="desktop-imgslider-container">
+                            <h1 style={{"font-weight": "400"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
+                            <h2 style={{"font-weight": "400"}}><span style={{"color": "white"}}>of steel structure buildings</span> and precast building structures</h2>
                         </div>
 
                     </div>
+
+                </div>
+ 
                 
                 </>
             );
@@ -228,6 +281,8 @@ function ImageSlider() {
 
         return(
             <>
+                <div style={{"height": "100px"}} />
+                
                 <div className="desktop-imgslider-main-container">
 
                     <button className="desktop-imgslider-button-container" onClick={() => {

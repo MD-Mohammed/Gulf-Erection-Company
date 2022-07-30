@@ -1,7 +1,6 @@
 import { render } from "@testing-library/react";
 import React, {Fragment, useState} from "react";
 import "./NavigationBarComponent.css"
-import Logo from "./images/GEC-Logo.svg"
 
 function NavigationBar() {
 
@@ -32,7 +31,7 @@ function NavigationBar() {
 
                         <div className="mobile-menu-button" onClick={() => setDropMenu(!DropMenu)}>
                             <img 
-                                style = { DropMenu ? {"height": "35%", "width": "50%"} : {"height": "45%", "width": "50%"} } 
+                                style = { DropMenu ? {"height": "30%", "width": "50%"} : {"height": "40%", "width": "50%"} } 
                                 src = { DropMenu ? process.env.PUBLIC_URL + "/images/menu-up-icon.png" : process.env.PUBLIC_URL + "/images/Menu-icon.png" } 
                             />
                         </div>
@@ -94,7 +93,7 @@ function NavigationBar() {
                             <span style={{"margin-left": "5%", "color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "300"}}>Request Quote</span>
                         </button>
                     </div>
-    
+
                 </div>
     
             </>
