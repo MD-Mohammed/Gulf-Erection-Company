@@ -1,0 +1,48 @@
+.desktop-header-container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.desktop-header-line{
+    background-color:#FF4343;
+    width : 40%;
+    height: 5px;
+}
+
+.desktop-header-container:hover {
+    cursor: pointer;
+}
+
+.desktop-header-container:hover .desktop-header-line {
+    width : 70%;
+    transition: 0.4s ease;
+}
+
+/* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
+
+
+.mobile-header-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.mobile-header-line{
+    background-color:#FF4343;
+    width : 40%;
+    height: 4px;
+}
+
+.mobile-header-container:active {
+    cursor: pointer;
+}
+
+.mobile-header-container:active .mobile-header-line {
+    width : 80%;
+    transition: 0.4s ease;
+}

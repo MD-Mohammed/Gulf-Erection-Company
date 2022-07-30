@@ -15,7 +15,7 @@ function NavigationBar() {
 
                     <div className="mobile-navbar-logo-main-container">
 
-                        <img style={{"height": "50%", "width": "50%", "margin-bottom": "2%"}} src={ process.env.PUBLIC_URL + "/images/GEC-Logo.svg"}  />
+                        <img style={{"height": "50%", "width": "30%", "margin-bottom": "2%", "margin-left": "5%"}} src={ process.env.PUBLIC_URL + "/images/GEC-Logo.png" }  />
                         <div className="mobile-navbar-logo-text-container">
                             <span className="mobile-navbar-logo-text-H1">GULF ERECTION</span>
                             <span className="mobile-navbar-logo-text-H1 mobile-navbar-logo-text-H2">CONSTRUCTIONS</span>
@@ -31,7 +31,7 @@ function NavigationBar() {
 
                         <div className="mobile-menu-button" onClick={() => setDropMenu(!DropMenu)}>
                             <img 
-                                style = { DropMenu ? {"height": "35%", "width": "50%"} : {"height": "45%", "width": "50%"} } 
+                                style = { DropMenu ? {"height": "30%", "width": "50%"} : {"height": "40%", "width": "50%"} } 
                                 src = { DropMenu ? process.env.PUBLIC_URL + "/images/menu-up-icon.png" : process.env.PUBLIC_URL + "/images/Menu-icon.png" } 
                             />
                         </div>
@@ -68,7 +68,7 @@ function NavigationBar() {
                     <div className="desktop-navbar-logo-main-container">
     
                         <div className="desktop-navbar-logo-icon-container">
-                            <img style={{"height": "70%", "width": "70%", "margin-bottom": "2%"}} src={ process.env.PUBLIC_URL + "/images/GEC-Logo.svg"}  />
+                            <img style={{"height": "70%", "width": "70%", "margin-bottom": "2%"}} src={ process.env.PUBLIC_URL + "/images/GEC-Logo.png" }  />
                         </div>
     
                         <div className="desktop-navbar-logo-text-container">
@@ -93,7 +93,7 @@ function NavigationBar() {
                             <span style={{"margin-left": "5%", "color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "300"}}>Request Quote</span>
                         </button>
                     </div>
-    
+
                 </div>
     
             </>
