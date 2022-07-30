@@ -162,7 +162,7 @@ function ImageSlider() {
             
                 <div style={{"height": "90px"}} />
                 
-                <div className="mobile-imgslider-main-container" style={{"background-color": "gray"}}>
+                <div className="mobile-imgslider-main-container">
 
                     <button className="mobile-imgslider-button-container" onClick={() => {
                         ChangeSlideLeft();
