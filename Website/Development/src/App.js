@@ -5,9 +5,10 @@ import { Routes,Route } from 'react-router-dom';
 import HashLoader from "react-spinners/HashLoader"
 
 import ServicePage from './Components/ServicePage.js'
-import ImageSlider from './Components/ImageSliderComponent';
+import ImageSlider from './Components/ImageSliderComponent.js';
 import AboutUsPage from './Components/AboutUsPage.js'
-import NavigationBar from './Components/NavigationBarComponent';
+import NavigationBar from './Components/NavigationBarComponent.js';
+import AboutusPagePopup from './Components/AboutusPagePopupComponent.js';
 
 function App() {
 
@@ -48,6 +49,8 @@ function App() {
               <AboutUsPage />
 
               <ServicePage/>
+
+              <AboutusPagePopup />
 
             </>
 
