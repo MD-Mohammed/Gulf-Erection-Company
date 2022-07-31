@@ -246,12 +246,12 @@ function AboutUsPage() {
                                 <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Trade<br/>License</h2>
                             </div>
 
-                            <div className="mobile-aboutus-page-badges">
+                            <div className="mobile-aboutus-page-badges" onClick={() => setBadge_B(true)}>
                                 <img  className="mobile-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
                                 <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>ISO<br/>Certificate</h2>
                             </div>
 
-                            <div className="mobile-aboutus-page-badges">
+                            <div className="mobile-aboutus-page-badges" onClick={() => setBadge_C(true)}>
                                 <img  className="mobile-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
                                 <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>ICV<br/>Certificate</h2>
                             </div>
@@ -260,7 +260,7 @@ function AboutUsPage() {
 
                         <div className="mobile-aboutus-page-buttons-container">
 
-                            <button className="mobile-aboutus-page-buttons" >Read More</button>
+                            <button className="mobile-aboutus-page-buttons" onClick={() => setReadMore(!ReadMore)}>Read More</button>
 
                             <button className="mobile-aboutus-page-buttons" style={{"background-color": "#FF4343", "margin-top": "5%"}} >Download Brochure</button>
 
@@ -368,7 +368,7 @@ function AboutUsPage() {
                         <div className="mobile-popup-main-container">
 
                             <div className="mobile-popup-close-button-container">
-                                <button className="mobile-popup-close-button" onClick={() => ReadMore(false)}>
+                                <button className="mobile-popup-close-button" onClick={() => setReadMore(false)}>
                                     <span className="mobile-popus-close-icon">X</span>
                                 </button>
                             </div>
