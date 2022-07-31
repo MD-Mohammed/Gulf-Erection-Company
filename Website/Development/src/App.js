@@ -8,7 +8,6 @@ import ServicePage from './Components/ServicePage.js'
 import ImageSlider from './Components/ImageSliderComponent.js';
 import AboutUsPage from './Components/AboutUsPage.js'
 import NavigationBar from './Components/NavigationBarComponent.js';
-import AboutusPagePopup from './Components/AboutusPagePopupComponent.js';
 
 function App() {
 
@@ -30,7 +29,7 @@ function App() {
 
           <div className="loader-style">
             <HashLoader 
-              size={100}
+              size={50}
               color="#FF4343"
               loading={loading}
             />
@@ -46,11 +45,9 @@ function App() {
 
               <ImageSlider />
 
-              <AboutUsPage />
+              <AboutUsPage/>
 
               <ServicePage/>
-
-              <AboutusPagePopup />
 
             </>
 

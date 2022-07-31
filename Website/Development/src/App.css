@@ -57,12 +57,8 @@
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
-  
-}
-
 ::-webkit-scrollbar-thumb{
-  background-color: #848C8E;
+  background-color: #848c8e77;
 }
 
 ::-webkit-scrollbar-thumb:hover {
