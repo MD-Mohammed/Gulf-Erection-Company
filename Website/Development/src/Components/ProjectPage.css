@@ -1,0 +1,66 @@
+.ProjectPage-desk-main-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    background-color: #16262E;
+}
+.ProjectPage-desk-container-Heading
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    /* background-color: blueviolet; */
+    height: 10%;
+}
+
+.ProjectPage-desk-container-ProjectCard
+{
+    display: flex;
+    margin-top: 2%;
+    /* background-color: rgb(226, 208, 10); */
+    height: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.ProjectPage-Desk-Project-Card-prop
+{
+    background-color: white;
+    width: 20%;
+    height: 40%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: 1%;
+    /* margin-right: 2%; */
+    margin-left: 2%;
+    /* align-items: center;
+    justify-items: center; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.ProjectPage-desk-card-img-prop
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 2%;
+    /* background-color: blue; */
+    
+}
+.ProjectPage-desk-card-text
+{
+    font-size:15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-wrap: break-word;
+    margin-top: 4%;
+    
+    /* background-color: aqua; */
+    
+    
+    
+    
+}
