@@ -1,0 +1,62 @@
+.ClientPage-desk-Main-container
+{
+    background-color: #16262E;
+    display: flex;
+    flex-direction: column;
+    /* height: 1000px; */
+}
+.ClientPage-desk-container
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.ClientPage-desk-image-card-prop
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+.ClientPage-desk-image-prop
+{
+    height: 30%;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+/* MObile CSS */
+
+.ClientPage-mobile-Main-container
+{
+    background-color: #16262E;
+    display: flex;
+    flex-direction: column;
+    /* height: 1000px; */
+}
+.ClientPage-mobile-container
+{
+    display: flex;
+    /* background-color: rgb(214, 214, 255); */
+    flex-direction: column;
+    
+}
+.ClientPage-mobile-image-card-prop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(43, 125, 226); */
+}
+.ClientPage-mobile-image-prop
+{
+    height: 100%;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 2%;
+}

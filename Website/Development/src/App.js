@@ -8,7 +8,7 @@ import ServicePage from './Components/ServicePage.js'
 import ImageSlider from './Components/ImageSliderComponent';
 import AboutUsPage from './Components/AboutUsPage.js'
 import NavigationBar from './Components/NavigationBarComponent';
-
+import ClientPage from './Components/ClientPage';
 function App() {
 
   const [loading, setLoading] = useState(false);
@@ -39,15 +39,8 @@ function App() {
         
             <>
 
-              <div className="navigationbar-position">
-                <NavigationBar />
-              </div>
-
-              <ImageSlider />
-
-              <AboutUsPage />
-
-              <ServicePage/>
+              
+              <ClientPage />
 
             </>
 
