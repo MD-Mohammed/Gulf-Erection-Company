@@ -17,7 +17,7 @@ function ProjectPage() {
                             <img style={{"marginLeft":"20px","marginTop":"18px","height": "28px", "width": "31px"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
                             
                             <h1 style={{"marginLeft":"20px","marginTop":"5px","color":"white"}}>
-                            SERVICES
+                            PROJECTS
                             </h1>
                         </div>
                         <div style={{"backgroundColor":"#FF4343","border":"5px","width":"147px","height":"5px","marginLeft":"20px"}}>
@@ -27,8 +27,8 @@ function ProjectPage() {
             <div className="ProjectPage-desk-container-ProjectCard">
                 
                 <div className="ProjectPage-Desk-Project-Card-prop">
-                  
-                    <div style={{"height":"80%","width":"100%"}}>
+                   
+                    <div style={{"height":"80%"}}>
                     <img className="ProjectPage-desk-card-img-prop" src={ process.env.PUBLIC_URL + "/images/project-image-e.jpg" }/>
                     
                     </div>
