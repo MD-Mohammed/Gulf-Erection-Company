@@ -3,60 +3,86 @@
     background-color: #16262E;
     display: flex;
     flex-direction: column;
-    /* height: 1000px; */
+    height: 1000px;
 }
 .ClientPage-desk-container
 {
-    display: flex;
-    flex-direction: column;
+    /* background-color: rgb(255, 144, 9); */
+    margin: 10% 5%;
+    overflow: hidden;
+    /* cursor: grab; */
+   
+    
+    
     
 }
-.ClientPage-desk-image-card-prop
+
+.ClientPage-desk-Main-Corousel
+{
+    cursor: grab;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+.ClientPage-desk-inner-Corousel
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 3%;
-    margin-right: 5%;
+    /* background-color: aqua; */
 }
-.ClientPage-desk-image-prop
+.ClientPage-desk-item-image
 {
-    height: 30%;
-    width: 25%;
-    margin-top: 2%;
-    margin-left: 2%;
+    min-height: 30rem;
+    min-width: 30rem;
+    padding: 20px;
 }
-
+.ClientPage-desk-item-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    pointer-events: none;
+}
 
 /* MObile CSS */
-
 .ClientPage-mobile-Main-container
 {
     background-color: #16262E;
     display: flex;
     flex-direction: column;
-    /* height: 1000px; */
+    height: 1000px;
 }
 .ClientPage-mobile-container
 {
-    display: flex;
-    /* background-color: rgb(214, 214, 255); */
-    flex-direction: column;
+    /* background-color: rgb(255, 144, 9); */
+    margin: 40% 5%;
+    overflow: hidden;
+    /* cursor: grab; */
+   
+    
+    
     
 }
-.ClientPage-mobile-image-card-prop
+
+.ClientPage-mobile-Main-Corousel
+{
+    cursor: grab;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+.ClientPage-mobile-inner-Corousel
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(43, 125, 226); */
+    /* background-color: aqua; */
 }
-.ClientPage-mobile-image-prop
+.ClientPage-mobile-item-image
 {
+    min-height: 20rem;
+    min-width: 20rem;
+    padding: 20px;
+}
+.ClientPage-mobile-item-image img{
+    width: 100%;
     height: 100%;
-    width: 70%;
-    margin-top: 5%;
-    margin-left: 2%;
+    border-radius: 5px;
+    pointer-events: none;
 }
