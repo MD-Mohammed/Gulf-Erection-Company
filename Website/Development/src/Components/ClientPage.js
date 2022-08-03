@@ -73,9 +73,9 @@ function MobileComponent() {
                     <div className="mobile-header-container" style={{"margin-top": "10%", "width": "100%"}}>
                         
                         <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
-                            <img style={{"height": "60%", "width": "8%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
+                            <img style={{"height": "80%", "width": "12%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
                             
-                            <h3 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white"}}>
+                            <h3 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white", "margin-left": "-2%"}}>
                                 Our Clients
                             </h3>
                         </div>

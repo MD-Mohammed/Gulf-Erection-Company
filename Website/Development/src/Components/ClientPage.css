@@ -71,14 +71,14 @@
     background-color: #16262E;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 350px;
 }
 
 .mobile-clientpage-slider-main-container{
     height: 100%;
-    margin-top: 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .mobile-clientpage-slider-container{
