@@ -5,9 +5,9 @@ import { Routes,Route } from 'react-router-dom';
 import HashLoader from "react-spinners/HashLoader"
 
 import ServicePage from './Components/ServicePage.js'
-import ImageSlider from './Components/ImageSliderComponent';
+import ImageSlider from './Components/ImageSliderComponent.js';
 import AboutUsPage from './Components/AboutUsPage.js'
-import NavigationBar from './Components/NavigationBarComponent';
+import NavigationBar from './Components/NavigationBarComponent.js';
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
 
           <div className="loader-style">
             <HashLoader 
-              size={100}
+              size={50}
               color="#FF4343"
               loading={loading}
             />
@@ -45,7 +45,7 @@ function App() {
 
               <ImageSlider />
 
-              <AboutUsPage />
+              <AboutUsPage/>
 
               <ServicePage/>
 
