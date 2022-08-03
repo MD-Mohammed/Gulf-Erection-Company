@@ -1,0 +1,132 @@
+.desktop-clientpage-main-container
+{
+    background-color: #16262E;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
+.desktop-clientpage-slider-main-container{
+
+    height: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-clientpage-slider-container{
+    background-color: #D9D9D9;
+    height: 85%;
+    width: 95%;
+    box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.desktop-clientpage-slider-frame
+{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.desktop-clientpage-slider-inner-frame
+{
+    display: flex;
+}
+
+
+.desktop-clientpage-slider-image-containers{
+    height: 100%;
+    width: 100%;
+}
+
+.desktop-clientpage-slider-frame{
+    cursor: grab;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-clientpage-icon-frame
+{
+    min-height: 25rem;
+    min-width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.desktop-clientpage-icon{
+    width: 75%;
+    height: 75%;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+/* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
+
+.mobile-clientpage-main-container
+{
+    background-color: #16262E;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.mobile-clientpage-slider-main-container{
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-clientpage-slider-container{
+    background-color: #D9D9D9;
+    height: 70%;
+    width: 90%;
+    box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.mobile-clientpage-slider-frame
+{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.mobile-clientpage-slider-inner-frame
+{
+    display: flex;
+}
+
+
+.mobile-clientpage-slider-image-containers{
+    height: 100%;
+    width: 100%;
+}
+
+
+.mobile-clientpage-slider-frame{
+    cursor: grab;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-clientpage-icon-frame
+{
+    min-height: 10rem;
+    min-width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mobile-clientpage-icon{
+    width: 75%;
+    height: 75%;
+    border-radius: 5px;
+    pointer-events: none;
+}

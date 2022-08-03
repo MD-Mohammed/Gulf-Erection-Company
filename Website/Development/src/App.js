@@ -7,7 +7,8 @@ import HashLoader from "react-spinners/HashLoader"
 import ServicePage from './Components/ServicePage.js'
 import ImageSlider from './Components/ImageSliderComponent.js';
 import AboutUsPage from './Components/AboutUsPage.js'
-import NavigationBar from './Components/NavigationBarComponent.js';
+import NavigationBar from './Components/NavigationBarComponent';
+import ClientPage from './Components/ClientPage';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
           :
         
             <>
-
+          
               <div className="navigationbar-position">
                 <NavigationBar />
               </div>
@@ -48,6 +49,8 @@ function App() {
               <AboutUsPage/>
 
               <ServicePage/>
+              
+              <ClientPage />
 
             </>
 
