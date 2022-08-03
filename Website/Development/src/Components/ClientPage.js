@@ -6,111 +6,116 @@ import { useState, useEffect,useRef} from "react"
 import images from "./Client_Images"
 
 function ClientPage() {
+
     const [corouselwidth, setCorouselWidth]=useState(0);
     const corousel=useRef();
 
     useEffect(() =>{
         setCorouselWidth(corousel.current.scrollWidth - corousel.current.offsetWidth);
     }, []);
-    
-       
 
     function DesktopComponent() {
        
-
-
-    return(
+        return(
             <>
-            <div className="ClientPage-desk-Main-container">
-                
-                <div style={{"height":"10%"}}>
+
+                <div className="desktop-clientpage-main-container">
+
+                    <div className="desktop-header-container" style={{"width": "35%"}}>
                     
-                     <div style={{"display":"flex"}}>  
-                            <img style={{"marginLeft":"20px","marginTop":"18px","height": "28px", "width": "31px"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
+                        <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                            <img style={{"height": "59%", "width": "8%", "margin-top": "-2%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
                             
-                            <h1 style={{"marginLeft":"20px","marginTop":"5px","color":"white"}}>
-                            SUCCESSFUL ASSOCIATIONS
+                            <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white"}}>
+                                Successful Associations
                             </h1>
                         </div>
-                        <div style={{"backgroundColor":"#FF4343","border":"5px","width":"147px","height":"5px","marginLeft":"20px"}}>
-                        </div>
-                </div>
-                <div style={{"height":"80%"}} className="ClientPage-desk-container">
-                    <div className="ClientPage-desk-App">
-                        <motion.div ref={corousel}className="ClientPage-desk-Main-Corousel">
-                            <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}}className="ClientPage-desk-inner-Corousel">
-                                {
-                                    images.map(image => {
-                                        return(
-                                            <motion.div className="ClientPage-desk-item-image" key={image}> 
-                                                <img src={image} alt ="" />
-                                                
-                                            </motion.div>
 
-                                        );
-                                    })
-                                }
+                        <div className="desktop-header-line" />
+
+                    </div>
+
+                    <div className="desktop-clientpage-slider-main-container">
+
+                        <div className="desktop-clientpage-slider-container">
+                            
+                            <motion.div ref={corousel}className="desktop-clientpage-slider-frame">
+                                <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}} style={{"display": "flex"}}>
+                                    {
+                                        images.map(image => {
+                                            return(
+                                                <motion.div className="desktop-clientpage-icon-frame" key={image}> 
+                                                    <img className="desktop-clientpage-icon" src={image} alt ="" />
+                                                </motion.div>
+                                            );
+                                        })
+                                    }
+                                </motion.div>
                             </motion.div>
-                    </motion.div>
-                </div>
-                </div>
 
+                        </div>
 
-            </div>
+                    </div>
+                    
+                </div>
             </>
-    );
-    
-} 
+        );
+            
+    } 
 
 function MobileComponent() {
 
 
     return(
-        <>
-            <div className="ClientPage-mobile-Main-container">
-                
-                <div style={{"height":"10%"}}>
-                    
-                     <div style={{"display":"flex"}}>  
-                            <img style={{"marginLeft":"20px","marginTop":"18px","height": "28px", "width": "31px"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
+            <>
+                <div className="mobile-clientpage-main-container">
+
+                    <div className="mobile-header-container" style={{"margin-top": "10%", "width": "100%"}}>
+                        
+                        <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                            <img style={{"height": "60%", "width": "8%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
                             
-                            <h1 style={{"marginLeft":"20px","marginTop":"5px","color":"white"}}>
-                            SUCCESSFUL ASSOCIATIONS
-                            </h1>
+                            <h3 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white"}}>
+                                Our Clients
+                            </h3>
                         </div>
-                        <div style={{"backgroundColor":"#FF4343","border":"5px","width":"147px","height":"5px","marginLeft":"20px"}}>
-                        </div>
-                </div>
-                <div style={{"height":"80%"}} className="ClientPage-mobile-container">
-                    <div className="ClientPage-mobile-App">
-                        <motion.div ref={corousel}className="ClientPage-mobile-Main-Corousel">
-                            <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}}className="ClientPage-mobile-inner-Corousel">
-                                {
-                                    images.map(image => {
-                                        return(
-                                            <motion.div className="ClientPage-mobile-item-image" key={image}> 
-                                                <img src={image} alt ="" />
-                                                
-                                            </motion.div>
 
-                                        );
-                                    })
-                                }
+                        <div className="mobile-header-line" style={{"margin-top": "2%"}} />
+
+                    </div>
+
+                    <div className="mobile-clientpage-slider-main-container">
+
+                        <div className="mobile-clientpage-slider-container">
+                            
+                            <motion.div ref={corousel}className="mobile-clientpage-slider-frame">
+                                <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}} style={{"display": "flex"}}>
+                                    {
+                                        images.map(image => {
+                                            return(
+                                                <motion.div className="mobile-clientpage-icon-frame" key={image}> 
+                                                    <img className="mobile-clientpage-icon" src={image} alt ="" />
+                                                </motion.div>
+                                            );
+                                        })
+                                    }
+                                </motion.div>
                             </motion.div>
-                    </motion.div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                </div>
 
+            </>
+        );
+    }
 
-            </div>
+    const width = window.innerWidth;
+    const breakpoint = 500;
 
-        </>
-    );
+    return width < breakpoint ? <MobileComponent /> : <DesktopComponent />;
 }
 
-const width = window.innerWidth;
-const breakpoint = 500;
-
-return width < breakpoint ? <MobileComponent /> : <DesktopComponent />;
-}
 export default ClientPage;
