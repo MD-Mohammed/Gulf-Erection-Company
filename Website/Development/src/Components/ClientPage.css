@@ -71,7 +71,7 @@
     background-color: #16262E;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 500px;
 }
 
 .mobile-clientpage-slider-main-container{
@@ -117,8 +117,8 @@
 
 .mobile-clientpage-icon-frame
 {
-    min-height: 10rem;
-    min-width: 12rem;
+    min-height: 15rem;
+    min-width: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
