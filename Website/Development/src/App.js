@@ -5,10 +5,11 @@ import { Routes,Route } from 'react-router-dom';
 import HashLoader from "react-spinners/HashLoader"
 
 import ServicePage from './Components/ServicePage.js'
-import ImageSlider from './Components/ImageSliderComponent';
+import ImageSlider from './Components/ImageSliderComponent.js';
 import AboutUsPage from './Components/AboutUsPage.js'
 import NavigationBar from './Components/NavigationBarComponent';
 import ClientPage from './Components/ClientPage';
+
 function App() {
 
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,7 @@ function App() {
 
           <div className="loader-style">
             <HashLoader 
-              size={100}
+              size={50}
               color="#FF4343"
               loading={loading}
             />
@@ -38,7 +39,16 @@ function App() {
           :
         
             <>
+          
+              <div className="navigationbar-position">
+                <NavigationBar />
+              </div>
 
+              <ImageSlider />
+
+              <AboutUsPage/>
+
+              <ServicePage/>
               
               <ClientPage />
 
