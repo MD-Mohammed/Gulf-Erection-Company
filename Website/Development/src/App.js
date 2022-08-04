@@ -9,6 +9,7 @@ import ImageSlider from './Components/ImageSliderComponent.js';
 import AboutUsPage from './Components/AboutUsPage.js'
 import NavigationBar from './Components/NavigationBarComponent';
 import ClientPage from './Components/ClientPage';
+import ProjectPage from './Components/ProjectPage';
 
 function App() {
 
@@ -51,6 +52,8 @@ function App() {
               <ServicePage/>
               
               <ClientPage />
+
+              <ProjectPage />
 
             </>
 

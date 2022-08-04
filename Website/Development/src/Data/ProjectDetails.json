@@ -1,0 +1,38 @@
+[
+    {
+        "ProjectName": "EMC Showroom Mussafah, Abu Dhabi",
+        "ProjectImage": "/images/project-image-a.jpg"
+    },
+    {
+        "ProjectName": "Abu Dhabi International Private School",
+        "ProjectImage": "/images/project-image-b.jpg"
+    },
+    {
+        "ProjectName": "Al Ittihad Private National School",
+        "ProjectImage": "/images/project-image-c.jpg"
+    },
+    {
+        "ProjectName": "Honda Showroom",
+        "ProjectImage": "/images/project-image-d.jpg"
+    },
+    {
+        "ProjectName": "EMC used car showroom",
+        "ProjectImage": "/images/project-image-e.jpg"
+    },
+    {
+        "ProjectName": "MC WANE GULF LLC",
+        "ProjectImage": "/images/project-image-f.jpg"
+    },
+    {
+        "ProjectName": "ITTIHAD Engineering",
+        "ProjectImage": "/images/project-image-g.jpg"
+    },
+    {
+        "ProjectName": "Shopping Mall",
+        "ProjectImage": "/images/project-image-h.jpg"
+    },
+    {
+        "ProjectName": "Emirates Steel",
+        "ProjectImage": "/images/project-image-i.jpg"
+    }
+]
