@@ -13,7 +13,7 @@ function ProjectPage() {
 
                 <div className="desktop-projectpage-main-container">
                     
-                    <div className="desktop-header-container" style={{"background-color": "yellow", "width": "80%", "margin-top": "50px"}}>
+                    <div className="desktop-header-container" style={{"width": "80%", "margin-top": "50px"}}>
                             
                         <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
                             <img style={{"height": "60%", "width": "12.5%", "margin-top": "-5%"}} src={ process.env.PUBLIC_URL + "/images/projects-icon.png" }/>
