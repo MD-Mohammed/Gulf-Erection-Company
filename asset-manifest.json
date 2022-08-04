@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Gulf-Erection-Company/static/css/main.2aafb83d.css",
-    "main.js": "/Gulf-Erection-Company/static/js/main.4aab3fa5.js",
+    "main.css": "/Gulf-Erection-Company/static/css/main.4839c011.css",
+    "main.js": "/Gulf-Erection-Company/static/js/main.131e54ba.js",
     "static/media/GEC-ImageCor3.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor3.0aa0bf63ac6bd325cb45.jpg",
     "static/media/GEC-ImageCor4.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor4.9eacb5f62d3b85288edd.jpg",
     "static/media/GEC-ImageCor2.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor2.b0d4628e5921345b24d0.jpg",
     "static/media/client-image.png": "/Gulf-Erection-Company/static/media/client-image.4160045305c6e1bf0379.png",
     "index.html": "/Gulf-Erection-Company/index.html",
-    "main.2aafb83d.css.map": "/Gulf-Erection-Company/static/css/main.2aafb83d.css.map",
-    "main.4aab3fa5.js.map": "/Gulf-Erection-Company/static/js/main.4aab3fa5.js.map"
+    "main.4839c011.css.map": "/Gulf-Erection-Company/static/css/main.4839c011.css.map",
+    "main.131e54ba.js.map": "/Gulf-Erection-Company/static/js/main.131e54ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.2aafb83d.css",
-    "static/js/main.4aab3fa5.js"
+    "static/css/main.4839c011.css",
+    "static/js/main.131e54ba.js"
   ]
 }
