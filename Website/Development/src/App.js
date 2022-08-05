@@ -11,6 +11,7 @@ import NavigationBar from './Components/NavigationBarComponent';
 import ClientPage from './Components/ClientPage';
 import ProjectPage from './Components/ProjectPage';
 import ContactPage from './Components/ContactPage';
+import FooterComponent from './Components/FooterComponent';
 
 function App() {
 
@@ -57,6 +58,8 @@ function App() {
               <ProjectPage />
 
               <ContactPage />
+
+              <FooterComponent />
 
             </>
 
