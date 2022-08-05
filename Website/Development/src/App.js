@@ -10,6 +10,7 @@ import AboutUsPage from './Components/AboutUsPage.js'
 import NavigationBar from './Components/NavigationBarComponent';
 import ClientPage from './Components/ClientPage';
 import ProjectPage from './Components/ProjectPage';
+import ContactPage from './Components/ContactPage';
 
 function App() {
 
@@ -54,6 +55,8 @@ function App() {
               <ClientPage />
 
               <ProjectPage />
+
+              <ContactPage />
 
             </>
 
