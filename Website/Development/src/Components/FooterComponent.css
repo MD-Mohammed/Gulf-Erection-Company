@@ -93,3 +93,14 @@
     cursor: pointer;
     font-weight: 500;
 }
+
+.desktop-footer-signoff-container{
+    margin-top: 4%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

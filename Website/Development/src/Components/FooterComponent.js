@@ -106,6 +106,11 @@ function FooterComponent() {
                         </div>
                     </div>
 
+                    <div className="desktop-footer-signoff-container">
+                        <span>©2022 Gulf Erection</span>
+                        <span>Designed by <span style={{"color": "red"}}>Team Alcodithm</span></span>
+                    </div>
+
                 </div>
             </>
         );
