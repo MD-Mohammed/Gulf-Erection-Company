@@ -9,7 +9,77 @@ function FooterComponent() {
 
         return(
             <>
-    
+                <div className="mobile-footer-main-container">
+
+                    <div className="mobile-footer-content-container">
+                    
+                        <div className="mobile-footer-content-logo-container">
+
+                            <div className="mobile-footer-content-logo-image-container">
+                                <img style={{"height": "100%", "width": "100%"}} src={ process.env.PUBLIC_URL + "/images/GEC-Logo.png" }  />
+                            </div>
+
+                            <div className="mobile-footer-content-logo-text-container">
+                                <p style={{"font-size": "180%", "margin-top": "4%"}}>GULF ERECTION</p>
+                                <p style={{"font-size": "150%", "font-weight": "500", "margin-top": "-12%"}}>CONSTRUCTIONS</p>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+
+                    <div className="mobile-footer-content-details-container" >
+
+                        <div className="mobile-footer-content-details-icon-container">
+                            <img style={{"height": "100%", "width": "100%"}} src={ process.env.PUBLIC_URL + "/images/location-icon.png" }  />
+                        </div>
+
+                        <div className="mobile-footer-content-details">
+                            <p style={{"font-size": "125%", "font-weight": "500"}}>Gulf Erection Co LLC</p>
+                            <p style={{"font-size": "100%", "margin-top": "-5%"}}>Al Manhal - W15-02 - Abu Dhabi United Arab Emirates</p>
+                        </div>
+
+                    </div>
+
+                    <div className="mobile-footer-line" />
+
+                    <div className="mobile-footer-content-details-container">
+
+                        <div className="mobile-footer-content-details-icon-container">
+                            <img style={{"height": "100%", "width": "100%"}} src={ process.env.PUBLIC_URL + "/images/call-icon.png" }  />
+                        </div>
+
+                        <div className="mobile-footer-content-details">
+                            <p style={{"font-size": "100%"}}>+971 2 443 5421 – Abu Dhabi</p>
+                            <p style={{"font-size": "100%", "margin-top": "-5%"}}>+971 2 443 6765 – Abu Dhabi</p>
+                            <p style={{"font-size": "100%", "margin-top": "-5%"}}>+971 2 722 1715 – Al Ain</p>
+                            <p style={{"font-size": "100%", "margin-top": "-5%"}}>+971 2 443 4357 – Fax</p>
+                        </div>
+
+                    </div>
+
+                    <div className="mobile-footer-line" />
+
+                    <div className="mobile-footer-content-details-container">
+
+                        <div className="mobile-footer-content-details-icon-container">
+                        <img style={{"height": "75%", "width": "100%"}} src={ process.env.PUBLIC_URL + "/images/email-icon.png" }  />
+                        </div>
+
+                        <div className="mobile-footer-content-details">
+                            <p style={{"font-size": "100%"}}>gec@gulferection.ae</p>
+                            <p style={{"font-size": "100%", "margin-top": "-5%"}}>reception@gulferection.ae</p>
+                            <p style={{"font-size": "100%", "margin-top": "-5%"}}>info@gulferection.ae</p>
+                        </div>
+
+                    </div>
+
+                    <div className="mobile-footer-signoff-container">
+                        <span>©2022 Gulf Erection</span>
+                        <span>Designed by <span style={{"color": "red"}}>Team Alcodithm</span></span>
+                    </div>
+
+                </div>
             </>
         );
     } 
