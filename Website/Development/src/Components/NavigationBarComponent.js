@@ -2,7 +2,19 @@ import { render } from "@testing-library/react";
 import React, {Fragment, useState} from "react";
 import "./NavigationBarComponent.css"
 
-function NavigationBar() {
+function NavigationBar(props) {
+
+    function NavigationScrollToElement(ComponentName){
+        var element = document.getElementById(`${ComponentName}`);
+        var headerOffset = 100;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+    }
 
     function MobileComponent() {
 
@@ -44,12 +56,12 @@ function NavigationBar() {
                     DropMenu &&
                         <div style={{"display":"flex", "justifyContent": "flex-end", "position": "absolute","width": "100%", "z-index": "3"}}>
                             <div className="mobile-menu-list-container">
-                                <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">Home</a></div>
-                                <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">About us</a></div>
-                                <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">Services</a></div>
-                                <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">Projects</a></div>
-                                <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">Clients</a></div>
-                                <div className="mobile-navbar-button-containers"><a href="#" className="mobile-navbar-button-style">Contacts</a></div>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-home-component')}>Home</button>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-aboutus-component')}><div>About</div><div>us</div></button>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-services-component')}>Services</button>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-clients-component')}>Clients</button>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-projects-component')}>Projects</button>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-contact-component')}>Contacts</button>
                             </div>
                         </div>
                 }
@@ -79,16 +91,16 @@ function NavigationBar() {
                     </div>
     
                     <div className="desktop-navbar-buttons-main-container">
-                        <div className="desktop-navbar-button-containers"><a href="#" className="desktop-navbar-button-style">HOME</a></div>
-                        <div className="desktop-navbar-button-containers"><a href="#" className="desktop-navbar-button-style">ABOUT US</a></div>
-                        <div className="desktop-navbar-button-containers"><a href="#" className="desktop-navbar-button-style">SERVICES</a></div>
-                        <div className="desktop-navbar-button-containers"><a href="#" className="desktop-navbar-button-style">PROJECTS</a></div>
-                        <div className="desktop-navbar-button-containers"><a href="#" className="desktop-navbar-button-style">CLIENTS</a></div>
-                        <div className="desktop-navbar-button-containers"><a href="#" className="desktop-navbar-button-style">CONTACT</a></div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-home-component')}>HOME</div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-aboutus-component')}>ABOUT US</div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-services-component')}>SERVICES</div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-clients-component')}>CLIENTS</div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-projects-component')}>PROJECTS</div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-contact-component')}>CONTACT</div>
                     </div>
     
                     <div className="desktop-navbar-quote-button-main-container">
-                        <button className="desktop-navbar-quote-button">
+                        <button className="desktop-navbar-quote-button" onClick={() => NavigationScrollToElement('desktop-contact-component')}>
                             <img style={{"height": "60%", "width": "14%"}} src={ process.env.PUBLIC_URL + "/images/quote-icon.png"} />
                             <span style={{"margin-left": "5%", "color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "300"}}>Request Quote</span>
                         </button>

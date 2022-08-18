@@ -160,7 +160,7 @@ function ImageSlider() {
         return(
             <>
             
-                <div style={{"height": "90px"}} />
+                <div style={{"height": "90px"}} id="mobile-home-component"/>
                 
                 <div className="mobile-imgslider-main-container">
 
@@ -281,7 +281,7 @@ function ImageSlider() {
 
         return(
             <>
-                <div style={{"height": "100px"}} />
+                <div style={{"height": "100px"}} id="desktop-home-component"/>
                 
                 <div className="desktop-imgslider-main-container">
 

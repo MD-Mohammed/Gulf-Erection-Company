@@ -5,6 +5,18 @@ import './FooterComponent.css'
 
 function FooterComponent() {
 
+    function FooterScrollToElement(ComponentName){
+        var element = document.getElementById(`${ComponentName}`);
+        var headerOffset = 100;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+    }
+
     function MobileComponent() {
 
         return(
@@ -156,22 +168,22 @@ function FooterComponent() {
                     <div className="desktop-footer-navigation-container">
                         <div style={{"width": "50%", "display":"flex", "justify-content": "space-evenly", "align-items": "center"}}>
                         
-                            <a className="desktop-footer-navigation-button"><span className="desktop-footer-navigation-button-text">Home</span></a>
+                            <button className="desktop-footer-navigation-button" onClick={() => FooterScrollToElement('desktop-home-component')}><span className="desktop-footer-navigation-button-text">Home</span></button>
                             <p style={{"color": "white","text-align": "center", "font-size": "200%", "color": "red"}}>.</p>
 
-                            <a className="desktop-footer-navigation-button"><span className="desktop-footer-navigation-button-text">About us</span></a>
+                            <button className="desktop-footer-navigation-button" onClick={() => FooterScrollToElement('desktop-aboutus-component')}><span className="desktop-footer-navigation-button-text">About us</span></button>
                             <p style={{"color": "white","text-align": "center", "font-size": "200%", "color": "red"}}>.</p>
 
-                            <a className="desktop-footer-navigation-button"><span className="desktop-footer-navigation-button-text">Services</span></a>
+                            <button className="desktop-footer-navigation-button" onClick={() => FooterScrollToElement('desktop-services-component')}><span className="desktop-footer-navigation-button-text">Services</span></button>
                             <p style={{"color": "white","text-align": "center", "font-size": "200%", "color": "red"}}>.</p>
 
-                            <a className="desktop-footer-navigation-button"><span className="desktop-footer-navigation-button-text">Projects</span></a>
+                            <button className="desktop-footer-navigation-button" onClick={() => FooterScrollToElement('desktop-clients-component')}><span className="desktop-footer-navigation-button-text">Clients</span></button>
                             <p style={{"color": "white","text-align": "center", "font-size": "200%", "color": "red"}}>.</p>
 
-                            <a className="desktop-footer-navigation-button"><span className="desktop-footer-navigation-button-text">Clients</span></a>
+                            <button className="desktop-footer-navigation-button" onClick={() => FooterScrollToElement('desktop-projects-component')}><span className="desktop-footer-navigation-button-text">Projects</span></button>
                             <p style={{"color": "white","text-align": "center", "font-size": "200%", "color": "red"}}>.</p>
 
-                            <a className="desktop-footer-navigation-button"><span className="desktop-footer-navigation-button-text">Contact us</span></a>
+                            <button className="desktop-footer-navigation-button" onClick={() => FooterScrollToElement('desktop-contact-component')}><span className="desktop-footer-navigation-button-text">Contact us</span></button>
 
                         </div>
                     </div>

@@ -82,6 +82,12 @@
     font-weight: 300;
     font-size: 110%;
     color: white;
+    background-color: #16262E;
+    border: none;
+}
+
+.desktop-footer-navigation-button:focus{
+    outline: none;
 }
 
 .desktop-footer-navigation-button-text{

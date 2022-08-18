@@ -16,7 +16,7 @@ function AboutUsPage() {
         return(
                 <>
     
-                    <div className="desktop-aboutus-page-main-container">
+                    <div className="desktop-aboutus-page-main-container" id="desktop-aboutus-component">
                                     
                         <div className="desktop-header-container">
                             
@@ -324,7 +324,7 @@ function AboutUsPage() {
 
         return(
             <>
-                <div className="mobile-aboutus-page-main-container">
+                <div className="mobile-aboutus-page-main-container" id="mobile-aboutus-component">
 
                     <div className="mobile-header-container">
                     
