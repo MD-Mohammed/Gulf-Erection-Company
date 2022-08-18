@@ -1,5 +1,5 @@
 import './App.css';
-import React, {Fragment, useState, useEffect} from 'react';
+import React, {Fragment, useState, useEffect, useRef} from 'react';
 import { Routes,Route } from 'react-router-dom';
 
 import HashLoader from "react-spinners/HashLoader"
@@ -24,6 +24,8 @@ function App() {
     }, 8000)
   }, [])
 
+  const ScrollToAboutus = useRef();
+
   return (
 
     <>
@@ -44,7 +46,7 @@ function App() {
             <>
           
               <div className="navigationbar-position">
-                <NavigationBar />
+                <NavigationBar/>
               </div>
 
               <ImageSlider />
@@ -52,7 +54,7 @@ function App() {
               <AboutUsPage/>
 
               <ServicePage/>
-              
+             
               <ClientPage />
 
               <ProjectPage />

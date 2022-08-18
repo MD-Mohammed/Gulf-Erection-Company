@@ -11,7 +11,7 @@ function ProjectPage() {
         return(
             <>
 
-                <div className="desktop-projectpage-main-container">
+                <div className="desktop-projectpage-main-container" id="mobile-projects-component">
                     
                     <div className="desktop-header-container" style={{"width": "80%", "margin-top": "50px"}}>
                             
@@ -60,7 +60,7 @@ function ProjectPage() {
 
         return(
             <>
-                <div className="desktop-projectpage-main-container">
+                <div className="desktop-projectpage-main-container" id="desktop-projects-component">
                     
                     <div className="desktop-header-container">
                             

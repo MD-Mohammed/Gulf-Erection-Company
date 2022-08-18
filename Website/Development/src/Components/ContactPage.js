@@ -10,7 +10,7 @@ function ContactPage() {
 
         return(
             <>
-                <div className="desktop-contactpage-main-container">
+                <div className="desktop-contactpage-main-container" id="mobile-contact-component">
                     
                     <div className="mobile-header-container" style={{"width": "55%"}}>
                         
@@ -119,7 +119,7 @@ function ContactPage() {
         return(
             <>
     
-                <div className="desktop-contactpage-main-container">
+                <div className="desktop-contactpage-main-container" id="desktop-contact-component">
 
                     <div className="desktop-header-container">
                         

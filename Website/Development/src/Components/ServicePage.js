@@ -10,7 +10,7 @@ function ServicePage() {
         return(
             <>
 
-                <div className="desktop-service-page-main-container">
+                <div className="desktop-service-page-main-container" id="desktop-services-component">
 
                     <div className="desktop-header-container">
                         
@@ -128,7 +128,7 @@ function MobileComponent() {
 
     return(
         <>
-            <div className="mobile-service-page-main-container">
+            <div className="mobile-service-page-main-container" id="mobile-services-component">
 
                 <div className="mobile-header-container" style={{"margin-top": "10%", "width": "55%"}}>
                     

@@ -54,19 +54,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.desktop-navbar-button-style, .desktop-navbar-button-style:link, .desktop-navbar-button-style:visited, .desktop-navbar-button-style:active{
-    text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 125%;
     color: #16262E;
 }
-
-.desktop-navbar-button-style:hover{
+.desktop-navbar-button-containers:hover {
     color: white;
-    filter: drop-shadow(-6px 6px 6px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
 }
 
 .desktop-navbar-quote-button-main-container{
@@ -87,6 +82,10 @@
     justify-content: center;
     align-items: center;
     transition: box-shadow 0.5s 0s ease-in-out;
+}
+
+.desktop-navbar-quote-button:focus{
+    outline: none;
 }
 
 .desktop-navbar-quote-button:hover{
@@ -186,17 +185,14 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
-}
-
-.mobile-navbar-button-containers:active{
-    opacity: 0.9;
-}
-
-.mobile-navbar-button-style, .mobile-navbar-button-style:link, .mobile-navbar-button-style:visited, .mobile-navbar-button-style:active{
-    text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 100%;
     color: white;
-    margin-left: 10%;
+    border: none;
+    gap: 5%;
+}
+
+.mobile-navbar-button-containers:active{
+    opacity: 0.9;
 }

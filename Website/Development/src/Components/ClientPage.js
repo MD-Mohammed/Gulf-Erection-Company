@@ -19,7 +19,7 @@ function ClientPage() {
         return(
             <>
 
-                <div className="desktop-clientpage-main-container">
+                <div className="desktop-clientpage-main-container" id="desktop-clients-component">
 
                     <div className="desktop-header-container" style={{"width": "35%"}}>
                     
@@ -68,7 +68,7 @@ function MobileComponent() {
 
     return(
             <>
-                <div className="mobile-clientpage-main-container">
+                <div className="mobile-clientpage-main-container" id="mobile-clients-component">
 
                     <div className="mobile-header-container" style={{"margin-top": "10%", "width": "80%"}}>
                         
