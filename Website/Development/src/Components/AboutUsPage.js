@@ -3,6 +3,8 @@ import React, {Fragment, useState} from "react";
 import './AboutUsPage.css';
 import './main.css';
 
+import Brochure from "../Data/GEC-Profile.pdf"
+
 function AboutUsPage() {
 
     const [ReadMore, setReadMore] = useState(false);
@@ -74,7 +76,7 @@ function AboutUsPage() {
 
                                             <button className="desktop-aboutus-page-buttons" onClick={() => setReadMore(!ReadMore)}>Read More</button>
 
-                                            <button className="desktop-aboutus-page-buttons" style={{"background-color": "#FF4343", "width": "45%", "margin-left": "5%"}} >Download Brochure</button>
+                                            <a href={Brochure} download={Brochure} className="desktop-aboutus-page-buttons" style={{"background-color": "#FF4343", "width": "45%", "margin-left": "5%"}}>Download Brochure</a>
                                         
                                 </div>
 
@@ -379,7 +381,7 @@ function AboutUsPage() {
 
                             <button className="mobile-aboutus-page-buttons" onClick={() => setReadMore(!ReadMore)}>Read More</button>
 
-                            <button className="mobile-aboutus-page-buttons" style={{"background-color": "#FF4343", "margin-top": "5%"}} >Download Brochure</button>
+                            <a href={Brochure} download={Brochure} className="mobile-aboutus-page-buttons" style={{"background-color": "#FF4343", "margin-top": "5%", "color": "white"}} >Download Brochure</a>
 
                         </div>
 
