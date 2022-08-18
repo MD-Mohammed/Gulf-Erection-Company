@@ -3,7 +3,7 @@ import React, {Fragment} from "react";
 import './ClientPage.css';
 import { motion } from "framer-motion"
 import { useState, useEffect,useRef} from "react"
-import images from "./Client_Images"
+import ClientLogos from "../Data/Client-Logos/Client.js"
 
 function ClientPage() {
 
@@ -42,7 +42,7 @@ function ClientPage() {
                             <motion.div ref={corousel}className="desktop-clientpage-slider-frame">
                                 <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}} style={{"display": "flex"}}>
                                     {
-                                        images.map(image => {
+                                        ClientLogos.map(image => {
                                             return(
                                                 <motion.div className="desktop-clientpage-icon-frame" key={image}> 
                                                     <img className="desktop-clientpage-icon" src={image} alt ="" />
@@ -91,7 +91,7 @@ function MobileComponent() {
                             <motion.div ref={corousel}className="mobile-clientpage-slider-frame">
                                 <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}} style={{"display": "flex"}}>
                                     {
-                                        images.map(image => {
+                                        ClientLogos.map(image => {
                                             return(
                                                 <motion.div className="mobile-clientpage-icon-frame" key={image}> 
                                                     <img className="mobile-clientpage-icon" src={image} alt ="" />
