@@ -1,17 +1,41 @@
 {
   "files": {
-    "main.css": "/Gulf-Erection-Company/static/css/main.247b2dbc.css",
-    "main.js": "/Gulf-Erection-Company/static/js/main.e4c21c6d.js",
+    "main.css": "/Gulf-Erection-Company/static/css/main.09a54f25.css",
+    "main.js": "/Gulf-Erection-Company/static/js/main.068d5d8d.js",
     "static/media/GEC-ImageCor3.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor3.0aa0bf63ac6bd325cb45.jpg",
     "static/media/GEC-ImageCor4.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor4.9eacb5f62d3b85288edd.jpg",
     "static/media/GEC-ImageCor2.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor2.b0d4628e5921345b24d0.jpg",
-    "static/media/client-image.png": "/Gulf-Erection-Company/static/media/client-image.4160045305c6e1bf0379.png",
+    "static/media/IntlGoldenGroup.png": "/Gulf-Erection-Company/static/media/IntlGoldenGroup.4e8edbc0faf450e1c1c2.png",
+    "static/media/AIS.png": "/Gulf-Erection-Company/static/media/AIS.9fcf33f6a2d59b82f1b3.png",
+    "static/media/Weatherford.png": "/Gulf-Erection-Company/static/media/Weatherford.4c2a645d66fe290ba205.png",
+    "static/media/ADPF.png": "/Gulf-Erection-Company/static/media/ADPF.58d4c75536806251633c.png",
+    "static/media/alittihadschool.png": "/Gulf-Erection-Company/static/media/alittihadschool.3cd4539b408e4835caea.png",
+    "static/media/GSI.png": "/Gulf-Erection-Company/static/media/GSI.181f8f21cd00bca878cd.png",
+    "static/media/etihad.png": "/Gulf-Erection-Company/static/media/etihad.3e8dd0589da5e760ebc0.png",
+    "static/media/ados.png": "/Gulf-Erection-Company/static/media/ados.53f0a63c1aca59136244.png",
+    "static/media/alnasser.png": "/Gulf-Erection-Company/static/media/alnasser.a3e92f7cb49d14bcb783.png",
+    "static/media/bloom.png": "/Gulf-Erection-Company/static/media/bloom.7b242c5d353f562128f4.png",
+    "static/media/technip.png": "/Gulf-Erection-Company/static/media/technip.ec7f22cb29d0956d1f5e.png",
+    "static/media/schlumberger.png": "/Gulf-Erection-Company/static/media/schlumberger.88daf195bb3488eab296.png",
+    "static/media/alfahim.png": "/Gulf-Erection-Company/static/media/alfahim.d60eca3b545f21b8d108.png",
+    "static/media/agthia.png": "/Gulf-Erection-Company/static/media/agthia.b65157862890260363a0.png",
+    "static/media/NFPC.png": "/Gulf-Erection-Company/static/media/NFPC.a86318e9910ae0c55ebd.png",
+    "static/media/GASOS.png": "/Gulf-Erection-Company/static/media/GASOS.95657eb5381f137fe4b8.png",
+    "static/media/NPCC.png": "/Gulf-Erection-Company/static/media/NPCC.44d90424452fa66fd8f5.png",
+    "static/media/EmiratesPrinting.png": "/Gulf-Erection-Company/static/media/EmiratesPrinting.e308a6434c8790697442.png",
+    "static/media/elencoemiratesgroup.png": "/Gulf-Erection-Company/static/media/elencoemiratesgroup.6e8a8103f9ebba7f103e.png",
+    "static/media/TMI.png": "/Gulf-Erection-Company/static/media/TMI.4dd9f8927012a8894ef1.png",
+    "static/media/elenco.png": "/Gulf-Erection-Company/static/media/elenco.5299e281a557d90d1d1a.png",
+    "static/media/EMC.png": "/Gulf-Erection-Company/static/media/EMC.cf706154e7573f5e5a31.png",
+    "static/media/alfutaim.png": "/Gulf-Erection-Company/static/media/alfutaim.8d24bf4d507e02ef277b.png",
+    "static/media/binhamoodah.png": "/Gulf-Erection-Company/static/media/binhamoodah.da586eb9bbbd4081716d.png",
+    "static/media/westernmotors.png": "/Gulf-Erection-Company/static/media/westernmotors.1eaf3a343bd36c24cf34.png",
     "index.html": "/Gulf-Erection-Company/index.html",
-    "main.247b2dbc.css.map": "/Gulf-Erection-Company/static/css/main.247b2dbc.css.map",
-    "main.e4c21c6d.js.map": "/Gulf-Erection-Company/static/js/main.e4c21c6d.js.map"
+    "main.09a54f25.css.map": "/Gulf-Erection-Company/static/css/main.09a54f25.css.map",
+    "main.068d5d8d.js.map": "/Gulf-Erection-Company/static/js/main.068d5d8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.247b2dbc.css",
-    "static/js/main.e4c21c6d.js"
+    "static/css/main.09a54f25.css",
+    "static/js/main.068d5d8d.js"
   ]
 }
