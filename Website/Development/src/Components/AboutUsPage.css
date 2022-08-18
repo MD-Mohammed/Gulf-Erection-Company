@@ -103,7 +103,7 @@
     align-items: center;
 }
 
-.desktop-aboutus-page-buttons
+.desktop-aboutus-page-buttons, .desktop-aboutus-page-buttons:link, .desktop-aboutus-page-buttons:visited, .desktop-aboutus-page-buttons:active
 {
     display: flex;
     width: 30%;
@@ -118,6 +118,7 @@
     color: white;
     border: none;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .desktop-aboutus-page-buttons:hover{
