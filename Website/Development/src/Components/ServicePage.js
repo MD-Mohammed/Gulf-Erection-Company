@@ -1,9 +1,15 @@
 import { render } from "@testing-library/react";
-import React, {Fragment} from "react";
+import React, {Fragment, useState} from "react";
 import './ServicePage.css';
 import './main.css'
 
 function ServicePage() {
+
+    const [ConsultantCooperationService, setConsultantCooperationService] = useState(false)
+    const [CivilWorkService, setCivilWorkService] = useState(false)
+    const [ElectroMechService, setElectroMechService] = useState(false)
+    const [SteelStructureService, setSteelStructureService] = useState(false)
+    const [GreenBuildingService, setGreenBuildingService] = useState(false)
 
     function DesktopComponent() {
 
@@ -44,6 +50,8 @@ function ServicePage() {
                                         </p>
                                 </div>
 
+                                <button className="desktop-servicepage-card-button" onClick={() => setConsultantCooperationService(true)}>Know More</button>
+
                             </div>
 
                             <div className="desktop-servicepage-content-cards">
@@ -59,6 +67,8 @@ function ServicePage() {
                                             Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
                                         </p>
                                 </div>
+
+                                <button className="desktop-servicepage-card-button" onClick={() => setCivilWorkService(true)}>Know More</button>
 
                             </div>
 
@@ -76,6 +86,8 @@ function ServicePage() {
                                         </p>
                                 </div>
 
+                                <button className="desktop-servicepage-card-button" onClick={() => setElectroMechService(true)}>Know More</button>
+
                             </div>
 
                             <div className="desktop-servicepage-content-cards">
@@ -91,6 +103,8 @@ function ServicePage() {
                                             Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
                                         </p>
                                 </div>
+
+                                <button className="desktop-servicepage-card-button" onClick={() => setSteelStructureService(true)}>Know More</button>
 
                             </div>
 
@@ -108,6 +122,8 @@ function ServicePage() {
                                         </p>
                                 </div>
 
+                                <button className="desktop-servicepage-card-button" onClick={() => setGreenBuildingService(true)}>Know More</button>
+
                             </div>
 
                         </div>
@@ -118,6 +134,116 @@ function ServicePage() {
                     </div>
 
                 </div>
+
+                {
+                    ConsultantCooperationService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setConsultantCooperationService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+                                Consultant Cooperation Service Content
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
+
+                {
+                    CivilWorkService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setCivilWorkService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+                                Civil Work Service Content
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
+
+                {
+                    ElectroMechService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setElectroMechService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+                                Electromechanical Service Content
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
+
+                {
+                    SteelStructureService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setSteelStructureService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+                                Steel Structure Service Content
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
+
+                {
+                    GreenBuildingService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setGreenBuildingService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+                                Green Building Service Content
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
 
             </>
         );
@@ -160,6 +286,8 @@ function MobileComponent() {
                                 </p>
                         </div>
 
+                        <button className="mobile-servicepage-card-button" onClick={() => setConsultantCooperationService(true)}>Know More</button>
+
                     </div>
 
                     <div className="mobile-servicepage-content-cards">
@@ -175,6 +303,8 @@ function MobileComponent() {
                                     Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
                                 </p>
                         </div>
+
+                        <button className="mobile-servicepage-card-button" onClick={() => setCivilWorkService(true)}>Know More</button>
 
                     </div>
 
@@ -192,6 +322,8 @@ function MobileComponent() {
                                 </p>
                         </div>
 
+                        <button className="mobile-servicepage-card-button" onClick={() => setElectroMechService(true)}>Know More</button>
+
                     </div>
 
                     <div className="mobile-servicepage-content-cards">
@@ -207,6 +339,8 @@ function MobileComponent() {
                                     Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
                                 </p>
                         </div>
+
+                        <button className="mobile-servicepage-card-button" onClick={() => setSteelStructureService(true)}>Know More</button>
 
                     </div>
 
@@ -224,14 +358,129 @@ function MobileComponent() {
                                 </p>
                         </div>
 
+                        <button className="mobile-servicepage-card-button" onClick={() => setGreenBuildingService(true)}>Know More</button>
+
                     </div>
-
-
-                    
 
                 </div>
 
             </div>
+
+            {
+                ConsultantCooperationService && 
+
+                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setConsultantCooperationService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                            Consultation Cooperation Service Content
+                        </div>
+
+                    </div>
+
+                </div>
+
+            }
+
+            {
+                CivilWorkService && 
+
+                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setCivilWorkService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                            Civil Work Service Content
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            }
+
+            {
+                ElectroMechService && 
+
+                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setElectroMechService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                            Electro Mechanical Service Service Content
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            }
+
+            {
+                SteelStructureService && 
+
+                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setSteelStructureService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                            Steel Structure Service Service Content
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            }
+
+            {
+                GreenBuildingService && 
+
+                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setGreenBuildingService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                            Green Building Service Service Service Content
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            }
+
         </>
     );
 } 
