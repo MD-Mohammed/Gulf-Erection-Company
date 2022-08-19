@@ -64,77 +64,18 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.desktop-servicepage-card-button{
+.desktop-servicepage-card-button, .desktop-servicepage-card-button:focus{
   background: #EAC435;
   width: 50%;
   height: 10%;
   border-radius: 10px;
   border: none;
+  outline: none;
 }
 
 .desktop-servicepage-card-button:hover{
   box-shadow: -2px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-}
-
-.ServicePage-mobile-main-container
-{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    /* background-color: blueviolet; */
-   
-}
-
-.ServicePage-mobile-services-container
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    /* background-color: rgb(118, 15, 214); */
-    /* margin: 2%; */
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    
-
-}
-
-.ServicePage-mobile-services-container-blocks {
-  width: 80%;
-  background: white;
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 2%;
-  margin-bottom: 2%;
-  /* margin-left: 5%; */
-  
-  
-}
-
-.ServicePage-mobile-services-img
-  {
-    height: 60%;
-    width: 30%;
-    margin: 5%;
-  }
-
-  .ServicePage-mobile-services-text
-{
-    font-size:15px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.ServicePage-mobile-services-text-H3
-{
-  font-size:35px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
