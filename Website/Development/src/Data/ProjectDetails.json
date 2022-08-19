@@ -1,38 +1,68 @@
 [
     {
         "ProjectName": "EMC Showroom Mussafah, Abu Dhabi",
-        "ProjectImage": "/images/project-image-a.jpg"
+        "ProjectImage": "/images/project-image-a.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "VideoLink" : "abc",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "Abu Dhabi International Private School",
-        "ProjectImage": "/images/project-image-b.jpg"
+        "ProjectImage": "/images/project-image-b.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "VideoLink" : "abc",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "Al Ittihad Private National School",
-        "ProjectImage": "/images/project-image-c.jpg"
+        "ProjectImage": "/images/project-image-c.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "VideoLink" : "abc",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "Honda Showroom",
-        "ProjectImage": "/images/project-image-d.jpg"
+        "ProjectImage": "/images/project-image-d.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "EMC used car showroom",
-        "ProjectImage": "/images/project-image-e.jpg"
+        "ProjectImage": "/images/project-image-e.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "MC WANE GULF LLC",
-        "ProjectImage": "/images/project-image-f.jpg"
+        "ProjectImage": "/images/project-image-f.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "ITTIHAD Engineering",
-        "ProjectImage": "/images/project-image-g.jpg"
+        "ProjectImage": "/images/project-image-g.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "Shopping Mall",
-        "ProjectImage": "/images/project-image-h.jpg"
+        "ProjectImage": "/images/project-image-h.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     },
     {
         "ProjectName": "Emirates Steel",
-        "ProjectImage": "/images/project-image-i.jpg"
+        "ProjectImage": "/images/project-image-i.jpg",
+        "ClientName" : "M/S. AL FAHIM GROUP",
+        "Year": "2007",
+        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
     }
 ]

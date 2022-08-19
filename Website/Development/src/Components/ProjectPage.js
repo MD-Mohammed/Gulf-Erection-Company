@@ -58,6 +58,22 @@ function ProjectPage() {
 
     function DesktopComponent() {
 
+        function ProjectVideo(props) {
+
+            return(
+                    <div>
+                        {   props.ProjectObject === undefined ?
+                            <div></div> : 
+                            
+                            <div className="desktop-projectpage-card-back-video-container">
+                                        <img className="desktop-projectpage-card-back-video-icon" src={ process.env.PUBLIC_URL + "/images/youtube-icon.png" }/>
+                                        <a href="" className="desktop-projectpage-card-back-video-play">Watch Video</a>
+                            </div>
+                        }
+                    </div>
+            )
+        }
+
         return(
             <>
                 <div className="desktop-projectpage-main-container" id="desktop-projects-component">
@@ -81,14 +97,50 @@ function ProjectPage() {
                         {
                             ProjectData.map((project) => (
                                 
-                                <div className="desktop-projectpage-cards">
+                                <div className="desktop-projectpage-cards-container">
 
-                                    <div className="desktop-projectpage-cards-image-container">
-                                        <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                    <div className="desktop-projectpage-card">
+                                        
+                                        <div className="desktop-projectpage-card-front">
+
+                                            <div className="desktop-projectpage-cards-image-container">
+                                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                            </div>
+            
+                                            <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%", "margin-left": "10%", "margin-right": "10%"}}>{project.ProjectName}</h6>
+                                        
+                                        </div>
+
+                                        <div className="desktop-projectpage-card-back">
+                                            
+                                            <h5 className="desktop-projectpage-card-back-header">{project.ProjectName}</h5>
+
+                                            <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
+
+                                            <p className="desktop-projectpage-card-back-description">{project.ProjectDescription}</p>
+
+                                            <div style={{"display": "flex"}}>
+
+                                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
+
+                                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.ClientName}</h6>
+
+                                            </div>
+
+                                            <div style={{"display": "flex"}}>
+
+                                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
+
+                                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.Year}</h6>
+
+                                            </div>
+                                            
+                                            <ProjectVideo ProjectObject={project.VideoLink}/>
+
+                                        </div>
+
                                     </div>
-        
-                                    <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{project.ProjectName}</h6>
-    
+
                                 </div>
 
                             ))
