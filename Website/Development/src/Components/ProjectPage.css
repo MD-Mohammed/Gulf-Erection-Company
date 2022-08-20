@@ -169,9 +169,9 @@
     align-items: center;
 }
 
-.mobile-projectpage-cards{
-    background-color: #16262E;
-    height: 325px;
+.mobile-projectpage-cards-container{
+    background-color: white;
+    height: 400px;
     width: 90%;
     margin-left: 2%;
     margin-right: 2%;
@@ -184,64 +184,101 @@
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
 }
 
-.mobile-projectpage-cards:hover{
+.mobile-projectpage-card-unturned{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.mobile-projectpage-card-front{
+    background: #16262E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mobile-projectpage-card-back{
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    filter: drop-shadow(-16px 16px 8px rgba(0, 0, 0, 0.25));
+}
+
+.mobile-projectpage-card-turned{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    transform: rotateY(180deg);
     cursor: pointer;
 }
 
-.ProjectPage-desk-container-Heading
-{
+
+.mobile-projectpage-cards-info-container{
+
+    height: 7.5%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-top: 2%;
-    /* background-color: blueviolet; */
-    height: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
-.ProjectPage-desk-container-ProjectCard
-{
+.mobile-projectpage-cards-info-icon{
+    height: 75%;
+    width: 7%;
+}
+
+.mobile-projectpage-cards-info-icon:active{
+    opacity: 0.9;
+}
+
+.mobile-projectpage-card-back-video-container{
+    height: 110%;
     display: flex;
-    margin-top: 2%;
-    /* background-color: rgb(226, 208, 10); */
-    height: 90%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-left: 2%;
-    margin-right: 2%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.ProjectPage-Desk-Project-Card-prop
-{
-    background-color: white;
-    width: 20%;
-    height: 40%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-   
-    /* margin-right: 2%; */
-    margin-left: 2%;
-    /* align-items: center;
-    justify-items: center; */
-    display: flex;
-    flex-direction: column;
-    
+
+.mobile-projectpage-card-back-video-icon{
+    height: 80%;
+    width: 15%;
 }
-.ProjectPage-desk-card-img-prop
-{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin-top: 2%;
-    /* background-color: blue; */
-    
+
+.mobile-projectpage-card-back-video-play, .mobile-projectpage-card-back-video-play:link, .mobile-projectpage-card-back-video-play:visited, .mobile-projectpage-card-back-video-play:active {
+    text-decoration: none;
+    margin-left: 5%;
+    color: #FF4343;
+    font-weight: 400;
 }
-.ProjectPage-desk-card-text
-{
-    font-size:15px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    overflow-wrap: break-word;
-    margin-top: 4%;
-    
-    /* background-color: aqua; */
+
+.mobile-projectpage-card-back-video-container:active .mobile-projectpage-card-back-video-icon{
+    opacity: 0.5;
+}
+
+.mobile-projectpage-card-back-video-container:active .mobile-projectpage-card-back-video-play{
+    opacity: 0.5;
 }
