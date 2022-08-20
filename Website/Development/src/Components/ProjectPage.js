@@ -8,6 +8,83 @@ function ProjectPage() {
 
     function MobileComponent() {
 
+        function MobileProjectVideo(props) {
+
+            return(
+                    <div>
+                        {   props.ProjectObject === undefined ?
+                            <div></div> : 
+                            
+                            <div className="mobile-projectpage-card-back-video-container">
+                                        <img className="mobile-projectpage-card-back-video-icon" src={ process.env.PUBLIC_URL + "/images/youtube-icon.png" }/>
+                                        <a href={props.ProjectObject} target="_blank" className="mobile-projectpage-card-back-video-play">Watch Video</a>
+                            </div>
+                        }
+                    </div>
+            )
+        }
+
+        function ProjectCard(props) {
+
+            const[CardFlip, setCardFlip] = useState(false)
+
+            return(
+                <>
+                
+                    <div className={ CardFlip ? "mobile-projectpage-card-turned" : "mobile-projectpage-card-unturned" }>
+
+                        <div className="mobile-projectpage-card-front">
+
+                            <div className="desktop-projectpage-cards-image-container">
+                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + props.ProjectImageObject }/>
+                            </div>
+
+                            <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{props.ProjectNameObject}</h6>
+
+                            <div className="mobile-projectpage-cards-info-container" onClick={() => setCardFlip(true)}>
+                                <img className="mobile-projectpage-cards-info-icon" src={ process.env.PUBLIC_URL + "/images/info-icon.png" }/>
+                            </div>
+
+                        </div>
+
+                        <div className="mobile-projectpage-card-back">
+
+                            <h5 className="desktop-projectpage-card-back-header">{props.ProjectNameObject}</h5>
+
+                            <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
+
+                            <p className="desktop-projectpage-card-back-description">{props.ProjectDescriptionObject}</p>
+
+                            <div style={{"display": "flex"}}>
+
+                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
+
+                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.ClientNameObject}</h6>
+
+                            </div>
+
+                            <div style={{"display": "flex"}}>
+
+                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
+
+                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.YearObject}</h6>
+
+                            </div>
+
+                            <MobileProjectVideo ProjectObject={props.VideoLinkObject}/>
+
+                            <div className="mobile-projectpage-cards-info-container" onClick={() => setCardFlip(false)}>
+                                <img className="mobile-projectpage-cards-info-icon" src={ process.env.PUBLIC_URL + "/images/show-image-icon.png" }/>
+                            </div>
+
+                        </div>
+
+                    </div>
+                
+                </>
+            )
+        }
+
         return(
             <>
 
@@ -31,25 +108,25 @@ function ProjectPage() {
 
                         {
                             ProjectData.map((project) => (
-                                
-                                <div className="mobile-projectpage-cards">
 
-                                <div className="desktop-projectpage-cards-image-container">
-                                    <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                <div className="mobile-projectpage-cards-container">
+                                    
+                                    <ProjectCard 
+                                        ProjectNameObject={project.ProjectName} 
+                                        ProjectImageObject={project.ProjectImage} 
+                                        ProjectDescriptionObject={project.ProjectDescription}
+                                        ClientNameObject={project.ClientName}
+                                        YearObject={project.Year}
+                                        VideoLinkObject={project.VideoLink}
+                                    />
+    
                                 </div>
-    
-                                <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{project.ProjectName}</h6>
-    
-                            </div>
 
                             ))
                         }
 
-
-
                     </div>
                     
-
                 </div>
 
             </>
@@ -58,7 +135,7 @@ function ProjectPage() {
 
     function DesktopComponent() {
 
-        function ProjectVideo(props) {
+        function DesktopProjectVideo(props) {
 
             return(
                     <div>
@@ -67,7 +144,7 @@ function ProjectPage() {
                             
                             <div className="desktop-projectpage-card-back-video-container">
                                         <img className="desktop-projectpage-card-back-video-icon" src={ process.env.PUBLIC_URL + "/images/youtube-icon.png" }/>
-                                        <a href="" className="desktop-projectpage-card-back-video-play">Watch Video</a>
+                                        <a href={props.ProjectObject} target="_blank" className="desktop-projectpage-card-back-video-play">Watch Video</a>
                             </div>
                         }
                     </div>
@@ -135,7 +212,7 @@ function ProjectPage() {
 
                                             </div>
                                             
-                                            <ProjectVideo ProjectObject={project.VideoLink}/>
+                                            <DesktopProjectVideo ProjectObject={project.VideoLink}/>
 
                                         </div>
 
