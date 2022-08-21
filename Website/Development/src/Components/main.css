@@ -86,6 +86,22 @@
     overflow-y: scroll;
 }
 
+/* +----------- Desktop Content Properties -----------+ */
+
+.desktop-content-main-container{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 3%;
+}
+
+.desktop-content-style{
+    color: #16262E;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    text-align: justify;
+    margin: 0%;
+}
+
 
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
 
