@@ -282,7 +282,8 @@ function AboutUsPage() {
                                 <div className="desktop-popup-content-container">
                                     <div className="desktop-aboutus-badge-main-container">
                                         <div className="desktop-aboutus-certificate-container">
-                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/certificate-a.png" }  />
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/Trade-Certificate-A.jpg" }  />
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/Trade-Certificate-B.jpg" }  />
                                         </div>  
                                     </div>
                                 </div>
@@ -308,7 +309,9 @@ function AboutUsPage() {
                                 <div className="desktop-popup-content-container">
                                     <div className="desktop-aboutus-badge-main-container">
                                         <div className="desktop-aboutus-certificate-container">
-                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/certificate-b.png" }  />
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ISO-Certificate-A.jpg" }  />
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ISO-Certificate-B.jpg" }  />
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ISO-Certificate-C.jpg" }  />
                                         </div>  
                                     </div>
                                 </div>
@@ -334,7 +337,7 @@ function AboutUsPage() {
                                 <div className="desktop-popup-content-container">
                                     <div className="desktop-aboutus-badge-main-container">
                                         <div className="desktop-aboutus-certificate-container">
-                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/certificate-c.png" }  />
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ICV-Certificate.jpg" }  />
                                         </div>  
                                     </div>
                                 </div>
@@ -678,7 +681,8 @@ function AboutUsPage() {
                             <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
                                 <div className="desktop-aboutus-badge-main-container">
                                     <div className="desktop-aboutus-certificate-container">
-                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/certificate-a.png" }  />
+                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/Trade-Certificate-A.jpg" }  />
+                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/Trade-Certificate-B.jpg" }  />
                                     </div>  
                                 </div>
                             </div>
@@ -701,11 +705,15 @@ function AboutUsPage() {
                                 </button>
                             </div>
 
-                            <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
-                                <div className="desktop-aboutus-badge-main-container">
-                                    <div className="desktop-aboutus-certificate-container">
-                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/certificate-b.png" }  />
-                                    </div>  
+                            <div className="mobile-aboutus-popup-content-container">
+                                <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                                    <div className="desktop-aboutus-badge-main-container">
+                                        <div className="desktop-aboutus-certificate-container">
+                                            <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ISO-Certificate-A.jpg" }  />
+                                            <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ISO-Certificate-B.jpg" }  />
+                                            <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ISO-Certificate-C.jpg" }  />
+                                        </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -730,7 +738,7 @@ function AboutUsPage() {
                             <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
                                 <div className="desktop-aboutus-badge-main-container">
                                     <div className="desktop-aboutus-certificate-container">
-                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/certificate-c.png" }  />
+                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ICV-Certificate.jpg" }  />
                                     </div>  
                                 </div>
                             </div>
