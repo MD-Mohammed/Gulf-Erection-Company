@@ -1,10 +1,24 @@
 import { render } from "@testing-library/react";
 import React, {Fragment, useState} from "react";
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import './ContactPage.css'
 import './main.css'
 
 function ContactPage() {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6xof54p', 'template_bwkttvn', form.current, 'PgHd1TPJxOLJ575zs')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
     function MobileComponent() {
 
@@ -27,8 +41,8 @@ function ContactPage() {
                     </div>
 
                     <div className="mobile-contactpage-content-container">
-
-                        <div className="mobile-contactpage-form-container">
+                    <form ref={form} onSubmit={sendEmail}   className="mobile-contactpage-form-container">
+                        
 
                             <h3 className="mobile-contactpage-form-container-header" style={{"margin-top": "15%"}}>Let us contact you</h3>
 
@@ -37,7 +51,7 @@ function ContactPage() {
                                 <div className="mobile-contactpage-form-field">
 
                                     <p className="mobile-contactpage-form-field-label">First Name *</p>
-                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your first name"/>
+                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your first name" name="first_name" required/>
 
                                 </div>
 
@@ -48,7 +62,7 @@ function ContactPage() {
                                 <div className="mobile-contactpage-form-field">
 
                                     <p className="mobile-contactpage-form-field-label">Last Name *</p>
-                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your last name"/>
+                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your last name" name="last_name" required/>
                                     
                                 </div>
 
@@ -59,7 +73,7 @@ function ContactPage() {
                                 <div className="mobile-contactpage-form-field">
 
                                     <p className="mobile-contactpage-form-field-label">Email Address *</p>
-                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your email id"/>
+                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your email id" name="Email_add" required/>
 
                                 </div>
 
@@ -70,7 +84,7 @@ function ContactPage() {
                                 <div className="mobile-contactpage-form-field">
 
                                     <p className="mobile-contactpage-form-field-label">Contact Number *</p>
-                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your contact number"/>
+                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your contact number" name="contact_no" required/>
                                     
                                 </div>
 
@@ -81,15 +95,16 @@ function ContactPage() {
                                 <div className="mobile-contactpage-form-field" style={{"width": "100%"}}>
 
                                     <p className="mobile-contactpage-form-field-label" style={{"margin-left": "5%", "margin-bottom": "5%"}}>Do you have any queries ?</p>
-                                    <input className="mobile-contactpage-form-field-input" style={{"margin-left": "5%", "width": "90%", "height": "80%"}}/>
+                                    <textarea className="mobile-contactpage-form-field-input" style={{"margin-left": "5%", "width": "90%", "height": "80%","text-indent":"0%"}} name="feedback" required/>
 
                                 </div>
 
                             </div>
 
-                            <button className="mobile-contactpage-form-button">SEND MESSAGE</button>
+                            <button className="mobile-contactpage-form-button" type="submit" value="Send" ref={form} onSubmit={sendEmail}>SEND MESSAGE</button>
 
-                        </div>
+                        
+                        </form>
 
                         <div className="mobile-contactpage-map-container">
 
@@ -153,61 +168,61 @@ function ContactPage() {
 
                         </div>
 
+                        <form ref={form} onSubmit={sendEmail}   className="desktop-contactpage-form-container">
+                            
 
-                        <div className="desktop-contactpage-form-container">
+                                <h2 className="desktop-contactpage-form-container-header">Let us contact you</h2>
 
-                            <h2 className="desktop-contactpage-form-container-header">Let us contact you</h2>
+                                <div className="desktop-contactpage-form-field-container">
 
-                            <div className="desktop-contactpage-form-field-container">
+                                    <div className="desktop-contactpage-form-field">
 
-                                <div className="desktop-contactpage-form-field">
+                                        <p className="desktop-contactpage-form-field-label">First Name *</p>
+                                        <input className="desktop-contactpage-form-field-input" placeholder="Enter your first name" name="first_name" required/>
 
-                                    <p className="desktop-contactpage-form-field-label">First Name *</p>
-                                    <input className="desktop-contactpage-form-field-input" placeholder="Enter your first name"/>
+                                    </div>
 
-                                </div>
+                                    <div className="desktop-contactpage-form-field">
 
-                                <div className="desktop-contactpage-form-field">
-
-                                    <p className="desktop-contactpage-form-field-label">Last Name *</p>
-                                    <input className="desktop-contactpage-form-field-input" placeholder="Enter your last name"/>
-                                    
-                                </div>
-
-                            </div>
-
-                            <div className="desktop-contactpage-form-field-container">
-
-                                <div className="desktop-contactpage-form-field">
-
-                                    <p className="desktop-contactpage-form-field-label">Email Address *</p>
-                                    <input className="desktop-contactpage-form-field-input" placeholder="Enter your email id"/>
+                                        <p className="desktop-contactpage-form-field-label">Last Name *</p>
+                                        <input className="desktop-contactpage-form-field-input" placeholder="Enter your last name" name="last_name" required/>
+                                        
+                                    </div>
 
                                 </div>
 
-                                <div className="desktop-contactpage-form-field">
+                                <div className="desktop-contactpage-form-field-container">
 
-                                    <p className="desktop-contactpage-form-field-label">Contact Number *</p>
-                                    <input className="desktop-contactpage-form-field-input" placeholder="Enter your contact number"/>
-                                    
+                                    <div className="desktop-contactpage-form-field">
+
+                                        <p className="desktop-contactpage-form-field-label">Email Address *</p>
+                                        <input className="desktop-contactpage-form-field-input" placeholder="Enter your email id" name="Email_add" required/>
+
+                                    </div>
+
+                                    <div className="desktop-contactpage-form-field">
+
+                                        <p className="desktop-contactpage-form-field-label">Contact Number *</p>
+                                        <input className="desktop-contactpage-form-field-input" placeholder="Enter your contact number" name="contact_no" required/>
+                                        
+                                    </div>
+
                                 </div>
 
-                            </div>
+                                <div className="desktop-contactpage-form-field-container" style={{"height": "200px"}}>
 
-                            <div className="desktop-contactpage-form-field-container" style={{"height": "200px"}}>
+                                    <div className="desktop-contactpage-form-field" style={{"width": "100%"}}>
 
-                                <div className="desktop-contactpage-form-field" style={{"width": "100%"}}>
+                                        <p className="desktop-contactpage-form-field-label" style={{"margin-left": "1%", "margin-bottom": "4%"}}>Do you have any queries ?</p>
+                                        <textarea className="desktop-contactpage-form-field-input" style={{" margin-left": "1%", "width": "97.5%", "height": "80%","text-indent":"0%"}} name="feedback" required/>
 
-                                    <p className="desktop-contactpage-form-field-label" style={{"margin-left": "1%", "margin-bottom": "4%"}}>Do you have any queries ?</p>
-                                    <input className="desktop-contactpage-form-field-input" style={{"margin-left": "1%", "width": "97.5%", "height": "80%"}}/>
+                                    </div>
 
                                 </div>
 
-                            </div>
+                                <button className="desktop-contactpage-form-button"  type="click" value="Send" >SEND MESSAGE</button>
 
-                            <button className="desktop-contactpage-form-button">SEND MESSAGE</button>
-
-                        </div>
+                        </form>
 
                     </div>
 
