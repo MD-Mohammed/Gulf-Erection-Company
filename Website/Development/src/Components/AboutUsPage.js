@@ -12,8 +12,161 @@ function AboutUsPage() {
     const [Badge_B, setBadge_B] = useState(false);
     const [Badge_C, setBadge_C] = useState(false);
 
-
     function DesktopComponent() {
+
+        function DesktopContent_Aboutus () {
+            return(
+                <>
+    
+                    <div className="desktop-aboutus-popup-content-area-main-container">
+    
+                        <div className="desktop-content-main-container">
+    
+                            <div>
+                            
+                                <h1 style={{"color": "#FF4343","margin-bottom": "3%"}}>Our Mission</h1>
+        
+                                <p className="desktop-content-style" style={{"margin-bottom": "2%"}}>
+                                    The Gulf Erection Company has been through a rapid growth to prove and successfully 
+                                    stand among the leading companies in the area of steel structure and pre-engineered 
+                                    building erectors in the emirate of Abu Dhabi and Al Ain.
+                                </p>
+        
+                                <div style={{"display": "flex", "width": "100%", "margin-top": "0%", "height": "300px"}}>
+        
+                                    <div style={{"height": "100%", "width": "50%"}}>
+                                        <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover", "object-position": "0px -50px"}} src={ process.env.PUBLIC_URL + "/images/our-mission.jpg" } />
+                                    </div>
+        
+                                    <div style={{"height": "100%", "margin-left": "2%", "width": "50%", "display": "flex", "flex-direction": "column", "justify-content": "space-between"}}>
+        
+                                        <p className="desktop-content-style">
+                                            Ever since we began our operations and expansion, we have stood up to meet the
+                                            expectations of our customers by constantly evolving and adapting to the developments
+                                            and transformations.
+                                        </p>
+        
+                                        <p className="desktop-content-style">
+                                            Our objective is to provide quality services according to our client requirements with
+                                            planning and specifications, design-built, authority requirement bugetary costing, 
+                                            percentage management and economically guaranteed pricing.
+                                        </p>
+        
+                                        <p className="desktop-content-style">
+                                            We guarantee your project's realization with the best quality criteria at unbelievable
+                                            schedules. Gulf Erection Company aims to be that trustful partner when you 
+                                            need your project delivered within your budget and schedule. We hope to soon have the 
+                                            opportunity to demonstrate our dyanamism and expertise at what we do the best.
+                                        </p>
+        
+                                    </div>
+        
+                                </div>
+
+                            </div>
+    
+                            <div>
+                            
+                                <h1 style={{"color": "#FF4343","margin-bottom": "1%", "margin-top": "5%"}}>Our Vision</h1>
+    
+                                <div style={{"display": "flex", "width": "100%", "margin-top": "3%", "height": "600px", "flex-direction": "column"}}>
+    
+                                    <div style={{"height": "80%", "width": "100%"}}>
+                                        <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover", "object-position": "0px -550px"}} src={ process.env.PUBLIC_URL + "/images/vision-image.jpg" } />
+                                    </div>
+    
+                                    <div style={{"height": "20%", "margin-right": "2%", "width": "100%", "margin-top": "2%", "margin-bottom": "2%"}}>
+    
+                                        <p className="desktop-content-style" style={{"margin-left": "4%", "margin-right": "4%", "text-align": "center", "font-size": "150%"}}>
+                                            Establish a benchmark in quality construction and engineering by promising well 
+                                            grounded and reliableworks that directly contributes to the development of the 
+                                            country.
+                                        </p>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div>
+                            
+                                <h1 style={{"color": "#FF4343","margin-bottom": "1%", "margin-top": "0%"}}>What we do ?</h1>
+    
+                                <div style={{"display": "flex", "width": "100%", "margin-top": "0%", "height": "300px"}}>
+    
+                                    <div style={{"height": "100%", "margin-right": "2%", "width": "50%","display": "flex", "flex-direction": "column", "justify-content": "space-between"}}>
+    
+                                        <p className="desktop-content-style" style={{"margin-bottom": "0%"}}>
+                                        Throughout these years of experience that we have achieved, we have contributed our expertise 
+                                        in a wide variety of areas.
+                                        </p>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>Showrooms and facilities that includes workshops, car wash facilities and more.</li>
+                                        </ul>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>Multi storey car parking.</li>
+                                        </ul>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>Industrial plants and manufacturing factories.</li>
+                                        </ul>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>School buildings and complete facilities.</li>
+                                        </ul>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>Storage facility and bus depots.</li>
+                                        </ul>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>Cold storages and hatcheries.</li>
+                                        </ul>
+    
+                                        <ul className="desktop-content-style">
+                                            <li>Onshore and offshore oil field works.</li>
+                                        </ul>
+    
+                                    </div>
+    
+                                    <div style={{"height": "100%", "width": "50%"}}>
+                                        <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover", "object-position": "0px -50px"}} src={ process.env.PUBLIC_URL + "/images/we-do-image.jpg" } />
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+
+                            <div>
+
+                                <h1 style={{"color": "#FF4343","margin-bottom": "1%", "margin-top": "5%", "margin-bottom": "5%"}}>Health, Safety and Environment - We are resposible!</h1>
+
+                                <div>
+
+                                    <iframe 
+                                        className="desktop-aboutus-content-video-container"
+                                        width="100%" 
+                                        height="100%" 
+                                        src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                        title="YouTube video player" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+
+                                </div>
+                            
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                
+                </>
+            )
+        }
 
         return(
                 <>
@@ -279,50 +432,146 @@ function AboutUsPage() {
 
                                     </div>
 
-                                    <div className="desktop-aboutus-popup-content-area-main-container">
-
-                                        <div style={{"margin-left": "2%", "margin-top": "3%"}}>
-
-                                            <h1>Our Mission</h1>
-                                            <p style={{"color": "#16262E", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-right": "5%", "margin-top": "3%", "text-align": "justify"}}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
-                                                Morbi venenatis nulla et est venenatis fringilla. 
-                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                                In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
-                                                Morbi venenatis nulla et est venenatis fringilla. 
-                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                                In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
-                                                Morbi venenatis nulla et est venenatis fringilla. 
-                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                                In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
-                                                Morbi venenatis nulla et est venenatis fringilla. 
-                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                                In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
-
-                                            </p>
-
-                                        </div>
-
-                                    </div>
+                                    <DesktopContent_Aboutus />
 
                                 </div>
                             </div>
 
                         </div>
                     }
-    
+
             </>
         );   
     }
 
     function MobileComponent() {
+
+        function MobileContent_Aboutus() {
+            return(
+                <>
+                
+                    <div className="desktop-aboutus-popup-content-area-main-container">
+
+                        <div className="desktop-content-main-container">
+
+                            <div>
+
+                                <h2 style={{"color": "#FF4343","margin-bottom": "10%", "font-weight": "400"}}>Our Mission</h2>
+                            
+                                <p className="desktop-content-style" style={{"margin-bottom": "2%"}}>
+                                    The Gulf Erection Company has been through a rapid growth to prove and successfully 
+                                    stand among the leading companies in the area of steel structure and pre-engineered 
+                                    building erectors in the emirate of Abu Dhabi and Al Ain.
+                                </p>
+
+                                <div style={{"display": "flex", "flex-direction": "column", "width": "100%"}}>
+                                    
+                                    <div style={{"height": "100%", "width": "100%", "margin-top": "5%"}}>
+                                        <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/our-mission.jpg" } />
+                                    </div>
+
+                                    <div style={{"height": "100%", "width": "100%", "display": "flex", "flex-direction": "column", "justify-content": "space-between"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top":"5%"}}>
+                                            Ever since we began our operations and expansion, we have stood up to meet the
+                                            expectations of our customers by constantly evolving and adapting to the developments
+                                            and transformations.
+                                        </p>
+
+                                        <p className="desktop-content-style" style={{"margin-top":"5%"}}>
+                                            Our objective is to provide quality services according to our client requirements with
+                                            planning and specifications, design-built, authority requirement bugetary costing, 
+                                            percentage management and economically guaranteed pricing.
+                                        </p>
+
+                                        <p className="desktop-content-style" style={{"margin-top":"5%"}}>
+                                            We guarantee your project's realization with the best quality criteria at unbelievable
+                                            schedules. Gulf Erection Company aims to be that trustful partner when you 
+                                            need your project delivered within your budget and schedule. We hope to soon have the 
+                                            opportunity to demonstrate our dyanamism and expertise at what we do the best.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <h2 style={{"color": "#FF4343","margin-bottom": "10%", "margin-top": "10%", "font-weight": "400"}}>Our Vision</h2>
+
+                                <div style={{"height": "80%", "width": "100%"}}>
+                                    <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/vision-image.jpg" } />
+                                </div>
+
+                                <div style={{"height": "20%", "margin-right": "2%", "width": "100%", "margin-top": "2%", "margin-bottom": "2%"}}>
+
+                                    <p className="desktop-content-style" style={{"margin-top": "5%"}}>
+                                        Establish a benchmark in quality construction and engineering by promising well 
+                                        grounded and reliableworks that directly contributes to the development of the 
+                                        country.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <h2 style={{"color": "#FF4343","margin-top": "10%", "margin-bottom": "10%", "font-weight": "400"}}>What we do ?</h2>
+                            
+                                <p className="desktop-content-style" style={{"margin-bottom": "2%"}}>
+                                    Throughout these years of experience that we have achieved, we have contributed our expertise 
+                                    in a wide variety of areas.
+                                </p>
+
+                                <div style={{"display": "flex", "flex-direction": "column", "width": "100%"}}>
+                                    
+                                    <div style={{"height": "100%", "width": "100%", "margin-top": "5%"}}>
+                                        <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/we-do-image.jpg" } />
+                                    </div>
+
+                                    <ul className="desktop-content-style" style={{"margin-top": "10%", "margin-left": "-5%", "line-height": "200%"}}>
+                                        <li>Showrooms and facilities that includes workshops, car wash facilities and more.</li>
+                                        <li>Multi storey car parking.</li>
+                                        <li>Industrial plants and manufacturing factories.</li>
+                                        <li>School buildings and complete facilities.</li>
+                                        <li>Storage facility and bus depots.</li>
+                                        <li>Cold storages and hatcheries.</li>
+                                        <li>Onshore and offshore oil field works.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <h2 style={{"color": "#FF4343","margin-top": "10%", "margin-bottom": "10%", "font-weight": "400"}}>Health, Safety and Environment - We are resposible!</h2>
+
+                                <div>
+
+                                    <iframe 
+                                        width="100%" 
+                                        height="200px" 
+                                        src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                        title="YouTube video player" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                
+                </>
+            )
+        }
 
         return(
             <>
@@ -594,6 +843,8 @@ function AboutUsPage() {
                                     </div>
 
                                 </div>
+
+                                <MobileContent_Aboutus />
 
                             </div>
                             
