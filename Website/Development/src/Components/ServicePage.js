@@ -149,7 +149,41 @@ function ServicePage() {
                             </div>
 
                             <div className="desktop-popup-content-container">
-                                Consultant Cooperation Service Content
+                                
+                                <div className="desktop-popup-header-container" style={{"width": "50%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Consultant Cooperation Service
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -175px"}} src={ process.env.PUBLIC_URL + "/images/consultancy-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Consultant Cooperation Services Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
 
@@ -171,7 +205,41 @@ function ServicePage() {
                             </div>
 
                             <div className="desktop-popup-content-container">
-                                Civil Work Service Content
+
+                                <div className="desktop-popup-header-container" style={{"width": "50%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Civil Work Service
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -300px"}} src={ process.env.PUBLIC_URL + "/images/civil-work-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Civil Work Service Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
 
@@ -193,8 +261,43 @@ function ServicePage() {
                             </div>
 
                             <div className="desktop-popup-content-container">
-                                Electromechanical Service Content
+
+                                <div className="desktop-popup-header-container" style={{"width": "50%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Electromechanical Project Service
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -300px"}} src={ process.env.PUBLIC_URL + "/images/Electromechanical-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Electromechanical Project Service Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>
@@ -215,8 +318,43 @@ function ServicePage() {
                             </div>
 
                             <div className="desktop-popup-content-container">
-                                Steel Structure Service Content
+
+                                <div className="desktop-popup-header-container" style={{"width": "50%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Steel Structure Works
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -300px"}} src={ process.env.PUBLIC_URL + "/images/steel-structure-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Steel Structure Works Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>
@@ -237,8 +375,43 @@ function ServicePage() {
                             </div>
 
                             <div className="desktop-popup-content-container">
-                                Green Building Service Content
+
+                                <div className="desktop-popup-header-container" style={{"width": "50%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Green Building Services
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -300px"}} src={ process.env.PUBLIC_URL + "/images/green-building-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Green Building Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>

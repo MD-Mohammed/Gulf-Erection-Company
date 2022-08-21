@@ -78,6 +78,24 @@
   cursor: pointer;
 }
 
+.desktop-popup-service-main-content-container{
+  width: 100%;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-popup-service-content{
+  width: 96%;
+}
+
+.desktop-popup-service-main-image-container{
+  width: 100%;
+  height: 100%;
+}
+
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
 
 .mobile-service-page-main-container
