@@ -149,9 +149,11 @@
 }
 
 .desktop-aboutus-certificate-container{
-    background-color: gray;
+    /* background-color: gray; */
     width: 95%;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: row
 }
 
 .desktop-aboutus-certificate-image{
