@@ -37,7 +37,7 @@ function NavigationBar(props) {
 
                     <div className="mobile-navbar-buttons-main-container">
 
-                        <div className="mobile-navbar-quote-button">
+                        <div className="mobile-navbar-quote-button" onClick={() => NavigationScrollToElement('mobile-contact-component')}>
                             <span style={{"margin-left": "5%", "color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "font-size": "80%"}}>Request Quote</span>
                         </div>
 
