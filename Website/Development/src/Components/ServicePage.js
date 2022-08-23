@@ -156,7 +156,7 @@ function ServicePage() {
                                         <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
                                         
                                         <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
-                                            Consultant Cooperation Service
+                                            Consultant Cooperation Services
                                         </h1>
                                     </div>
 
@@ -185,6 +185,7 @@ function ServicePage() {
                                 </div>
 
                             </div>
+
                         </div>
 
                     </div>
@@ -212,7 +213,7 @@ function ServicePage() {
                                         <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
                                         
                                         <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
-                                            Civil Work Service
+                                            Civil Work Services
                                         </h1>
                                     </div>
 
@@ -268,7 +269,7 @@ function ServicePage() {
                                         <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
                                         
                                         <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
-                                            Electromechanical Project Service
+                                            Electromechanical Project Services
                                         </h1>
                                     </div>
 
@@ -542,9 +543,9 @@ function MobileComponent() {
             {
                 ConsultantCooperationService && 
 
-                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+                <div className="mobile-popup-modal">
 
-                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+                    <div className="mobile-popup-main-container">
 
                         <div className="mobile-popup-close-button-container">
                             <button className="mobile-popup-close-button" onClick={() => setConsultantCooperationService(false)}>
@@ -552,10 +553,50 @@ function MobileComponent() {
                             </button>
                         </div>
 
-                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
-                            Consultation Cooperation Service Content
-                        </div>
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
 
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Consultancy Cooperation Services
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/consultancy-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content">
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Consultant Cooperation Services Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -565,9 +606,9 @@ function MobileComponent() {
             {
                 CivilWorkService && 
 
-                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+                <div className="mobile-popup-modal">
 
-                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+                    <div className="mobile-popup-main-container">
 
                         <div className="mobile-popup-close-button-container">
                             <button className="mobile-popup-close-button" onClick={() => setCivilWorkService(false)}>
@@ -575,9 +616,50 @@ function MobileComponent() {
                             </button>
                         </div>
 
-                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
-                            Civil Work Service Content
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
+
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Civil Work Services
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/civil-work-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content">
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Civil Work Service Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         
                     </div>
 
@@ -588,9 +670,9 @@ function MobileComponent() {
             {
                 ElectroMechService && 
 
-                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+                <div className="mobile-popup-modal">
 
-                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+                    <div className="mobile-popup-main-container">
 
                         <div className="mobile-popup-close-button-container">
                             <button className="mobile-popup-close-button" onClick={() => setElectroMechService(false)}>
@@ -598,9 +680,50 @@ function MobileComponent() {
                             </button>
                         </div>
 
-                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
-                            Electro Mechanical Service Service Content
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
+
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Electromechanical Project Services
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/Electromechanical-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content">
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Electromechanical Project Service Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         
                     </div>
 
@@ -611,9 +734,9 @@ function MobileComponent() {
             {
                 SteelStructureService && 
 
-                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+                <div className="mobile-popup-modal">
 
-                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+                    <div className="mobile-popup-main-container">
 
                         <div className="mobile-popup-close-button-container">
                             <button className="mobile-popup-close-button" onClick={() => setSteelStructureService(false)}>
@@ -621,9 +744,50 @@ function MobileComponent() {
                             </button>
                         </div>
 
-                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
-                            Steel Structure Service Service Content
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
+
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Steel Structure Works
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/steel-structure-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content">
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Steel Structure Works Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         
                     </div>
 
@@ -634,9 +798,9 @@ function MobileComponent() {
             {
                 GreenBuildingService && 
 
-                <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+                <div className="mobile-popup-modal">
 
-                    <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+                    <div className="mobile-popup-main-container">
 
                         <div className="mobile-popup-close-button-container">
                             <button className="mobile-popup-close-button" onClick={() => setGreenBuildingService(false)}>
@@ -644,9 +808,50 @@ function MobileComponent() {
                             </button>
                         </div>
 
-                        <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
-                            Green Building Service Service Service Content
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
+
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Green Building Services
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/green-building-service-image-main.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content">
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Green Building Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
                         
                     </div>
 
