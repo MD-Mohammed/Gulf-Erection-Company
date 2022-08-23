@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import React, {Fragment,useState} from "react";
+import React, {Fragment,useState,useEffect} from "react";
 import "./ImageSliderComponent.css"
 import imgA from "./images/GEC-ImageCor2.jpg"
 import imgC from "./images/GEC-ImageCor3.jpg"
@@ -10,6 +10,8 @@ function ImageSlider() {
     const [Active, setActive] = useState("SlideA");
 
     const [SlideTransition, setSlideTransition] = useState("slide-right");
+
+    const Slides = ["SlideA", "SlideB", "SlideC", "SlideD"];
 
     const ChangeSlideRight = () => {
 
@@ -61,6 +63,17 @@ function ImageSlider() {
             setActive("SlideC")
         }
     }
+
+    useEffect(() => {
+        var i = 0;
+        setInterval(() => {
+            setActive(Slides[i]);
+            i = i + 1
+            if (i == 4) {
+                i = 0;
+            }
+        }, 5000);
+    }, []);
 
     function MobileComponent() {
 
