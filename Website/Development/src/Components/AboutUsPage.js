@@ -241,12 +241,12 @@ function AboutUsPage() {
                             <div className="desktop-aboutus-page-grids-inner-container">
                             
                                 <div className="desktop-abutus-page-sub-container-gridBox-text">
-                                    <h1>20+</h1>
+                                    <h1>40+</h1>
                                     <a style={{"font-weight": "200", "font-size": "110%"}}>Years of experience</a>
                                 </div>
 
                                 <div className="desktop-abutus-page-sub-container-gridBox-text">
-                                    <h1>100+</h1>
+                                    <h1>700+</h1>
                                     <a style={{"font-weight": "200", "font-size": "110%"}}>Projects completed</a>
                                 </div>
 
@@ -256,7 +256,7 @@ function AboutUsPage() {
                                 </div>
 
                                 <div className="desktop-abutus-page-sub-container-gridBox-text">
-                                    <h1>300+</h1>
+                                    <h1>600+</h1>
                                     <a style={{"font-weight": "200", "font-size": "110%"}}>Active workers</a>
                                 </div>  
 
@@ -640,12 +640,12 @@ function AboutUsPage() {
                         <div className="mobile-aboutus-page-grids-main-container">
                             
                             <div className="mobile-aboutus-page-sub-container-gridBox-text">
-                                <h2>20+</h2>
+                                <h2>40+</h2>
                                 <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Years of experience</a>
                             </div>
 
                             <div className="mobile-aboutus-page-sub-container-gridBox-text">
-                                <h2>100+</h2>
+                                <h2>700+</h2>
                                 <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Projects completed</a>
                             </div>
 
@@ -655,7 +655,7 @@ function AboutUsPage() {
                             </div>
 
                             <div className="mobile-aboutus-page-sub-container-gridBox-text">
-                                <h2>300+</h2>
+                                <h2>600+</h2>
                                 <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Active workers</a>
                             </div>   
 

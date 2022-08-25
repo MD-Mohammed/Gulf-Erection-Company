@@ -57,10 +57,10 @@ function NavigationBar(props) {
                         <div style={{"display":"flex", "justifyContent": "flex-end", "position": "absolute","width": "100%", "z-index": "3"}}>
                             <div className="mobile-menu-list-container">
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-home-component')}>Home</button>
+                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-projects-component')}>Projects</button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-aboutus-component')}><div>About</div><div>us</div></button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-services-component')}>Services</button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-clients-component')}>Clients</button>
-                                <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-projects-component')}>Projects</button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-contact-component')}>Contacts</button>
                             </div>
                         </div>
@@ -92,10 +92,10 @@ function NavigationBar(props) {
     
                     <div className="desktop-navbar-buttons-main-container">
                         <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-home-component')}>HOME</div>
+                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-projects-component')}>PROJECTS</div>
                         <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-aboutus-component')}>ABOUT US</div>
                         <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-services-component')}>SERVICES</div>
                         <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-clients-component')}>CLIENTS</div>
-                        <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-projects-component')}>PROJECTS</div>
                         <div className="desktop-navbar-button-containers" onClick={() => NavigationScrollToElement('desktop-contact-component')}>CONTACT</div>
                     </div>
     

@@ -51,13 +51,13 @@ function App() {
 
               <ImageSlider />
 
+              <ProjectPage />
+
               <AboutUsPage/>
 
               <ServicePage/>
              
               <ClientPage />
-
-              <ProjectPage />
 
               <ContactPage />
 
