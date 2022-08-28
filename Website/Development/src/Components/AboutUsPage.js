@@ -140,25 +140,9 @@ function AboutUsPage() {
     
                             </div>
 
-                            <div>
-
-                                <h1 style={{"color": "#FF4343","margin-bottom": "1%", "margin-top": "5%", "margin-bottom": "5%"}}>Health, Safety and Environment - We are resposible!</h1>
-
-                                <div>
-
-                                    <iframe 
-                                        className="desktop-aboutus-content-video-container"
-                                        width="100%" 
-                                        height="100%" 
-                                        src="https://www.youtube.com/embed/CSV8GtV7M2U" 
-                                        title="YouTube video player" frameborder="0" 
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen>
-                                    </iframe>
-
-                                </div>
+                           <div style={{"marginTop":"5%"}}>
                             
-                            </div>
+                           </div>
     
                         </div>
     
@@ -549,24 +533,7 @@ function AboutUsPage() {
 
                             </div>
 
-                            <div>
-
-                                <h2 style={{"color": "#FF4343","margin-top": "10%", "margin-bottom": "10%", "font-weight": "400"}}>Health, Safety and Environment - We are resposible!</h2>
-
-                                <div>
-
-                                    <iframe 
-                                        width="100%" 
-                                        height="200px" 
-                                        src="https://www.youtube.com/embed/CSV8GtV7M2U" 
-                                        title="YouTube video player" frameborder="0" 
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen>
-                                    </iframe>
-
-                                </div>
-
-                            </div>
+                            <div style={{"marginTop":"5%"}}></div>
 
                         </div>
 
