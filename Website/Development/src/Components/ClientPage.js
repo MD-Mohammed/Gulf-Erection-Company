@@ -70,13 +70,13 @@ function MobileComponent() {
             <>
                 <div className="mobile-clientpage-main-container" id="mobile-clients-component">
 
-                    <div className="mobile-header-container" style={{"margin-top": "10%", "width": "80%"}}>
+                    <div className="mobile-header-container" style={{"margin-top": "10%", "width": "100%"}}>
                         
                         <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
-                            <img style={{"height": "70%", "width": "12%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
+                            <img style={{ "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
                             
                             <h3 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white", "margin-left": "-2%"}}>
-                                Our Clients
+                            Successful Associations
                             </h3>
                         </div>
 
