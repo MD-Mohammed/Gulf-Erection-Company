@@ -3,8 +3,11 @@ import React, {Fragment, useState} from "react";
 import './ProjectPage.css'
 
 import ProjectData from "../Data/ProjectDetails.json";
+import ProjectVideos from "../Data/ProjectVideos.json";
 
 function ProjectPage() {
+
+    const[ShowGallary, setShowGallary] = useState(false)
 
     function MobileComponent() {
 
@@ -169,6 +172,35 @@ function ProjectPage() {
 
                     </div>
 
+                    <div className="desktop-projectpage-video-card-container">
+                        
+                    {
+                        ProjectVideos.map((video) => (
+
+                            <div className="desktop-projectpage-video-cards">
+
+                                <div className="desktop-projectpage-video-card-video">
+
+                                    <iframe
+                                        style={{"border-radius": "10px"}} 
+                                        width="100%"
+                                        height="100%"
+                                        src={video.VideoLink}
+                                        title="YouTube video player" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen="true"
+                                    ></iframe>
+
+                                </div>
+
+                                <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%", "margin-left": "10%", "margin-right": "10%"}}>{video.VideoTitle}</h6>
+
+                            </div>
+                        ))
+                    }
+
+                    </div>
+
                     <div className="desktop-projectpage-cards-main-container">
 
                         {
@@ -211,8 +243,11 @@ function ProjectPage() {
                                                 <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.Year}</h6>
 
                                             </div>
-                                            
-                                            <DesktopProjectVideo ProjectObject={project.VideoLink}/>
+
+                                            <div className="desktop-projectpage-cards-gallery-container" onClick={() => setShowGallary(true)} >
+                                                <img className="desktop-projectpage-cards-gallery-icon" src={ process.env.PUBLIC_URL + "/images/show-imag-icon-yellow.png" }/>
+                                                <div className="desktop-projectpage-cards-gallery-text">View Gallery</div>
+                                            </div>
 
                                         </div>
 
@@ -226,6 +261,57 @@ function ProjectPage() {
                     </div>
 
                 </div>
+
+                {
+                    ShowGallary &&
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setShowGallary(false)}>
+                                    <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+
+                                <div className="desktop-popup-header-container" style={{"width": "100%"}}>
+                            
+                                    <div style={{"display":"flex", "align-items": "center","justify-content": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "5%", "width": "5%"}} src={ process.env.PUBLIC_URL + "/images/gallery-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%", "text-align": "center", "color": "#EAC435"}}>
+                                            Project Gallery
+                                        </h1>
+                                    </div>
+
+                                </div>
+
+                                <div className="desktop-projectpage-gallery-main-container">
+
+                                    {
+                                        ProjectData.map((project) => (
+
+                                            <div className="desktop-projectpage-gallery-image-tile">
+                                                <img style={{"height": "100%", "width": "100%", "border-radius": "20px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                            </div>
+
+                                        ))
+
+                                    }
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+
+
             </>
         );
 
