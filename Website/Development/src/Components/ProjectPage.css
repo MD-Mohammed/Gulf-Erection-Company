@@ -244,6 +244,7 @@
     background-color: white;
     height: 400px;
     width: 90%;
+    margin-top: -3%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 15%;
@@ -364,4 +365,30 @@
 
 .mobile-projectpage-card-back-video-container:active .mobile-projectpage-card-back-video-play{
     opacity: 0.5;
+}
+
+.mobile-projectpage-videocard-main-container{
+    margin: 4%;
+}
+
+.mobile-projectpage-videocard{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background: #16262E;
+    height: 400px;
+    box-shadow: -10px 10px 0px #FF4343;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-projectpage-video-container{
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
 }

@@ -94,6 +94,35 @@ function ProjectPage() {
 
                     </div>
 
+                    {
+                        ProjectVideos.map((video) => (
+
+                            <div className="mobile-projectpage-videocard-main-container">
+
+                                <div className="mobile-projectpage-videocard">
+        
+                                    <div className="mobile-projectpage-video-container">
+        
+                                            <iframe
+                                                style={{"border-radius": "10px"}} 
+                                                width="100%"
+                                                height="100%"
+                                                src={video.VideoLink}
+                                                title="YouTube video player" frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                allowfullscreen="true"
+                                            ></iframe>
+        
+                                    </div>
+        
+                                    <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{video.VideoTitle}</h6>
+        
+                                </div>
+    
+                            </div>
+                        ))
+                    }
+
                     <div className="mobile-projectpage-cards-main-container">
 
                         {
