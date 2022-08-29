@@ -317,6 +317,10 @@
     align-items: center;
 }
 
+.mobile-projectpage-cards-info-container:active{
+    opacity: 0.8;
+}
+
 .mobile-projectpage-cards-info-icon{
     height: 75%;
     width: 7%;
@@ -324,6 +328,14 @@
 
 .mobile-projectpage-cards-info-icon:active{
     opacity: 0.9;
+}
+
+.mobile-projectpage-cards-flip-container{
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-projectpage-card-back-video-container{

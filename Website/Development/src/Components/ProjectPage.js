@@ -11,22 +11,6 @@ function ProjectPage() {
 
     function MobileComponent() {
 
-        function MobileProjectVideo(props) {
-
-            return(
-                    <div>
-                        {   props.ProjectObject === undefined ?
-                            <div></div> : 
-                            
-                            <div className="mobile-projectpage-card-back-video-container">
-                                        <img className="mobile-projectpage-card-back-video-icon" src={ process.env.PUBLIC_URL + "/images/youtube-icon.png" }/>
-                                        <a href={props.ProjectObject} target="_blank" className="mobile-projectpage-card-back-video-play">Watch Video</a>
-                            </div>
-                        }
-                    </div>
-            )
-        }
-
         function ProjectCard(props) {
 
             const[CardFlip, setCardFlip] = useState(false)
@@ -74,10 +58,13 @@ function ProjectPage() {
 
                             </div>
 
-                            <MobileProjectVideo ProjectObject={props.VideoLinkObject}/>
+                            <div className="mobile-projectpage-cards-info-container" style={{"width": "47.5%", "margin-left": "26.25%", "margin-right": "26.25%", "margin-top": "2%"}} onClick={() => setCardFlip(false)}>
+                                <img className="mobile-projectpage-cards-info-icon" style={{"width": "15%", "margin-right": "2%"}} src={ process.env.PUBLIC_URL + "/images/show-imag-icon-yellow.png" }/>
+                                <div className="desktop-projectpage-cards-gallery-text" style={{"font-size": "110%", "font-weight": "500", "margin-top": "-0.25%"}}>View Gallery</div>
+                            </div>
 
-                            <div className="mobile-projectpage-cards-info-container" onClick={() => setCardFlip(false)}>
-                                <img className="mobile-projectpage-cards-info-icon" src={ process.env.PUBLIC_URL + "/images/show-image-icon.png" }/>
+                            <div className="mobile-projectpage-cards-flip-container" style={{"justify-content": "flex-end", "width": "95%"}}>
+                                <img className="mobile-projectpage-cards-info-icon" src={ process.env.PUBLIC_URL + "/images/flip-icon.png" } onClick={() => setCardFlip(false)}/>
                             </div>
 
                         </div>
