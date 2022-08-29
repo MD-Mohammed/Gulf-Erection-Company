@@ -299,7 +299,6 @@ function ProjectPage() {
                                             </div>
 
                                         ))
-
                                     }
 
                                 </div>
