@@ -11,22 +11,6 @@ function ProjectPage() {
 
     function MobileComponent() {
 
-        function MobileProjectVideo(props) {
-
-            return(
-                    <div>
-                        {   props.ProjectObject === undefined ?
-                            <div></div> : 
-                            
-                            <div className="mobile-projectpage-card-back-video-container">
-                                        <img className="mobile-projectpage-card-back-video-icon" src={ process.env.PUBLIC_URL + "/images/youtube-icon.png" }/>
-                                        <a href={props.ProjectObject} target="_blank" className="mobile-projectpage-card-back-video-play">Watch Video</a>
-                            </div>
-                        }
-                    </div>
-            )
-        }
-
         function ProjectCard(props) {
 
             const[CardFlip, setCardFlip] = useState(false)
@@ -74,10 +58,13 @@ function ProjectPage() {
 
                             </div>
 
-                            <MobileProjectVideo ProjectObject={props.VideoLinkObject}/>
+                            <div className="mobile-projectpage-cards-info-container" style={{"width": "47.5%", "margin-left": "26.25%", "margin-right": "26.25%", "margin-top": "2%"}} onClick={() => setShowGallary(true)}>
+                                <img className="mobile-projectpage-cards-info-icon" style={{"width": "15%", "margin-right": "2%"}} src={ process.env.PUBLIC_URL + "/images/show-imag-icon-yellow.png" }/>
+                                <div className="desktop-projectpage-cards-gallery-text" style={{"font-size": "110%", "font-weight": "500", "margin-top": "-0.25%"}}>View Gallery</div>
+                            </div>
 
-                            <div className="mobile-projectpage-cards-info-container" onClick={() => setCardFlip(false)}>
-                                <img className="mobile-projectpage-cards-info-icon" src={ process.env.PUBLIC_URL + "/images/show-image-icon.png" }/>
+                            <div className="mobile-projectpage-cards-flip-container" style={{"justify-content": "flex-end", "width": "95%"}}>
+                                <img className="mobile-projectpage-cards-info-icon" src={ process.env.PUBLIC_URL + "/images/flip-icon.png" } onClick={() => setCardFlip(false)}/>
                             </div>
 
                         </div>
@@ -107,6 +94,35 @@ function ProjectPage() {
 
                     </div>
 
+                    {
+                        ProjectVideos.map((video) => (
+
+                            <div className="mobile-projectpage-videocard-main-container">
+
+                                <div className="mobile-projectpage-videocard">
+        
+                                    <div className="mobile-projectpage-video-container">
+        
+                                            <iframe
+                                                style={{"border-radius": "10px"}} 
+                                                width="100%"
+                                                height="100%"
+                                                src={video.VideoLink}
+                                                title="YouTube video player" frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                allowfullscreen="true"
+                                            ></iframe>
+        
+                                    </div>
+        
+                                    <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{video.VideoTitle}</h6>
+        
+                                </div>
+    
+                            </div>
+                        ))
+                    }
+
                     <div className="mobile-projectpage-cards-main-container">
 
                         {
@@ -131,6 +147,55 @@ function ProjectPage() {
                     </div>
                     
                 </div>
+
+                {
+                    ShowGallary && 
+
+                    <div className="mobile-popup-modal">
+
+                        <div className="mobile-popup-main-container">
+
+                            <div className="mobile-popup-close-button-container">
+                                <button className="mobile-popup-close-button" onClick={() => setShowGallary(false)}>
+                                    <span className="mobile-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
+                                </button>
+                            </div>
+
+                            <div className="mobile-projectpage-gallery-popup-content-container" >
+                                
+                                <div className="mobile-popup-header-container" style={{"width": "80%", "margin-left": "10%", "margin-right": "10%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "justify-content": "center", "gap": "5%"}}> 
+
+                                        <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/gallery-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%", "font-size": "175%", "color": "#EAC435"}}>
+                                            Project Gallery
+                                        </h1>
+
+                                    </div>
+
+                                </div>
+
+                                <div className="mobile-projectpage-gallery-main-container">
+
+                                    {
+                                        ProjectData.map((project) => (
+                                            <div className="mobile-projectpage-gallery-image-tile">
+                                                <img style={{"height": "100%", "width": "100%", "border-radius": "5px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                            </div>
+                                        ))
+                                    }
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                }
 
             </>
         );

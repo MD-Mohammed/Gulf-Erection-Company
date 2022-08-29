@@ -244,6 +244,7 @@
     background-color: white;
     height: 400px;
     width: 90%;
+    margin-top: -3%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 15%;
@@ -317,6 +318,10 @@
     align-items: center;
 }
 
+.mobile-projectpage-cards-info-container:active{
+    opacity: 0.8;
+}
+
 .mobile-projectpage-cards-info-icon{
     height: 75%;
     width: 7%;
@@ -324,6 +329,14 @@
 
 .mobile-projectpage-cards-info-icon:active{
     opacity: 0.9;
+}
+
+.mobile-projectpage-cards-flip-container{
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-projectpage-card-back-video-container{
@@ -352,4 +365,51 @@
 
 .mobile-projectpage-card-back-video-container:active .mobile-projectpage-card-back-video-play{
     opacity: 0.5;
+}
+
+.mobile-projectpage-videocard-main-container{
+    margin: 4%;
+}
+
+.mobile-projectpage-videocard{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background: #16262E;
+    height: 400px;
+    box-shadow: -10px 10px 0px #FF4343;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-projectpage-video-container{
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mobile-projectpage-gallery-popup-content-container{
+    width: 100%;
+    height: 92.5%;
+    overflow-y: scroll;
+}
+
+.mobile-projectpage-gallery-main-container{
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobile-projectpage-gallery-image-tile{
+    width: 45%;
+    height: 175px;
+    margin-bottom: 4%;
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.20));
 }
