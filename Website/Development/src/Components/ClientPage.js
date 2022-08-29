@@ -70,7 +70,7 @@ function MobileComponent() {
             <>
                 <div className="mobile-clientpage-main-container" id="mobile-clients-component">
 
-                    <div className="mobile-header-container" style={{"margin-top": "10%", "width": "100%"}}>
+                    <div className="mobile-header-container" style={{"margin-top": "10%", "width": "90%"}}>
                         
                         <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
                             <img style={{ "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
