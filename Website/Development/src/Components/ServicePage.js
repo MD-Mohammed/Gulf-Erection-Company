@@ -47,7 +47,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            We provide all kinds of construction consultancy services that can start off 
+                                            your project right from the inception to it's most appropriate completion.
                                         </p>
                                 </div>
 
@@ -65,7 +66,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                                We are experienced and proficient with the civil works that your 
+                                                project needs.
                                         </p>
                                 </div>
 
@@ -195,8 +197,29 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Consultant Cooperation Services Description
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
+                                            We stand up to be one of your premium team of consultants when it comes to absolute 
+                                            support at all levels of your project. Starting from pre-planning, sheduling, 
+                                            budgeting to execution and maintainence of your dream project. 
+                                            <br /><br />
+                                            Here's our areas of expertise when we provide service as professional construction
+                                            consultants.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Project Planning</li>
+                                                <li>Steel Structure Designing</li>
+                                                <li>Budgeting</li>
+                                                <li>Project Scheduling</li>
+                                                <li>Project Management</li>
+                                                <li>Project execution and construction consultation</li>
+                                                <li>Maintenance and support</li>
+                                            </ul>
+                                            <br />
+                                            We have always ensured that we have maintained supreme quality when it comes to 
+                                            customer care consultancy and servicing which has resulted in the successful 
+                                            associations and professional relationship that we have achieved throughout the 
+                                            years of competence at what we do the best.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -252,8 +275,25 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Civil Work Service Description
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
+                                            We are competent when it comes to the refinement and consummation of 
+                                            civil works as this is where we get to exhibhit our proficiency while unifying 
+                                            customer expectations with service quality.
+                                            <br /><br />
+                                            Here's what we can do for you to have your project serviced in professional hands.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Stucture Building Construction</li>
+                                                <li>Pre Cast Building Construction</li>
+                                                <li>Showrooms and Warehouses Construction</li>
+                                                <li>Electrical and Mechanical Works</li>
+                                                <li>Surveillance and Installations</li>
+                                                <li>Government Approvals and Necessary Clearances</li>
+                                            </ul>
+                                            With expertise that comes from both skills and experience we can always ensure clean
+                                            delivery of your requirments with our most efficient workers whome we manage with 
+                                            great responsibility.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -532,7 +572,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    We provide all kinds of construction consultancy services that can start off 
+                                    your project right from the inception to it's most appropriate completion.
                                 </p>
                         </div>
 
@@ -550,7 +591,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    We are experienced and proficient with the civil works that your 
+                                    project needs.
                                 </p>
                         </div>
 
@@ -677,10 +719,31 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Consultant Cooperation Services Description
+                                            We stand up to be one of your premium team of consultants when it comes to absolute 
+                                            support at all levels of your project. Starting from pre-planning, sheduling, 
+                                            budgeting to execution and maintainence of your dream project. 
+                                            <br /><br />
+                                            Here's our areas of expertise when we provide service as professional construction
+                                            consultants.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Project Planning</li>
+                                                <li>Steel Structure Designing</li>
+                                                <li>Budgeting</li>
+                                                <li>Project Scheduling</li>
+                                                <li>Project Management</li>
+                                                <li>Project execution and construction consultation</li>
+                                                <li>Maintenance and support</li>
+                                            </ul>
+                                            <br />
+                                            We have always ensured that we have maintained supreme quality when it comes to 
+                                            customer care consultancy and servicing which has resulted in the successful 
+                                            associations and professional relationship that we have achieved throughout the 
+                                            years of competence at what we do the best.
+                                            <br /><br />
                                         </p>
 
                                     </div>
@@ -740,10 +803,28 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Civil Work Service Description
+                                            We are competent when it comes to the refinement and consummation of 
+                                            civil works as this is where we get to exhibhit our proficiency while unifying 
+                                            customer expectations with service quality.
+                                            <br /><br />
+                                            Here's what we can do for you to have your project serviced in professional hands.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Stucture Building Construction</li>
+                                                <li>Pre Cast Building Construction</li>
+                                                <li>Showrooms and Warehouses Construction</li>
+                                                <li>Electrical and Mechanical Works</li>
+                                                <li>Surveillance and Installations</li>
+                                                <li>Government Approvals and Necessary Clearances</li>
+                                            </ul>
+                                            <br />
+                                            With expertise that comes from both skills and experience we can always ensure clean
+                                            delivery of your requirments with our most efficient workers whome we manage with 
+                                            great responsibility.
+                                            <br />
                                         </p>
 
                                     </div>
