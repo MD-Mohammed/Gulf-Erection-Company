@@ -10,6 +10,7 @@ function ServicePage() {
     const [ElectroMechService, setElectroMechService] = useState(false)
     const [SteelStructureService, setSteelStructureService] = useState(false)
     const [GreenBuildingService, setGreenBuildingService] = useState(false)
+    const [HSEService, setHSEService] = useState(false)
 
     function DesktopComponent() {
 
@@ -123,6 +124,24 @@ function ServicePage() {
                                 </div>
 
                                 <button className="desktop-servicepage-card-button" onClick={() => setGreenBuildingService(true)}>Know More</button>
+
+                            </div>
+
+                            <div className="desktop-servicepage-content-cards">
+
+                                <div className="desktop-servicepage-card-img" >
+                                    <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-icon.png" }/>
+                                </div>
+
+                                <h1 className="desktop-servicepage-card-header">Health and Safety</h1>
+
+                                <div className="desktop-servicepage-card-text">
+                                        <p className="desktop-servicepage-card-text">
+                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                        </p>
+                                </div>
+
+                                <button className="desktop-servicepage-card-button" onClick={() => setHSEService(true)}>Know More</button>
 
                             </div>
 
@@ -419,6 +438,63 @@ function ServicePage() {
 
                 }
 
+                {
+                    HSEService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setHSEService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+
+                                <div className="desktop-popup-header-container" style={{"width": "60%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Health, Safety and Environment Services
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -300px"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-image.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Health, Safety and Environment Services Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                }
+
             </>
         );
 } 
@@ -518,7 +594,7 @@ function MobileComponent() {
 
                     </div>
 
-                    <div className="mobile-servicepage-content-cards" style={{"margin-bottom": "10%"}}>
+                    <div className="mobile-servicepage-content-cards">
 
                         <div className="mobile-servicepage-card-img" >
                             <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/green-building-service-icon.png" }/>
@@ -533,6 +609,24 @@ function MobileComponent() {
                         </div>
 
                         <button className="mobile-servicepage-card-button" onClick={() => setGreenBuildingService(true)}>Know More</button>
+
+                    </div>
+
+                    <div className="mobile-servicepage-content-cards" style={{"margin-bottom": "10%"}}>
+
+                        <div className="mobile-servicepage-card-img" >
+                            <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-icon.png" }/>
+                        </div>
+
+                        <h1 className="mobile-servicepage-card-header">Health and Safety</h1>
+
+                        <div className="mobile-servicepage-card-text">
+                                <p className="mobile-servicepage-card-text">
+                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                </p>
+                        </div>
+
+                        <button className="mobile-servicepage-card-button" onClick={() => setHSEService(true)}>Know More</button>
 
                     </div>
 
@@ -842,6 +936,70 @@ function MobileComponent() {
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
                                             Green Building Description
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+            }
+
+            {
+                HSEService && 
+
+                <div className="mobile-popup-modal">
+
+                    <div className="mobile-popup-main-container">
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setHSEService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
+
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Health, Safety and Environment Services
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-image.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content">
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Health, Safety and Environment Services Description
                                         </p>
 
                                     </div>
