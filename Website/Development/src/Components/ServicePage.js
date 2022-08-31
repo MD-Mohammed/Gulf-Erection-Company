@@ -48,7 +48,7 @@ function ServicePage() {
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
                                             We provide all kinds of construction consultancy services that can start off 
-                                            your project right from the inception to it's most appropriate completion.
+                                            your project right from the inception to it's most settled completion.
                                         </p>
                                 </div>
 
@@ -85,7 +85,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Bringing to you the best in class services in the area of electrical and mechanical works 
+                                            the most needed for your project.
                                         </p>
                                 </div>
 
@@ -349,7 +350,27 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Electromechanical Project Service Description
+                                            Our project services package is only complete when we are able to provide you
+                                            the best in class Electrical and Mechanical works that makes your building 
+                                            functional and ready for commission. Understanding that this is one of the 
+                                            critical part of your project, we always manage to secure and guarantee the 
+                                            quality of the service that we bring to the table.
+                                            <br /><br />
+                                            Here's what we are able to cater to your requirements in the area of electrical 
+                                            and mechanical services.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+                                            <br />
+                                            Being experienced professionals, we are able to understand your requirements from 
+                                            the objective level of the project while ensuring that you are compliant 
+                                            to the concerned authorities.
+                                            <br /><br /><br /> 
                                         </p>
 
                                     </div>
@@ -573,7 +594,7 @@ function MobileComponent() {
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
                                     We provide all kinds of construction consultancy services that can start off 
-                                    your project right from the inception to it's most appropriate completion.
+                                    your project right from the inception to it's most settled completion.
                                 </p>
                         </div>
 
@@ -610,7 +631,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Bringing to you the best in class services in the area of electrical and mechanical works 
+                                    the most needed for your project.
                                 </p>
                         </div>
 
@@ -885,10 +907,30 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Electromechanical Project Service Description
+                                            Our project services package is only complete when we are able to provide you
+                                            the best in class Electrical and Mechanical works that makes your building 
+                                            functional and ready for commission. Understanding that this is one of the 
+                                            critical part of your project, we always manage to secure and guarantee the 
+                                            quality of the service that we bring to the table.
+                                            <br /><br />
+                                            Here's what we are able to cater to your requirements in the area of electrical 
+                                            and mechanical services.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+                                            <br />
+                                            Being experienced professionals, we are able to understand your requirements from 
+                                            the objective level of the project while ensuring that you are compliant 
+                                            to the concerned authorities.
+                                            <br /><br />
                                         </p>
 
                                     </div>
