@@ -122,7 +122,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Constuction services that serves the increasing demands of technologies that can enhance 
+                                            environmental sustainability.
                                         </p>
                                 </div>
 
@@ -140,7 +141,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            We ensure that the health and safety of our entire team is of utmost importance to maintain a sustainable environment that 
+                                            evolves.
                                         </p>
                                 </div>
 
@@ -427,7 +429,7 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Steel Structure Works Description
+                                            
                                         </p>
 
                                     </div>
@@ -484,7 +486,31 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Green Building Description
+                                            Keeping up with the demands of our environment and technological 
+                                            advancements, we are capable of contributing to the green development 
+                                            mission. We aim to use technologies that enhance performance, 
+                                            durability, aesthetics and sustainable solutions to your green requirements
+                                            of the project.
+                                            <br /><br />
+
+                                            These are the areas of expertise that we can enhance your sustainable 
+                                            concept of your project.
+                                            <br /><br />
+
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+
+                                            <br />
+                                            With continuous improvements and advancements in our methods of constructions 
+                                            we will be able to refine the efficiency to achieve the goal of development that 
+                                            should be as environment friendly as it could look visually appealing while ensuring 
+                                            structual and functional robustness.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -541,7 +567,30 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Health, Safety and Environment Services Description
+                                            Occupational Health and Safety is the most imortant when it comes to 
+                                            a sustainable and credible delivery of work that defined the values 
+                                            that we stand up for. Our aim is to reduce the risk within the "high-risk" 
+                                            industry that our services are often referred to as. 
+                                            <br /><br />
+                                            We ensure that our workers and our environment is safe as we are experienced 
+                                            and have managed the impact of the forecasted dangers by ensuring that we 
+                                            are compliant to the health, safety and environment regulations and rules  
+                                            of our country. 
+                                            <br /><br />
+                                            Here's an overview of our practices that we ensure before we start off 
+                                            with the work.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Identify and devise risks and their appropriate management plan</li>
+                                                <li>Ensure manadatory trainings that are specific to the site and job</li>
+                                                <li>Ensuring the workers have abundant access to the safety equipements and absolute proficiency and knowledge to use them</li>
+                                                <li>Making sure that all health,safety and environment related management plans are followed day to day regardless of any priority of works involved.</li>
+                                            </ul>
+                                            <br />
+                                            Here at Gulf Erection Constrctions, we realise understanding the primary causes 
+                                            of the risks and dangers is the key to start with. This is why we are professionals 
+                                            with effective management of activities and competent site supervision.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -668,7 +717,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Constuction services that serves the increasing demands of technologies that can enhance 
+                                    environmental sustainability.
                                 </p>
                         </div>
 
@@ -686,7 +736,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    We ensure that the health and safety of our entire team is of utmost importance to maintain a sustainable environment that 
+                                    evolves.
                                 </p>
                         </div>
 
@@ -1055,10 +1106,34 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Green Building Description
+                                            Keeping up with the demands of our environment and technological 
+                                            advancements, we are capable of contributing to the green development 
+                                            mission. We aim to use technologies that enhance performance, 
+                                            durability, aesthetics and sustainable solutions to your green requirements
+                                            of the project.
+                                            <br /><br />
+
+                                            These are the areas of expertise that we can enhance your sustainable 
+                                            concept of your project.
+                                            <br /><br />
+
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+
+                                            <br />
+                                            With continuous improvements and advancements in our methods of constructions 
+                                            we will be able to refine the efficiency to achieve the goal of development that 
+                                            should be as environment friendly as it could look visually appealing while ensuring 
+                                            structual and functional robustness.
+                                            <br /><br />
                                         </p>
 
                                     </div>
@@ -1119,10 +1194,33 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Health, Safety and Environment Services Description
+                                            Occupational Health and Safety is the most imortant when it comes to 
+                                            a sustainable and credible delivery of work that defined the values 
+                                            that we stand up for. Our aim is to reduce the risk within the "high-risk" 
+                                            industry that our services are often referred to as. 
+                                            <br /><br />
+                                            We ensure that our workers and our environment is safe as we are experienced 
+                                            and have managed the impact of the forecasted dangers by ensuring that we 
+                                            are compliant to the health, safety and environment regulations and rules  
+                                            of our country. 
+                                            <br /><br />
+                                            Here's an overview of our practices that we ensure before we start off 
+                                            with the work.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Identify and devise risks and their appropriate management plan</li>
+                                                <li>Ensure manadatory trainings that are specific to the site and job</li>
+                                                <li>Ensuring the workers have abundant access to the safety equipements and absolute proficiency and knowledge to use them</li>
+                                                <li>Making sure that all health,safety and environment related management plans are followed day to day regardless of any priority of works involved.</li>
+                                            </ul>
+                                            <br />
+                                            Here at Gulf Erection Constrctions, we realise understanding the primary causes 
+                                            of the risks and dangers is the key to start with. This is why we are professionals 
+                                            with effective management of activities and competent site supervision.
+                                            <br /><br />
                                         </p>
 
                                     </div>
