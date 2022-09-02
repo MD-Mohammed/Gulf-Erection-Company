@@ -351,7 +351,7 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
                                             Our project services package is only complete when we are able to provide you
                                             the best in class Electrical and Mechanical works that makes your building 
                                             functional and ready for commission. Understanding that this is one of the 
@@ -428,7 +428,7 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
                                             Steel Structure Buildings are one of our prime quality works that 
                                             we have in our service line. Being the most fundamental area of 
                                             you project or be it the complete requirement of work within your 
@@ -505,7 +505,7 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
                                             Keeping up with the demands of our environment and technological 
                                             advancements, we are capable of contributing to the green development 
                                             mission. We aim to use technologies that enhance performance, 
@@ -586,7 +586,7 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
                                             Occupational Health and Safety is the most imortant when it comes to 
                                             a sustainable and credible delivery of work that defined the values 
                                             that we stand up for. Our aim is to reduce the risk within the "high-risk" 
