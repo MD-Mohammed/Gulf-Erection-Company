@@ -66,8 +66,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                                We are experienced and proficient with the civil works that your 
-                                                project needs.
+                                            Providing turnkey services right from the inception stage including drawings, designs and estimation 
+                                            including necessary authority approvals.
                                         </p>
                                 </div>
 
@@ -104,7 +104,7 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Steel Structure Building services are the prime quality construction service that you can ensure in professional hands with us.
                                         </p>
                                 </div>
 
@@ -429,7 +429,27 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            
+                                            Steel Structure Buildings are one of our prime quality works that 
+                                            we have in our service line. Being the most fundamental area of 
+                                            you project or be it the complete requirement of work within your 
+                                            project, Gulf Erection Company has always proven to be the best 
+                                            among this competent space that is quite evident from the projects 
+                                            that we have completed so far.
+                                            <br /><br />
+                                            Here's our complete end to end service when it comes to steel structure 
+                                            building projects.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Structure Project Consultancy</li>
+                                                <li>Steel Structure Building Design</li>
+                                                <li>Steel Structure Authority Approvals</li>
+                                                <li>Steel Structure Material Procurement</li>
+                                                <li>Steel Strcuture building construction.</li>
+                                            </ul>
+                                            <br />
+                                            Have your project handled by us, to make sure that you have your projects 
+                                            completed with non compromising effort and quality.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -661,8 +681,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    We are experienced and proficient with the civil works that your 
-                                    project needs.
+                                    Providing turnkey services right from the inception stage including drawings, designs and estimation 
+                                    including necessary authority approvals.
                                 </p>
                         </div>
 
@@ -699,7 +719,7 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Steel Structure Building services are the prime quality construction service that you can ensure in professional hands with us.
                                 </p>
                         </div>
 
@@ -1042,10 +1062,30 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Steel Structure Works Description
+                                            Steel Structure Buildings are one of our prime quality works that 
+                                            we have in our service line. Being the most fundamental area of 
+                                            you project or be it the complete requirement of work within your 
+                                            project, Gulf Erection Company has always proven to be the best 
+                                            among this competent space that is quite evident from the projects 
+                                            that we have completed so far.
+                                            <br /><br />
+                                            Here's our complete end to end service when it comes to steel structure 
+                                            building projects.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Structure Project Consultancy</li>
+                                                <li>Steel Structure Building Design</li>
+                                                <li>Steel Structure Authority Approvals</li>
+                                                <li>Steel Structure Material Procurement</li>
+                                                <li>Steel Strcuture building construction.</li>
+                                            </ul>
+                                            <br />
+                                            Have your project handled by us, to make sure that you have your projects 
+                                            completed with non compromising effort and quality.
+                                            <br /><br />
                                         </p>
 
                                     </div>
