@@ -40,6 +40,34 @@ function FooterComponent() {
                     
                     </div>
 
+                    <div className="mobile-footer-socialmedia-main-container">
+
+                        <div className="mobile-footer-socialmedia-container">
+
+                            <div className="mobile-footer-socialmedia-logo">
+                                <img style={{"height": "80%", "width": "80%"}} src={ process.env.PUBLIC_URL + "/images/whatsapp-footer-icon.png" }  />
+                            </div>
+
+                            <div className="mobile-footer-socialmedia-text">
+                                <a>+971 5000000000</a>
+                            </div>
+
+                        </div>
+
+                        <div className="mobile-footer-socialmedia-container">
+
+                            <div className="mobile-footer-socialmedia-logo">
+                                <img style={{"height": "80%", "width": "80%"}} src={ process.env.PUBLIC_URL + "/images/youtube-footer-icon.png" }  />
+                            </div>
+
+                            <div className="mobile-footer-socialmedia-text">
+                                <a className="mobile-footer-socialmedia-link" href="https://www.youtube.com/channel/UCPNjQYHXeMO_kCM5jmf7EJQ/videos" target="_blank" >Gulf Erection Company</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                     <div className="mobile-footer-content-details-container" >
 
                         <div className="mobile-footer-content-details-icon-container">
@@ -158,6 +186,34 @@ function FooterComponent() {
                             </div>
 
                         </div>             
+
+                    </div>
+
+                    <div className="desktop-footer-socialmedia-main-container">
+
+                        <div className="desktop-footer-socialmedia-container" style={{"width": "20%"}}>
+
+                            <div className="desktop-footer-socialmedia-logo" style={{"width": "20%"}}>
+                                <img style={{"height": "100%", "width": "80%"}} src={ process.env.PUBLIC_URL + "/images/whatsapp-footer-icon.png" }  />
+                            </div>
+
+                            <div className="desktop-footer-socialmedia-text" style={{"width": "72.5%"}}>
+                                <a>+971 5000000000</a>
+                            </div>
+
+                        </div>
+
+                        <div className="desktop-footer-socialmedia-container">
+
+                            <div className="desktop-footer-socialmedia-logo">
+                                <img style={{"height": "100%", "width": "80%"}} src={ process.env.PUBLIC_URL + "/images/youtube-footer-icon.png" }  />
+                            </div>
+
+                            <div className="desktop-footer-socialmedia-text">
+                                <a className="desktop-footer-socialmedia-link" href="https://www.youtube.com/channel/UCPNjQYHXeMO_kCM5jmf7EJQ/videos" target="_blank" >Gulf Erection Company</a>
+                            </div>
+
+                        </div>
 
                     </div>
 

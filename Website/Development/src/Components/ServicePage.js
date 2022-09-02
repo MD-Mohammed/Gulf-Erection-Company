@@ -10,6 +10,7 @@ function ServicePage() {
     const [ElectroMechService, setElectroMechService] = useState(false)
     const [SteelStructureService, setSteelStructureService] = useState(false)
     const [GreenBuildingService, setGreenBuildingService] = useState(false)
+    const [HSEService, setHSEService] = useState(false)
 
     function DesktopComponent() {
 
@@ -46,7 +47,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            We provide all kinds of construction consultancy services that can start off 
+                                            your project right from the inception to it's most settled completion.
                                         </p>
                                 </div>
 
@@ -64,7 +66,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Providing turnkey services right from the inception stage including drawings, designs and estimation 
+                                            including necessary authority approvals.
                                         </p>
                                 </div>
 
@@ -82,7 +85,8 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Bringing to you the best in class services in the area of electrical and mechanical works 
+                                            the most needed for your project.
                                         </p>
                                 </div>
 
@@ -100,7 +104,7 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Steel Structure Building services are the prime quality construction service that you can ensure in professional hands with us.
                                         </p>
                                 </div>
 
@@ -118,11 +122,31 @@ function ServicePage() {
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
-                                            Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                            Constuction services that serves the increasing demands of technologies that can enhance 
+                                            environmental sustainability.
                                         </p>
                                 </div>
 
                                 <button className="desktop-servicepage-card-button" onClick={() => setGreenBuildingService(true)}>Know More</button>
+
+                            </div>
+
+                            <div className="desktop-servicepage-content-cards">
+
+                                <div className="desktop-servicepage-card-img" >
+                                    <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-icon.png" }/>
+                                </div>
+
+                                <h1 className="desktop-servicepage-card-header">Health and Safety</h1>
+
+                                <div className="desktop-servicepage-card-text">
+                                        <p className="desktop-servicepage-card-text">
+                                            We ensure that the health and safety of our entire team is of utmost importance to maintain a sustainable environment that 
+                                            evolves.
+                                        </p>
+                                </div>
+
+                                <button className="desktop-servicepage-card-button" onClick={() => setHSEService(true)}>Know More</button>
 
                             </div>
 
@@ -176,8 +200,29 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Consultant Cooperation Services Description
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
+                                            We stand up to be one of your premium team of consultants when it comes to absolute 
+                                            support at all levels of your project. Starting from pre-planning, sheduling, 
+                                            budgeting to execution and maintainence of your dream project. 
+                                            <br /><br />
+                                            Here's our areas of expertise when we provide service as professional construction
+                                            consultants.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Project Planning</li>
+                                                <li>Steel Structure Designing</li>
+                                                <li>Budgeting</li>
+                                                <li>Project Scheduling</li>
+                                                <li>Project Management</li>
+                                                <li>Project execution and construction consultation</li>
+                                                <li>Maintenance and support</li>
+                                            </ul>
+                                            <br />
+                                            We have always ensured that we have maintained supreme quality when it comes to 
+                                            customer care consultancy and servicing which has resulted in the successful 
+                                            associations and professional relationship that we have achieved throughout the 
+                                            years of competence at what we do the best.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -233,8 +278,25 @@ function ServicePage() {
 
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
-                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Civil Work Service Description
+                                        <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
+                                            We are competent when it comes to the refinement and consummation of 
+                                            civil works as this is where we get to exhibhit our proficiency while unifying 
+                                            customer expectations with service quality.
+                                            <br /><br />
+                                            Here's what we can do for you to have your project serviced in professional hands.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Stucture Building Construction</li>
+                                                <li>Pre Cast Building Construction</li>
+                                                <li>Showrooms and Warehouses Construction</li>
+                                                <li>Electrical and Mechanical Works</li>
+                                                <li>Surveillance and Installations</li>
+                                                <li>Government Approvals and Necessary Clearances</li>
+                                            </ul>
+                                            With expertise that comes from both skills and experience we can always ensure clean
+                                            delivery of your requirments with our most efficient workers whome we manage with 
+                                            great responsibility.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -290,7 +352,27 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Electromechanical Project Service Description
+                                            Our project services package is only complete when we are able to provide you
+                                            the best in class Electrical and Mechanical works that makes your building 
+                                            functional and ready for commission. Understanding that this is one of the 
+                                            critical part of your project, we always manage to secure and guarantee the 
+                                            quality of the service that we bring to the table.
+                                            <br /><br />
+                                            Here's what we are able to cater to your requirements in the area of electrical 
+                                            and mechanical services.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+                                            <br />
+                                            Being experienced professionals, we are able to understand your requirements from 
+                                            the objective level of the project while ensuring that you are compliant 
+                                            to the concerned authorities.
+                                            <br /><br /><br /> 
                                         </p>
 
                                     </div>
@@ -347,7 +429,27 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Steel Structure Works Description
+                                            Steel Structure Buildings are one of our prime quality works that 
+                                            we have in our service line. Being the most fundamental area of 
+                                            you project or be it the complete requirement of work within your 
+                                            project, Gulf Erection Company has always proven to be the best 
+                                            among this competent space that is quite evident from the projects 
+                                            that we have completed so far.
+                                            <br /><br />
+                                            Here's our complete end to end service when it comes to steel structure 
+                                            building projects.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Structure Project Consultancy</li>
+                                                <li>Steel Structure Building Design</li>
+                                                <li>Steel Structure Authority Approvals</li>
+                                                <li>Steel Structure Material Procurement</li>
+                                                <li>Steel Strcuture building construction.</li>
+                                            </ul>
+                                            <br />
+                                            Have your project handled by us, to make sure that you have your projects 
+                                            completed with non compromising effort and quality.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -404,7 +506,111 @@ function ServicePage() {
                                     <div className="desktop-popup-service-content" style={{"height": "400px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%"}}>
-                                            Green Building Description
+                                            Keeping up with the demands of our environment and technological 
+                                            advancements, we are capable of contributing to the green development 
+                                            mission. We aim to use technologies that enhance performance, 
+                                            durability, aesthetics and sustainable solutions to your green requirements
+                                            of the project.
+                                            <br /><br />
+
+                                            These are the areas of expertise that we can enhance your sustainable 
+                                            concept of your project.
+                                            <br /><br />
+
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+
+                                            <br />
+                                            With continuous improvements and advancements in our methods of constructions 
+                                            we will be able to refine the efficiency to achieve the goal of development that 
+                                            should be as environment friendly as it could look visually appealing while ensuring 
+                                            structual and functional robustness.
+                                            <br /><br /><br />
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                }
+
+                {
+                    HSEService && 
+
+                    <div className="desktop-popup-modal">
+
+                        <div className="desktop-popup-main-container">
+
+                            <div className="desktop-popup-close-button-container">
+                                <button className="desktop-popup-close-button" onClick={() => setHSEService(false)}>
+                                    <span className="desktop-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="desktop-popup-content-container">
+
+                                <div className="desktop-popup-header-container" style={{"width": "60%"}}>
+                                    
+                                    <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                                        <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                        
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                            Health, Safety and Environment Services
+                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-popup-header-line"/>
+
+                                </div>
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "0px -300px"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-image.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "4%"}}>
+                                            Occupational Health and Safety is the most imortant when it comes to 
+                                            a sustainable and credible delivery of work that defined the values 
+                                            that we stand up for. Our aim is to reduce the risk within the "high-risk" 
+                                            industry that our services are often referred to as. 
+                                            <br /><br />
+                                            We ensure that our workers and our environment is safe as we are experienced 
+                                            and have managed the impact of the forecasted dangers by ensuring that we 
+                                            are compliant to the health, safety and environment regulations and rules  
+                                            of our country. 
+                                            <br /><br />
+                                            Here's an overview of our practices that we ensure before we start off 
+                                            with the work.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Identify and devise risks and their appropriate management plan</li>
+                                                <li>Ensure manadatory trainings that are specific to the site and job</li>
+                                                <li>Ensuring the workers have abundant access to the safety equipements and absolute proficiency and knowledge to use them</li>
+                                                <li>Making sure that all health,safety and environment related management plans are followed day to day regardless of any priority of works involved.</li>
+                                            </ul>
+                                            <br />
+                                            Here at Gulf Erection Constrctions, we realise understanding the primary causes 
+                                            of the risks and dangers is the key to start with. This is why we are professionals 
+                                            with effective management of activities and competent site supervision.
+                                            <br /><br /><br />
                                         </p>
 
                                     </div>
@@ -456,7 +662,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    We provide all kinds of construction consultancy services that can start off 
+                                    your project right from the inception to it's most settled completion.
                                 </p>
                         </div>
 
@@ -474,7 +681,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Providing turnkey services right from the inception stage including drawings, designs and estimation 
+                                    including necessary authority approvals.
                                 </p>
                         </div>
 
@@ -492,7 +700,8 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Bringing to you the best in class services in the area of electrical and mechanical works 
+                                    the most needed for your project.
                                 </p>
                         </div>
 
@@ -510,7 +719,7 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Steel Structure Building services are the prime quality construction service that you can ensure in professional hands with us.
                                 </p>
                         </div>
 
@@ -518,7 +727,7 @@ function MobileComponent() {
 
                     </div>
 
-                    <div className="mobile-servicepage-content-cards" style={{"margin-bottom": "10%"}}>
+                    <div className="mobile-servicepage-content-cards">
 
                         <div className="mobile-servicepage-card-img" >
                             <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/green-building-service-icon.png" }/>
@@ -528,11 +737,31 @@ function MobileComponent() {
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
-                                    Providing turnkey services right from the inception stage including drawings, designs and estimation including necessary authority approvals.
+                                    Constuction services that serves the increasing demands of technologies that can enhance 
+                                    environmental sustainability.
                                 </p>
                         </div>
 
                         <button className="mobile-servicepage-card-button" onClick={() => setGreenBuildingService(true)}>Know More</button>
+
+                    </div>
+
+                    <div className="mobile-servicepage-content-cards" style={{"margin-bottom": "10%"}}>
+
+                        <div className="mobile-servicepage-card-img" >
+                            <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-icon.png" }/>
+                        </div>
+
+                        <h1 className="mobile-servicepage-card-header">Health and Safety</h1>
+
+                        <div className="mobile-servicepage-card-text">
+                                <p className="mobile-servicepage-card-text">
+                                    We ensure that the health and safety of our entire team is of utmost importance to maintain a sustainable environment that 
+                                    evolves.
+                                </p>
+                        </div>
+
+                        <button className="mobile-servicepage-card-button" onClick={() => setHSEService(true)}>Know More</button>
 
                     </div>
 
@@ -583,10 +812,31 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Consultant Cooperation Services Description
+                                            We stand up to be one of your premium team of consultants when it comes to absolute 
+                                            support at all levels of your project. Starting from pre-planning, sheduling, 
+                                            budgeting to execution and maintainence of your dream project. 
+                                            <br /><br />
+                                            Here's our areas of expertise when we provide service as professional construction
+                                            consultants.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Project Planning</li>
+                                                <li>Steel Structure Designing</li>
+                                                <li>Budgeting</li>
+                                                <li>Project Scheduling</li>
+                                                <li>Project Management</li>
+                                                <li>Project execution and construction consultation</li>
+                                                <li>Maintenance and support</li>
+                                            </ul>
+                                            <br />
+                                            We have always ensured that we have maintained supreme quality when it comes to 
+                                            customer care consultancy and servicing which has resulted in the successful 
+                                            associations and professional relationship that we have achieved throughout the 
+                                            years of competence at what we do the best.
+                                            <br /><br />
                                         </p>
 
                                     </div>
@@ -646,10 +896,28 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Civil Work Service Description
+                                            We are competent when it comes to the refinement and consummation of 
+                                            civil works as this is where we get to exhibhit our proficiency while unifying 
+                                            customer expectations with service quality.
+                                            <br /><br />
+                                            Here's what we can do for you to have your project serviced in professional hands.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Stucture Building Construction</li>
+                                                <li>Pre Cast Building Construction</li>
+                                                <li>Showrooms and Warehouses Construction</li>
+                                                <li>Electrical and Mechanical Works</li>
+                                                <li>Surveillance and Installations</li>
+                                                <li>Government Approvals and Necessary Clearances</li>
+                                            </ul>
+                                            <br />
+                                            With expertise that comes from both skills and experience we can always ensure clean
+                                            delivery of your requirments with our most efficient workers whome we manage with 
+                                            great responsibility.
+                                            <br />
                                         </p>
 
                                     </div>
@@ -710,10 +978,30 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Electromechanical Project Service Description
+                                            Our project services package is only complete when we are able to provide you
+                                            the best in class Electrical and Mechanical works that makes your building 
+                                            functional and ready for commission. Understanding that this is one of the 
+                                            critical part of your project, we always manage to secure and guarantee the 
+                                            quality of the service that we bring to the table.
+                                            <br /><br />
+                                            Here's what we are able to cater to your requirements in the area of electrical 
+                                            and mechanical services.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+                                            <br />
+                                            Being experienced professionals, we are able to understand your requirements from 
+                                            the objective level of the project while ensuring that you are compliant 
+                                            to the concerned authorities.
+                                            <br /><br />
                                         </p>
 
                                     </div>
@@ -774,10 +1062,30 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Steel Structure Works Description
+                                            Steel Structure Buildings are one of our prime quality works that 
+                                            we have in our service line. Being the most fundamental area of 
+                                            you project or be it the complete requirement of work within your 
+                                            project, Gulf Erection Company has always proven to be the best 
+                                            among this competent space that is quite evident from the projects 
+                                            that we have completed so far.
+                                            <br /><br />
+                                            Here's our complete end to end service when it comes to steel structure 
+                                            building projects.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Steel Structure Project Consultancy</li>
+                                                <li>Steel Structure Building Design</li>
+                                                <li>Steel Structure Authority Approvals</li>
+                                                <li>Steel Structure Material Procurement</li>
+                                                <li>Steel Strcuture building construction.</li>
+                                            </ul>
+                                            <br />
+                                            Have your project handled by us, to make sure that you have your projects 
+                                            completed with non compromising effort and quality.
+                                            <br /><br />
                                         </p>
 
                                     </div>
@@ -838,10 +1146,121 @@ function MobileComponent() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content">
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "10%"}}>
-                                            Green Building Description
+                                            Keeping up with the demands of our environment and technological 
+                                            advancements, we are capable of contributing to the green development 
+                                            mission. We aim to use technologies that enhance performance, 
+                                            durability, aesthetics and sustainable solutions to your green requirements
+                                            of the project.
+                                            <br /><br />
+
+                                            These are the areas of expertise that we can enhance your sustainable 
+                                            concept of your project.
+                                            <br /><br />
+
+                                            <ul>
+                                                <li>Item 1</li>
+                                                <li>Item 2</li>
+                                                <li>Item 3</li>
+                                                <li>Item 4</li>
+                                                <li>Item 5</li>
+                                            </ul>
+
+                                            <br />
+                                            With continuous improvements and advancements in our methods of constructions 
+                                            we will be able to refine the efficiency to achieve the goal of development that 
+                                            should be as environment friendly as it could look visually appealing while ensuring 
+                                            structual and functional robustness.
+                                            <br /><br />
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+            }
+
+            {
+                HSEService && 
+
+                <div className="mobile-popup-modal">
+
+                    <div className="mobile-popup-main-container">
+
+                        <div className="mobile-popup-close-button-container">
+                            <button className="mobile-popup-close-button" onClick={() => setHSEService(false)}>
+                                <span className="mobile-popus-close-icon">X</span>
+                            </button>
+                        </div>
+
+                        <div className="mobile-aboutus-popup-content-container">
+                            
+                            <div className="mobile-popup-header-container" style={{"width": "90%"}}>
+                                
+                                <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}> 
+
+                                    <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
+                                    
+                                    <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
+                                        Health, Safety and Environment Services
+                                    </h4>
+
+                                </div>
+
+                                <div className="mobile-popup-header-line" style={{"width": "60%"}}/>
+
+                            </div>
+
+                            <div className="mobile-service-popup-content-main-container">
+
+                                <div className="desktop-popup-service-main-content-container">
+
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
+
+                                        <div className="desktop-popup-service-main-image-container">
+                                            <img style={{"height": "100%", "width": "100%", "object-fit": "cover", "border-radius": "20px", "object-position": "-75px 0px"}} src={ process.env.PUBLIC_URL + "/images/HSE-service-image.jpg" }/>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content" style={{"width": "87.5%"}}>
+
+                                        <p className="desktop-content-style" style={{"margin-top": "10%"}}>
+                                            Occupational Health and Safety is the most imortant when it comes to 
+                                            a sustainable and credible delivery of work that defined the values 
+                                            that we stand up for. Our aim is to reduce the risk within the "high-risk" 
+                                            industry that our services are often referred to as. 
+                                            <br /><br />
+                                            We ensure that our workers and our environment is safe as we are experienced 
+                                            and have managed the impact of the forecasted dangers by ensuring that we 
+                                            are compliant to the health, safety and environment regulations and rules  
+                                            of our country. 
+                                            <br /><br />
+                                            Here's an overview of our practices that we ensure before we start off 
+                                            with the work.
+                                            <br /><br />
+                                            <ul>
+                                                <li>Identify and devise risks and their appropriate management plan</li>
+                                                <li>Ensure manadatory trainings that are specific to the site and job</li>
+                                                <li>Ensuring the workers have abundant access to the safety equipements and absolute proficiency and knowledge to use them</li>
+                                                <li>Making sure that all health,safety and environment related management plans are followed day to day regardless of any priority of works involved.</li>
+                                            </ul>
+                                            <br />
+                                            Here at Gulf Erection Constrctions, we realise understanding the primary causes 
+                                            of the risks and dangers is the key to start with. This is why we are professionals 
+                                            with effective management of activities and competent site supervision.
+                                            <br /><br />
                                         </p>
 
                                     </div>
