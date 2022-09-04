@@ -10,6 +10,7 @@ function ContactPage() {
     const form = useRef();
 
   const sendEmail = (e) => {
+    
     e.preventDefault();
 
     emailjs.sendForm('service_6xof54p', 'template_bwkttvn', form.current, 'PgHd1TPJxOLJ575zs')
@@ -18,6 +19,8 @@ function ContactPage() {
       }, (error) => {
           console.log(error.text);
       });
+      alert('Your enquiry has been recieved, Thanks You'); 
+      
   };
 
     function MobileComponent() {
@@ -61,8 +64,8 @@ function ContactPage() {
 
                                 <div className="mobile-contactpage-form-field">
 
-                                    <p className="mobile-contactpage-form-field-label">Last Name *</p>
-                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your last name" name="last_name" required/>
+                                    <p className="mobile-contactpage-form-field-label">Company Name (optional)</p>
+                                    <input className="mobile-contactpage-form-field-input" placeholder="Enter your last name" name="last_name" />
                                     
                                 </div>
 
@@ -184,8 +187,8 @@ function ContactPage() {
 
                                     <div className="desktop-contactpage-form-field">
 
-                                        <p className="desktop-contactpage-form-field-label">Last Name *</p>
-                                        <input className="desktop-contactpage-form-field-input" placeholder="Enter your last name" name="last_name" required/>
+                                        <p className="desktop-contactpage-form-field-label">Company Name (optional) </p>
+                                        <input className="desktop-contactpage-form-field-input" placeholder="Enter your last name" name="last_name" />
                                         
                                     </div>
 
