@@ -8,6 +8,8 @@ import ProjectVideos from "../Data/ProjectVideos.json";
 function ProjectPage() {
 
     const[ShowGallary, setShowGallary] = useState(false)
+    const[ViewImage, setViewImage] = useState(false)
+    const[ImageName, setImageName] = useState("")
 
     function MobileComponent() {
 
@@ -289,24 +291,26 @@ function ProjectPage() {
                                             
                                             <h5 className="desktop-projectpage-card-back-header">{project.ProjectName}</h5>
 
-                                            <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
+                                            {/* <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
 
-                                            <p className="desktop-projectpage-card-back-description">{project.ProjectDescription}</p>
+                                            <p className="desktop-projectpage-card-back-description">{project.ProjectDescription}</p> */}
 
-                                            <div style={{"display": "flex"}}>
+                                            <div>
+                                                <div style={{"display": "flex"}}>
 
-                                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
+                                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
 
-                                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.ClientName}</h6>
+                                                    <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.ClientName}</h6>
 
-                                            </div>
+                                                </div>
 
-                                            <div style={{"display": "flex"}}>
+                                                <div style={{"display": "flex"}}>
 
-                                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
+                                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
 
-                                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.Year}</h6>
+                                                    <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.Year}</h6>
 
+                                                </div>
                                             </div>
 
                                             <div className="desktop-projectpage-cards-gallery-container" onClick={() => setShowGallary(true)} >
@@ -359,8 +363,15 @@ function ProjectPage() {
                                     {
                                         ProjectData.map((project) => (
 
-                                            <div className="desktop-projectpage-gallery-image-tile">
-                                                <img style={{"height": "100%", "width": "100%", "border-radius": "20px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                            <div className="desktop-projectpage-gallery-image-tile" 
+                                                 onClick={() => {
+                                                    setViewImage(true)
+                                                    setImageName(project.ProjectImage)
+                                                 }}
+                                            >
+
+                                                <img className="desktop-projectpage-gallery-image" src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+
                                             </div>
 
                                         ))
@@ -371,6 +382,26 @@ function ProjectPage() {
                             </div>
 
                         </div>
+
+                        {
+                            ViewImage &&
+                            
+                            <div className="desktop-projectpage-gallery-image-popup-modal">
+                                
+                                <div className="desktop-projectpage-gallery-image-popup-modal-close-button-container">
+
+                                    <button className="desktop-projectpage-gallery-image-popup-modal-close-button" onClick={() => setViewImage(false)}>
+                                        <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
+                                    </button>
+
+                                </div>
+
+                                <div className="desktop-projectpage-gallery-image-popup-image-container">
+                                    <img style={{"width": "auto", "height": "auto", "object-fit": "cover", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + ImageName }/>
+                                </div>
+
+                            </div>
+                        }
 
                     </div>
                 }

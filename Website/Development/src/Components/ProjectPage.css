@@ -91,7 +91,7 @@
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: 'Ubuntu', sans-serif;
     filter: drop-shadow(-16px 16px 8px rgba(0, 0, 0, 0.25));
 }
@@ -224,6 +224,63 @@
     width: 31%;
     margin-top: 2%;
     filter: drop-shadow(-8px 8px 6px rgba(0, 0, 0, 0.25));
+    transition: 0.25s;
+}
+
+.desktop-projectpage-gallery-image{
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    border-radius: 20px; 
+    object-fit: cover;
+}
+
+/* .desktop-projectpage-gallery-image-tile:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+} */
+
+.desktop-projectpage-gallery-image-tile:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.desktop-projectpage-gallery-image-popup-modal{
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 99%;
+    height: 99%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-projectpage-gallery-image-popup-modal-close-button-container{
+    width: 98%;
+    height: 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.desktop-projectpage-gallery-image-popup-modal-close-button, .desktop-projectpage-gallery-image-popup-modal-close-button:focus{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.desktop-projectpage-gallery-image-popup-image-container{
+    width: 98%;
+    height: 90%;
+    border-radius: 20px;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
