@@ -3,7 +3,15 @@ import React, {Fragment} from "react";
 import './ClientPage.css';
 import { motion } from "framer-motion"
 import { useState, useEffect,useRef} from "react"
-import ClientLogos from "../Data/Client-Logos/Client.js"
+function importAll(r){
+    let images1 = {};
+    r.keys().map((item, index) => { images1[item.replace('./', '')] = r(item); });
+    return images1; 
+  }
+const images1 = importAll(require.context('../Data/Client-Logos', false, /\.(png|jpe?g|svg)$/));
+const image_path=Object.values(images1)
+
+
 
 function ClientPage() {
 
@@ -42,7 +50,7 @@ function ClientPage() {
                             <motion.div ref={corousel}className="desktop-clientpage-slider-frame">
                                 <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}} style={{"display": "flex"}}>
                                     {
-                                        ClientLogos.map(image => {
+                                        image_path.map(image => {
                                             return(
                                                 <motion.div className="desktop-clientpage-icon-frame" key={image}> 
                                                     <img className="desktop-clientpage-icon" src={image} alt ="" />
@@ -91,7 +99,7 @@ function MobileComponent() {
                             <motion.div ref={corousel}className="mobile-clientpage-slider-frame">
                                 <motion.div drag ="x" dragConstraints ={{right:0,left: -corouselwidth}} style={{"display": "flex"}}>
                                     {
-                                        ClientLogos.map(image => {
+                                        image_path.map(image => {
                                             return(
                                                 <motion.div className="mobile-clientpage-icon-frame" key={image}> 
                                                     <img className="mobile-clientpage-icon" src={image} alt ="" />
