@@ -25,7 +25,7 @@ function ProjectPage() {
                         <div className="mobile-projectpage-card-front">
 
                             <div className="desktop-projectpage-cards-image-container">
-                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + props.ProjectImageObject }/>
+                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + props.ProjectImageObject + "/cover.jpg" }/>
                             </div>
 
                             <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{props.ProjectNameObject}</h6>
@@ -40,23 +40,29 @@ function ProjectPage() {
 
                             <h5 className="desktop-projectpage-card-back-header">{props.ProjectNameObject}</h5>
 
-                            <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
+                            {/* <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
 
-                            <p className="desktop-projectpage-card-back-description">{props.ProjectDescriptionObject}</p>
+                            <p className="desktop-projectpage-card-back-description">{props.ProjectDescriptionObject}</p> */}
 
-                            <div style={{"display": "flex"}}>
+                            <div>
+                                
+                                <div style={{"display": "flex"}}>
 
-                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
+                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
 
-                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.ClientNameObject}</h6>
+                                    <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.ClientNameObject}</h6>
 
-                            </div>
+                                </div>
+                                
+                            
 
-                            <div style={{"display": "flex"}}>
+                                <div style={{"display": "flex"}}>
 
-                                <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
+                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
 
-                                <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.YearObject}</h6>
+                                    <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.YearObject}</h6>
+
+                                </div>
 
                             </div>
 
@@ -134,7 +140,7 @@ function ProjectPage() {
                                     
                                     <ProjectCard 
                                         ProjectNameObject={project.ProjectName} 
-                                        ProjectImageObject={project.ProjectImage} 
+                                        ProjectImageObject={project.ProjectImagePath} 
                                         ProjectDescriptionObject={project.ProjectDescription}
                                         ClientNameObject={project.ClientName}
                                         YearObject={project.Year}
@@ -183,8 +189,13 @@ function ProjectPage() {
 
                                     {
                                         ProjectData.map((project) => (
-                                            <div className="mobile-projectpage-gallery-image-tile">
-                                                <img style={{"height": "100%", "width": "100%", "border-radius": "5px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                            <div className="mobile-projectpage-gallery-image-tile"
+                                                onClick={() => {
+                                                    setViewImage(true)
+                                                    setImageName(project.ProjectImagePath)
+                                             }}
+                                            >
+                                                <img style={{"height": "100%", "width": "100%", "border-radius": "5px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImagePath + "/cover.jpg" }/>
                                             </div>
                                         ))
                                     }
@@ -194,6 +205,26 @@ function ProjectPage() {
                             </div>
                             
                         </div>
+
+                        {
+                            ViewImage &&
+
+                            <div className="desktop-projectpage-gallery-image-popup-modal">
+                            
+                                <div className="desktop-projectpage-gallery-image-popup-modal-close-button-container">
+
+                                    <button className="desktop-projectpage-gallery-image-popup-modal-close-button" onClick={() => setViewImage(false)}>
+                                        <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
+                                    </button>
+
+                                </div>
+
+                                <div className="mobile-projectpage-gallery-image-popup-image-container">
+                                    <img style={{"width": "98%", "height": "98%", "object-fit": "cover", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + ImageName }/>
+                                </div>
+
+                            </div>
+                        }
 
                     </div>
 
@@ -280,7 +311,7 @@ function ProjectPage() {
                                         <div className="desktop-projectpage-card-front">
 
                                             <div className="desktop-projectpage-cards-image-container">
-                                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImage }/>
+                                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImagePath + "/cover.jpg" }/>
                                             </div>
             
                                             <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%", "margin-left": "10%", "margin-right": "10%"}}>{project.ProjectName}</h6>
@@ -366,11 +397,11 @@ function ProjectPage() {
                                             <div className="desktop-projectpage-gallery-image-tile" 
                                                  onClick={() => {
                                                     setViewImage(true)
-                                                    setImageName(project.ProjectImage)
+                                                    setImageName(project.ProjectImagePath)
                                                  }}
                                             >
 
-                                                <img className="desktop-projectpage-gallery-image" src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                                <img className="desktop-projectpage-gallery-image" src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImagePath + "/cover.jpg" }/>
 
                                             </div>
 
@@ -397,7 +428,7 @@ function ProjectPage() {
                                 </div>
 
                                 <div className="desktop-projectpage-gallery-image-popup-image-container">
-                                    <img style={{"width": "auto", "height": "auto", "object-fit": "cover", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + ImageName }/>
+                                    <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + ImageName + "/cover.jpg" }/>
                                 </div>
 
                             </div>

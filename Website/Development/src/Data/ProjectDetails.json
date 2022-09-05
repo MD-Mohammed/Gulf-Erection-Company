@@ -1,139 +1,139 @@
 [
     {
         "ProjectName": "ADCB - Musaffah",
-        "ProjectImage": "/adcb-musaffah/cover.jpg",
+        "ProjectImagePath": "/adcb-musaffah",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "AIS School",
-        "ProjectImage": "/ais-school/cover.jpg",
+        "ProjectImagePath": "/ais-school",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Al Ahalia Coca Cola",
-        "ProjectImage": "/alahalia-cocacola/cover.jpg",
+        "ProjectImagePath": "/alahalia-cocacola",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Al Geemi",
-        "ProjectImage": "/algeemi/cover.jpg",
+        "ProjectImagePath": "/algeemi",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Arabian Industries",
-        "ProjectImage": "/arabian-industries/cover.jpg",
+        "ProjectImagePath": "/arabian-industries",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Bloom School",
-        "ProjectImage": "/bloom-school/cover.jpg",
+        "ProjectImagePath": "/bloom-school",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Church",
-        "ProjectImage": "/church/cover.jpg",
+        "ProjectImagePath": "/church",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Cow Farm",
-        "ProjectImage": "/cow-farm/cover.jpg",
+        "ProjectImagePath": "/cow-farm",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Electrical Works",
-        "ProjectImage": "/electrical-work/cover.jpg",
+        "ProjectImagePath": "/electrical-work",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "EMC - Airport Road",
-        "ProjectImage": "/emc-airport-rd/cover.jpg",
+        "ProjectImagePath": "/emc-airport-rd",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "EMC Car Showroom",
-        "ProjectImage": "/emc-car-showroom/cover.jpg",
+        "ProjectImagePath": "/emc-car-showroom",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Emirates Printing Form",
-        "ProjectImage": "/emirates-printing-form/cover.jpg",
+        "ProjectImagePath": "/emirates-printing-form",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Federal Transformer",
-        "ProjectImage": "/federal-transformer/cover.jpg",
+        "ProjectImagePath": "/federal-transformer",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Foundation Work",
-        "ProjectImage": "/foundation-work/cover.jpg",
+        "ProjectImagePath": "/foundation-work",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Ground Breaking - Al Ain",
-        "ProjectImage": "/ground-breaking-alain/cover.jpg",
+        "ProjectImagePath": "/ground-breaking-alain",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Gulf Steel",
-        "ProjectImage": "/gulf-steel/cover.jpg",
+        "ProjectImagePath": "/gulf-steel",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Honda",
-        "ProjectImage": "/honda/cover.jpg",
+        "ProjectImagePath": "/honda",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "MC Wane",
-        "ProjectImage": "/mc-wane/cover.jpg",
+        "ProjectImagePath": "/mc-wane",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Safe Care",
-        "ProjectImage": "/safe-care/cover.jpg",
+        "ProjectImagePath": "/safe-care",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "School Ittihad",
-        "ProjectImage": "/school-ittihad/cover.jpg",
+        "ProjectImagePath": "/school-ittihad",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Space-Frame Works",
-        "ProjectImage": "/space-framework/cover.jpg",
+        "ProjectImagePath": "/space-framework",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     },    
     {
         "ProjectName": "Steel Structure Works",
-        "ProjectImage": "/steel-structure-work/cover.jpg",
+        "ProjectImagePath": "/steel-structure-work",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     }, 
     {
         "ProjectName": "Varco Al Mansoori",
-        "ProjectImage": "/varco-almansoori/cover.jpg",
+        "ProjectImagePath": "/varco-almansoori",
         "ClientName" : "< Client Name >",
         "Year": "< Project Year >"
     }
