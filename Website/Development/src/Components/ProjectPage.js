@@ -280,7 +280,7 @@ function ProjectPage() {
                                         <div className="desktop-projectpage-card-front">
 
                                             <div className="desktop-projectpage-cards-image-container">
-                                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + project.ProjectImage }/>
+                                                <img className="desktop-projectpage-cards-image" src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImage }/>
                                             </div>
             
                                             <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%", "margin-left": "10%", "margin-right": "10%"}}>{project.ProjectName}</h6>
@@ -405,7 +405,6 @@ function ProjectPage() {
 
                     </div>
                 }
-
 
             </>
         );
