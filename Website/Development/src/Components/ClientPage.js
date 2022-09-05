@@ -8,7 +8,7 @@ function importAll(r){
     r.keys().map((item, index) => { images1[item.replace('./', '')] = r(item); });
     return images1; 
   }
-const images1 = importAll(require.context('../Data/Client-Logos', false, /\.(png|jpe?g|svg)$/));
+const images1 = importAll(require.context('D:/Venkatashware/GIT/Gulf_erection_company/Gulf-Erection-Company/Website/Development/public/Client-Logos', false, /\.(png|jpe?g|svg)$/));
 const image_path=Object.values(images1)
 
 
