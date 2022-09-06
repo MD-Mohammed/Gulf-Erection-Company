@@ -207,6 +207,11 @@ function AboutUsPage() {
                                         <h2 className="desktop-aboutus-page-badge-text" style={{"margin-top": "2%"}}>ICV Certificate</h2>
                                     </div>
 
+                                    <div className="desktop-aboutus-page-badges" onClick={() => setBadge_C(true)}>
+                                        <img  className="desktop-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
+                                        <h2 className="desktop-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Badge</h2>
+                                    </div>
+
                                 </div>
                                 
                                 <div className="desktop-aboutus-page-buttons-container">
@@ -592,6 +597,11 @@ function AboutUsPage() {
                             <div className="mobile-aboutus-page-badges" onClick={() => setBadge_C(true)}>
                                 <img  className="mobile-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
                                 <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>ICV<br/>Certificate</h2>
+                            </div>
+
+                            <div className="mobile-aboutus-page-badges" onClick={() => setBadge_C(true)}>
+                                <img  className="mobile-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
+                                <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Badge<br/> Cert</h2>
                             </div>
 
                         </div>

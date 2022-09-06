@@ -212,7 +212,7 @@
 }
 
 .desktop-projectpage-gallery-main-container{
-    margin : 2%;
+    margin-bottom : 2%;
     margin-top: 0%;
     display: flex;
     flex-wrap: wrap;

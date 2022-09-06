@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useState, useEffect} from "react";
 import './ProjectPage.css'
 
 import ProjectData from "../Data/ProjectDetails.json";
@@ -10,6 +10,9 @@ function ProjectPage() {
     const[ShowGallary, setShowGallary] = useState(false)
     const[ViewImage, setViewImage] = useState(false)
     const[ImageName, setImageName] = useState("")
+    const[GalleryName, setGalleryName] = useState("")
+    const[GalleryImages, setGalleryImages] = useState("")
+    const[GalleryPath, setGalleryPath] = useState("")
 
     function MobileComponent() {
 
@@ -66,7 +69,14 @@ function ProjectPage() {
 
                             </div>
 
-                            <div className="mobile-projectpage-cards-info-container" style={{"width": "47.5%", "margin-left": "26.25%", "margin-right": "26.25%", "margin-top": "2%"}} onClick={() => setShowGallary(true)}>
+                            <div className="mobile-projectpage-cards-info-container" style={{"width": "47.5%", "margin-left": "26.25%", "margin-right": "26.25%", "margin-top": "2%"}} 
+                                onClick={() => {
+                                    setGalleryName(props.ProjectNameObject)
+                                    setGalleryImages(props.ProjectGalleryObject)
+                                    setGalleryPath(process.env.PUBLIC_URL + "/Data/Project-Gallery" + props.ProjectImagePathObject)
+                                    setShowGallary(true)
+                                }}
+                            >
                                 <img className="mobile-projectpage-cards-info-icon" style={{"width": "15%", "margin-right": "2%"}} src={ process.env.PUBLIC_URL + "/images/show-imag-icon-yellow.png" }/>
                                 <div className="desktop-projectpage-cards-gallery-text" style={{"font-size": "110%", "font-weight": "500", "margin-top": "-0.25%"}}>View Gallery</div>
                             </div>
@@ -141,10 +151,10 @@ function ProjectPage() {
                                     <ProjectCard 
                                         ProjectNameObject={project.ProjectName} 
                                         ProjectImageObject={project.ProjectImagePath} 
-                                        ProjectDescriptionObject={project.ProjectDescription}
                                         ClientNameObject={project.ClientName}
                                         YearObject={project.Year}
-                                        VideoLinkObject={project.VideoLink}
+                                        ProjectImagePathObject={project.ProjectImagePath}
+                                        ProjectGalleryObject={project.ProjectGallery}
                                     />
     
                                 </div>
@@ -161,10 +171,10 @@ function ProjectPage() {
 
                     <div className="mobile-popup-modal">
 
-                        <div className="mobile-popup-main-container">
+                        <div className="mobile-popup-main-container" style={{"background-color": "#16262E"}}>
 
                             <div className="mobile-popup-close-button-container">
-                                <button className="mobile-popup-close-button" onClick={() => setShowGallary(false)}>
+                                <button className="mobile-popup-close-button" style={{"background-color": "#16262E"}} onClick={() => setShowGallary(false)}>
                                     <span className="mobile-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
                                 </button>
                             </div>
@@ -178,7 +188,7 @@ function ProjectPage() {
                                         <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/gallery-icon.png" }/>
                                         
                                         <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%", "font-size": "175%", "color": "#EAC435"}}>
-                                            Project Gallery
+                                            { GalleryName }
                                         </h1>
 
                                     </div>
@@ -188,14 +198,14 @@ function ProjectPage() {
                                 <div className="mobile-projectpage-gallery-main-container">
 
                                     {
-                                        ProjectData.map((project) => (
+                                        GalleryImages.map((gallery) => (
                                             <div className="mobile-projectpage-gallery-image-tile"
                                                 onClick={() => {
                                                     setViewImage(true)
-                                                    setImageName(project.ProjectImagePath)
+                                                    setImageName(GalleryPath + '/' + gallery)
                                              }}
                                             >
-                                                <img style={{"height": "100%", "width": "100%", "border-radius": "5px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImagePath + "/cover.jpg" }/>
+                                                <img style={{"height": "100%", "width": "100%", "border-radius": "5px", "object-fit": "cover"}} src={ GalleryPath + '/' + gallery }/>
                                             </div>
                                         ))
                                     }
@@ -220,7 +230,7 @@ function ProjectPage() {
                                 </div>
 
                                 <div className="mobile-projectpage-gallery-image-popup-image-container">
-                                    <img style={{"width": "98%", "height": "98%", "object-fit": "cover", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + ImageName }/>
+                                    <img style={{"width": "98%", "height": "98%", "object-fit": "cover", "border-radius": "20px"}} src={ ImageName }/>
                                 </div>
 
                             </div>
@@ -344,9 +354,17 @@ function ProjectPage() {
                                                 </div>
                                             </div>
 
-                                            <div className="desktop-projectpage-cards-gallery-container" onClick={() => setShowGallary(true)} >
+                                            <div className="desktop-projectpage-cards-gallery-container" 
+                                                onClick={() => {
+                                                    setGalleryName(project.ProjectName)
+                                                    setGalleryImages(project.ProjectGallery)
+                                                    setGalleryPath(process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImagePath)
+                                                    setShowGallary(true)
+                                                }} 
+                                            >
                                                 <img className="desktop-projectpage-cards-gallery-icon" src={ process.env.PUBLIC_URL + "/images/show-imag-icon-yellow.png" }/>
                                                 <div className="desktop-projectpage-cards-gallery-text">View Gallery</div>
+
                                             </div>
 
                                         </div>
@@ -360,82 +378,81 @@ function ProjectPage() {
 
                     </div>
 
-                </div>
+                    {
+                        ShowGallary &&
 
-                {
-                    ShowGallary &&
+                        <div className="desktop-popup-modal">
 
-                    <div className="desktop-popup-modal">
+                            <div className="desktop-popup-main-container" style={{"background-color": "#16262E"}}>
 
-                        <div className="desktop-popup-main-container">
+                                <div className="desktop-popup-close-button-container">
+                                    <button className="desktop-popup-close-button" style={{"background-color": "#16262E"}} onClick={() => setShowGallary(false)}>
+                                        <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
+                                    </button>
+                                </div>
 
-                            <div className="desktop-popup-close-button-container">
-                                <button className="desktop-popup-close-button" onClick={() => setShowGallary(false)}>
-                                    <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
-                                </button>
-                            </div>
+                                <div className="desktop-popup-content-container">
 
-                            <div className="desktop-popup-content-container">
+                                    <div style={{"margin-top": "2%","margin-bottom": "2%"}}>
+                                
+                                        <div style={{"display":"flex", "align-items": "center","justify-content": "center", "gap": "5%"}}>  
+                                            <img style={{"height": "5%", "width": "5%"}} src={ process.env.PUBLIC_URL + "/images/gallery-icon.png" }/>
+                                            
+                                            <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "500", "margin-left": "-2%", "text-align": "center", "color": "#EAC435"}}>
+                                                {GalleryName}
+                                            </h1>
+                                        </div>
 
-                                <div className="desktop-popup-header-container" style={{"width": "100%"}}>
-                            
-                                    <div style={{"display":"flex", "align-items": "center","justify-content": "center", "gap": "5%"}}>  
-                                        <img style={{"height": "5%", "width": "5%"}} src={ process.env.PUBLIC_URL + "/images/gallery-icon.png" }/>
-                                        
-                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%", "text-align": "center", "color": "#EAC435"}}>
-                                            Project Gallery
-                                        </h1>
+                                    </div>
+
+                                    <div className="desktop-projectpage-gallery-main-container">
+
+                                        {
+                                            GalleryImages.map((gallery) => (
+
+                                                <div className="desktop-projectpage-gallery-image-tile" 
+                                                    onClick={() => {
+                                                        setViewImage(true)
+                                                        setImageName(GalleryPath + '/' + gallery)
+                                                    }}
+                                                >
+                                                    <img className="desktop-projectpage-gallery-image" src={ GalleryPath + '/' + gallery }/> 
+
+                                                </div>
+
+                                            ))
+                                        }
+
                                     </div>
 
                                 </div>
 
-                                <div className="desktop-projectpage-gallery-main-container">
+                            </div>
 
-                                    {
-                                        ProjectData.map((project) => (
+                            {
+                                ViewImage &&
+                                
+                                <div className="desktop-projectpage-gallery-image-popup-modal">
+                                    
+                                    <div className="desktop-projectpage-gallery-image-popup-modal-close-button-container">
 
-                                            <div className="desktop-projectpage-gallery-image-tile" 
-                                                 onClick={() => {
-                                                    setViewImage(true)
-                                                    setImageName(project.ProjectImagePath)
-                                                 }}
-                                            >
+                                        <button className="desktop-projectpage-gallery-image-popup-modal-close-button" onClick={() => setViewImage(false)}>
+                                            <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
+                                        </button>
 
-                                                <img className="desktop-projectpage-gallery-image" src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + project.ProjectImagePath + "/cover.jpg" }/>
+                                    </div>
 
-                                            </div>
-
-                                        ))
-                                    }
+                                    <div className="desktop-projectpage-gallery-image-popup-image-container">
+                                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "border-radius": "20px"}} src={ ImageName }/>
+                                    </div>
 
                                 </div>
-
-                            </div>
+                            }
 
                         </div>
+                    }
 
-                        {
-                            ViewImage &&
-                            
-                            <div className="desktop-projectpage-gallery-image-popup-modal">
-                                
-                                <div className="desktop-projectpage-gallery-image-popup-modal-close-button-container">
-
-                                    <button className="desktop-projectpage-gallery-image-popup-modal-close-button" onClick={() => setViewImage(false)}>
-                                        <span className="desktop-popus-close-icon" style={{"color": "#EAC435"}}>X</span>
-                                    </button>
-
-                                </div>
-
-                                <div className="desktop-projectpage-gallery-image-popup-image-container">
-                                    <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/Data/Project-Gallery" + ImageName + "/cover.jpg" }/>
-                                </div>
-
-                            </div>
-                        }
-
-                    </div>
-                }
+                </div>
 
             </>
         );
