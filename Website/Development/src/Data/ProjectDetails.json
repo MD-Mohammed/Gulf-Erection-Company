@@ -1,93 +1,163 @@
 [
     {
-        "ProjectName": "EMC Showroom Mussafah, Abu Dhabi",
-        "ProjectImage": "/images/project-image-a.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "ADCB - Musaffah",
+        "ProjectImagePath": "/adcb-musaffah",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Abu Dhabi International Private School",
-        "ProjectImage": "/images/project-image-b.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "AIS School",
+        "ProjectImagePath": "/ais-school",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Al Ittihad Private National School",
-        "ProjectImage": "/images/project-image-c.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Al Ahalia Coca Cola",
+        "ProjectImagePath": "/alahalia-cocacola",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Honda Showroom",
-        "ProjectImage": "/images/project-image-d.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Al Geemi",
+        "ProjectImagePath": "/algeemi",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "EMC used car showroom",
-        "ProjectImage": "/images/project-image-e.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Arabian Industries",
+        "ProjectImagePath": "/arabian-industries",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "MC WANE GULF LLC",
-        "ProjectImage": "/images/project-image-f.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Bloom School",
+        "ProjectImagePath": "/bloom-school",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "ITTIHAD Engineering",
-        "ProjectImage": "/images/project-image-g.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Church",
+        "ProjectImagePath": "/church",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Shopping Mall",
-        "ProjectImage": "/images/project-image-h.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Cow Farm",
+        "ProjectImagePath": "/cow-farm",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Emirates Steel",
-        "ProjectImage": "/images/project-image-i.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Electrical Works",
+        "ProjectImagePath": "/electrical-work",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "EMC - Airport Road",
+        "ProjectImagePath": "/emc-airport-rd",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "EMC Car Showroom",
+        "ProjectImagePath": "/emc-car-showroom",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
         "ProjectName": "Emirates Printing Form",
-        "ProjectImage": "/images/project-image-i.jpg",
-        "ClientName" : "M/S. AL FAHIM GROUP",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectImagePath": "/emirates-printing-form",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Rolling Mill Plant",
-        "ProjectImage": "/images/project-image-i.jpg",
-        "ClientName" : "Gulf Steel Industries",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Federal Transformer",
+        "ProjectImagePath": "/federal-transformer",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Church of South India",
-        "ProjectImage": "/images/project-image-i.jpg",
-        "ClientName" : "C.S.I Parish Abu Dhabi",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
-    },
+        "ProjectName": "Foundation Work",
+        "ProjectImagePath": "/foundation-work",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
     {
-        "ProjectName": "Preform & Cap Plant Production",
-        "ProjectImage": "/images/project-image-i.jpg",
-        "ClientName" : "M/S. Al Ain Farms",
-        "Year": "2007",
-        "ProjectDescription" : "The most prominent achievement and a milestone in the professional expertise of thecompany. Being a multifaceted facility, revolutionary design concepts were adopted tomeet the standards as expected by Al Fahim groups. The building structure consist well grounded steel structure, precast concrete & showroomwith space frame structure with cost effective"
+        "ProjectName": "Ground Breaking - Al Ain",
+        "ProjectImagePath": "/ground-breaking-alain",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "Gulf Steel",
+        "ProjectImagePath": "/gulf-steel",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "Honda",
+        "ProjectImagePath": "/honda",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "MC Wane",
+        "ProjectImagePath": "/mc-wane",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "Safe Care",
+        "ProjectImagePath": "/safe-care",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "School Ittihad",
+        "ProjectImagePath": "/school-ittihad",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "Space-Frame Works",
+        "ProjectImagePath": "/space-framework",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    },    
+    {
+        "ProjectName": "Steel Structure Works",
+        "ProjectImagePath": "/steel-structure-work",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg",  "9.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
+    }, 
+    {
+        "ProjectName": "Varco Al Mansoori",
+        "ProjectImagePath": "/varco-almansoori",
+        "ProjectGallery": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "cover.jpg"],
+        "ClientName" : "< Client Name >",
+        "Year": "< Project Year >"
     }
 ]
