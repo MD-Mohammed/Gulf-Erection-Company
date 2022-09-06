@@ -85,7 +85,7 @@ function ImageSlider() {
 
                         <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor2.jpg" } />
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/SliderImageA.jpg" } />
                             
                             <div className="mobile-imgslider-container">
                                 <h1 style={{"font-weight": "500", "font-size": "175%", "margin-top": "50%", "text-shadow": "-15px 10px 10px rgba(0, 0, 0, 0.75)"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
@@ -109,10 +109,10 @@ function ImageSlider() {
 
                         <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-325px 200px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor3.jpg" } />
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-200px 200px"}} src={ process.env.PUBLIC_URL + "/images/SliderImageB.jpg" } />
                             
                             <div className="mobile-imgslider-container">
-                                <h1 style={{"font-weight": "400", "font-size": "250%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "margin-top": "10%"}}><span style={{"color": "white"}}>We</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Build</span></h1>
+                                <h1 style={{"font-weight": "400", "font-size": "250%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "margin-top": "75%"}}><span style={{"color": "white"}}>We</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Build</span></h1>
                                 <h2 style={{"font-weight": "400", "font-size": "250%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)"}}><span style={{"color": "white"}}>Your</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Dreams!</span></h2>
                             </div>
 
@@ -132,7 +132,7 @@ function ImageSlider() {
 
                         <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor4.jpg" } />
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-250px 40px"}} src={ process.env.PUBLIC_URL + "/images/SliderImageC.jpg" } />
                             
                             <div className="mobile-imgslider-container">
                                 <h1 style={{"font-weight": "500", "font-size": "200%", "margin-top": "75%", "text-shadow": "-15px 10px 10px rgba(0, 0, 0, 0.75)", "text-align": "center"}}><span style={{"color": "#EAC435"}}>Construction <br /> planning and services</span></h1>
@@ -155,7 +155,7 @@ function ImageSlider() {
 
                         <div className="mobile-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-200px 200px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor1.jpg" } />
+                            <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "-200px 200px"}} src={ process.env.PUBLIC_URL + "/images/SliderImageD.jpg" } />
                             
                             <div className="mobile-imgslider-container">
                                 <h1 style={{"font-weight": "500", "font-size": "300%", "margin-top": "40%", "text-shadow": "-15px 10px 10px rgba(0, 0, 0, 0.75)", "text-align": "center"}}><span style={{"color": "#EAC435"}}>Bring<br />your project</span></h1>
@@ -206,7 +206,7 @@ function ImageSlider() {
 
                             <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                                <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor2.jpg" } />
+                                <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/SliderImageA.jpg" } />
                                 
                                 <div className="desktop-imgslider-container">
                                     <h1 style={{"font-weight": "400", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "font-size": "500%"}}><span style={{"color": "white"}}>Meet the</span> Professionals</h1>
@@ -229,11 +229,11 @@ function ImageSlider() {
 
                     <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "0px 0px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor3.jpg" } />
+                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "0px 0px"}} src={ process.env.PUBLIC_URL + "/images/SliderImageB.jpg" } />
                         
                         <div className="desktop-imgslider-container">
-                            <h1 style={{"font-weight": "400", "font-size": "500%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "margin-top": "-15%"}}><span style={{"color": "white"}}>We</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Build</span></h1>
-                            <h2 style={{"font-weight": "400", "font-size": "500%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)"}}><span style={{"color": "white"}}>Your</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Dreams!</span></h2>
+                            <h1 style={{"font-weight": "400", "font-size": "500%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "margin-top": "13%", "margin-left": "-18%"}}><span style={{"color": "white"}}>We</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Build</span></h1>
+                            <h2 style={{"font-weight": "400", "font-size": "500%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "margin-left": "-18%"}}><span style={{"color": "white"}}>Your</span><span style={{"color": "#FF4343", "font-weight": "600"}}> Dreams!</span></h2>
                         </div>
 
                     </div>
@@ -252,7 +252,7 @@ function ImageSlider() {
 
                     <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor4.jpg" } />
+                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/SliderImageC.jpg" } />
                         
                         <div className="desktop-imgslider-container">
                             <h1 style={{"font-weight": "500", "font-size": "500%", "text-shadow": "-15px 10px 15px rgba(0, 0, 0, 0.75)", "margin-top": "17.5%"}}><span style={{"color": "#EAC435"}}>Construction planning and services</span></h1>
@@ -276,7 +276,7 @@ function ImageSlider() {
 
                     <div className="desktop-slider-img-property"  style={{"animation-name": {SlideTransition}['SlideTransition']}}>
 
-                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "0px -100px"}} src={ process.env.PUBLIC_URL + "/images/GEC-ImageCor1.jpg" } />
+                        <img style={{"width": "100%", "height": "100%", "object-fit": "cover", "object-position": "0px -100px"}} src={ process.env.PUBLIC_URL + "/images/SliderImageD.jpg" } />
                         
                         <div className="desktop-imgslider-container">
                             <h1 style={{"font-weight": "500", "font-size": "600%", "text-shadow": "-15px 10px 20px rgba(0, 0, 0, 0.75)", "margin-top": "-15%"}}><span style={{"color": "#EAC435" }}>Bring your project</span></h1>
