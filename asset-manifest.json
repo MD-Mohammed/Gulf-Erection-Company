@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gulf-Erection-Company/static/css/main.7359ac4c.css",
-    "main.js": "/Gulf-Erection-Company/static/js/main.d5c7a364.js",
+    "main.js": "/Gulf-Erection-Company/static/js/main.db4c4ceb.js",
     "static/media/GEC-Profile.pdf": "/Gulf-Erection-Company/static/media/GEC-Profile.80d90ec5973108fd01b3.pdf",
     "static/media/GEC-ImageCor3.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor3.0aa0bf63ac6bd325cb45.jpg",
     "static/media/GEC-ImageCor4.jpg": "/Gulf-Erection-Company/static/media/GEC-ImageCor4.9eacb5f62d3b85288edd.jpg",
@@ -33,10 +33,10 @@
     "static/media/westernmotors.png": "/Gulf-Erection-Company/static/media/westernmotors.1eaf3a343bd36c24cf34.png",
     "index.html": "/Gulf-Erection-Company/index.html",
     "main.7359ac4c.css.map": "/Gulf-Erection-Company/static/css/main.7359ac4c.css.map",
-    "main.d5c7a364.js.map": "/Gulf-Erection-Company/static/js/main.d5c7a364.js.map"
+    "main.db4c4ceb.js.map": "/Gulf-Erection-Company/static/js/main.db4c4ceb.js.map"
   },
   "entrypoints": [
     "static/css/main.7359ac4c.css",
-    "static/js/main.d5c7a364.js"
+    "static/js/main.db4c4ceb.js"
   ]
 }
