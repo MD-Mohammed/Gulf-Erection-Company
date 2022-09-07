@@ -4,6 +4,8 @@ import "./NavigationBarComponent.css"
 
 function NavigationBar(props) {
 
+    const [DropMenu, setDropMenu] = useState(false);
+
     function NavigationScrollToElement(ComponentName){
         var element = document.getElementById(`${ComponentName}`);
         var headerOffset = 100;
@@ -14,11 +16,12 @@ function NavigationBar(props) {
              top: offsetPosition,
              behavior: "smooth"
         });
+
+        setDropMenu(false);
+
     }
 
     function MobileComponent() {
-
-        const [DropMenu, setDropMenu] = useState(false);
 
         return(
             <>
