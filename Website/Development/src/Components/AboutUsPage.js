@@ -218,7 +218,7 @@ function AboutUsPage() {
 
                                             <button className="desktop-aboutus-page-buttons" onClick={() => setReadMore(!ReadMore)}>Read More</button>
 
-                                            <a href={Brochure} download={Brochure} className="desktop-aboutus-page-buttons" style={{"background-color": "#FF4343", "width": "45%", "margin-left": "5%"}}>Download Brochure</a>
+                                            <a href={Brochure} download="Gulf Erection Company" className="desktop-aboutus-page-buttons" style={{"background-color": "#FF4343", "width": "45%", "margin-left": "5%"}}>Download Brochure</a>
                                         
                                 </div>
 
@@ -610,7 +610,7 @@ function AboutUsPage() {
 
                             <button className="mobile-aboutus-page-buttons" onClick={() => setReadMore(!ReadMore)}>Read More</button>
 
-                            <a href={Brochure} download={Brochure} className="mobile-aboutus-page-buttons" style={{"background-color": "#FF4343", "margin-top": "5%", "color": "white"}} >Download Brochure</a>
+                            <a href={Brochure} download="Gulf Erection Company" className="mobile-aboutus-page-buttons" style={{"background-color": "#FF4343", "margin-top": "5%", "color": "white"}} >Download Brochure</a>
 
                         </div>
 

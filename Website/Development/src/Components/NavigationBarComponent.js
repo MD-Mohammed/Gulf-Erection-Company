@@ -2,6 +2,8 @@ import { render } from "@testing-library/react";
 import React, {Fragment, useState} from "react";
 import "./NavigationBarComponent.css"
 
+import Brochure from "../Data/GEC-Profile.pdf"
+
 function NavigationBar(props) {
 
     const [DropMenu, setDropMenu] = useState(false);
@@ -57,12 +59,13 @@ function NavigationBar(props) {
 
                 {
                     DropMenu &&
-                        <div style={{"display":"flex", "justifyContent": "flex-end", "position": "absolute","width": "100%", "z-index": "3"}}>
+                        <div style={{"display":"flex", "justify-content": "flex-end", "position": "absolute","width": "100%", "z-index": "3"}}>
                             <div className="mobile-menu-list-container">
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-home-component')}>Home</button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-projects-component')}>Projects</button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-aboutus-component')}><div>About</div><div>us</div></button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-services-component')}>Services</button>
+                                <a href={Brochure} download="Gulf Erection Company" target="_blank" className="mobile-navbar-button-containers" style={{"color": "white"}}><span style={{"margin-left": "10%"}}>Download Profile</span></a>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-clients-component')}>Clients</button>
                                 <button className="mobile-navbar-button-containers" onClick={() => NavigationScrollToElement('mobile-contact-component')}>Contacts</button>
                             </div>
@@ -103,10 +106,17 @@ function NavigationBar(props) {
                     </div>
     
                     <div className="desktop-navbar-quote-button-main-container">
+
+                        <a href={Brochure} download="Gulf Erection Company" target="_blank" className="desktop-navbar-quote-button">
+                            <img style={{"height": "25px", "width": "25px"}} src={ process.env.PUBLIC_URL + "/images/download-icon.png"} />
+                            <span style={{"margin-left": "5%", "color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "300"}}>Download Brochure</span>
+                        </a>
+                        
                         <button className="desktop-navbar-quote-button" onClick={() => NavigationScrollToElement('desktop-contact-component')}>
-                            <img style={{"height": "60%", "width": "14%"}} src={ process.env.PUBLIC_URL + "/images/quote-icon.png"} />
+                            <img style={{"height": "25px", "width": "25px"}} src={ process.env.PUBLIC_URL + "/images/quote-icon.png"} />
                             <span style={{"margin-left": "5%", "color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "300"}}>Request Quote</span>
                         </button>
+
                     </div>
 
                 </div>
