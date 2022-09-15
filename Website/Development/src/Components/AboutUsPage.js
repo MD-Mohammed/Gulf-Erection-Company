@@ -32,7 +32,7 @@ function AboutUsPage() {
                                     building erectors in the emirate of Abu Dhabi and Al Ain.
                                 </p>
         
-                                <div style={{"display": "flex", "width": "100%", "margin-top": "0%", "height": "300px"}}>
+                                <div style={{"display": "flex", "width": "100%", "margin-top": "0%", "height": "390px"}}>
         
                                     <div style={{"height": "100%", "width": "50%"}}>
                                         <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover", "object-position": "0px -50px"}} src={ process.env.PUBLIC_URL + "/images/our-mission.jpg" } />
@@ -93,11 +93,11 @@ function AboutUsPage() {
                             
                                 <h1 style={{"color": "#FF4343","margin-bottom": "1%", "margin-top": "0%"}}>What we do ?</h1>
     
-                                <div style={{"display": "flex", "width": "100%", "margin-top": "0%", "height": "300px"}}>
+                                <div style={{"display": "flex", "width": "100%", "margin-top": "0%", "height": "400px"}}>
     
                                     <div style={{"height": "100%", "margin-right": "2%", "width": "50%","display": "flex", "flex-direction": "column", "justify-content": "space-between"}}>
     
-                                        <p className="desktop-content-style" style={{"margin-bottom": "0%"}}>
+                                        <p className="desktop-content-style" style={{"margin-bottom": "5%","margin-top": "2%"}}>
                                         Throughout these years of experience that we have achieved, we have contributed our expertise 
                                         in a wide variety of areas.
                                         </p>
