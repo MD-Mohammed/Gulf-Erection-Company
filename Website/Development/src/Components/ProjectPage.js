@@ -43,9 +43,9 @@ function ProjectPage() {
 
                             <h5 className="desktop-projectpage-card-back-header">{props.ProjectNameObject}</h5>
 
-                            {/* <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
+                            <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
 
-                            <p className="desktop-projectpage-card-back-description">{props.ProjectDescriptionObject}</p> */}
+                            <p className="desktop-projectpage-card-back-description">{props.ProjectDescriptionObject}</p>
 
                             <div>
                                 
@@ -59,13 +59,13 @@ function ProjectPage() {
                                 
                             
 
-                                <div style={{"display": "flex"}}>
+                                {/* <div style={{"display": "flex"}}>
 
                                     <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
 
                                     <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.YearObject}</h6>
 
-                                </div>
+                                </div> */}
 
                             </div>
 
@@ -155,6 +155,7 @@ function ProjectPage() {
                                         YearObject={project.Year}
                                         ProjectImagePathObject={project.ProjectImagePath}
                                         ProjectGalleryObject={project.ProjectGallery}
+                                        ProjectDescriptionObject={project.ProjectDescription}
                                     />
     
                                 </div>
@@ -332,9 +333,9 @@ function ProjectPage() {
                                             
                                             <h5 className="desktop-projectpage-card-back-header">{project.ProjectName}</h5>
 
-                                            {/* <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
+                                            <h6 style={{"text-align": "left", "margin-left": "5%"}}>About the project</h6>
 
-                                            <p className="desktop-projectpage-card-back-description">{project.ProjectDescription}</p> */}
+                                            <p className="desktop-projectpage-card-back-description">{project.ProjectDescription}</p>
 
                                             <div>
                                                 <div style={{"display": "flex"}}>
@@ -345,13 +346,13 @@ function ProjectPage() {
 
                                                 </div>
 
-                                                <div style={{"display": "flex"}}>
+                                                {/* <div style={{"display": "flex"}}>
 
                                                     <h6 style={{"text-align": "left", "margin-left": "5%"}}>Year :</h6>
 
                                                     <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.Year}</h6>
 
-                                                </div>
+                                                </div> */}
                                             </div>
 
                                             <div className="desktop-projectpage-cards-gallery-container" 
