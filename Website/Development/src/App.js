@@ -12,7 +12,6 @@ import ClientPage from './Components/ClientPage';
 import ProjectPage from './Components/ProjectPage';
 import ContactPage from './Components/ContactPage';
 import FooterComponent from './Components/FooterComponent';
-import HealthSafety from './Components/Health_safety';
 
 function App() {
 
@@ -52,15 +51,13 @@ function App() {
 
               <ImageSlider />
 
-              <ProjectPage />
-
               <AboutUsPage/>
+
+              <ProjectPage />
 
               <ServicePage/>
 
               <ClientPage />
-
-              <HealthSafety />
 
               <ContactPage />
 

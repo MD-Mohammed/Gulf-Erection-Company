@@ -3,6 +3,8 @@ import React, {Fragment, useState} from "react";
 import './ServicePage.css';
 import './main.css'
 
+import HealthSafety from './Health_safety';
+
 function ServicePage() {
 
     const [ConsultantCooperationService, setConsultantCooperationService] = useState(false)
@@ -610,8 +612,10 @@ function ServicePage() {
                                             Here at Gulf Erection Constrctions, we realise understanding the primary causes 
                                             of the risks and dangers is the key to start with. This is why we are professionals 
                                             with effective management of activities and competent site supervision.
-                                            <br /><br /><br />
+                                            <br />
                                         </p>
+
+                                        <HealthSafety/>
 
                                     </div>
 
@@ -1262,6 +1266,8 @@ function MobileComponent() {
                                             with effective management of activities and competent site supervision.
                                             <br /><br />
                                         </p>
+
+                                        <HealthSafety/>
 
                                     </div>
 

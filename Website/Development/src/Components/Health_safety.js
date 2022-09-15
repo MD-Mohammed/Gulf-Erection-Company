@@ -18,7 +18,8 @@ function HealthSafety() {
 
         return(
             <div className="desktop_Health_safety_main_container">
-                <div className="desktop-header-container" style={{"width": "85%"}}>
+
+                    {/* <div className="desktop-header-container" style={{"width": "85%"}}>
                         
                         <div style={{"display":"flex", "align-items": "center"}}>  
                             <img style={{"width": "8%", "margin-top": "-2%"}} src={ process.env.PUBLIC_URL + "/images/HealthSafety.png" }/>
@@ -30,31 +31,27 @@ function HealthSafety() {
 
                         <div className="desktop-header-line" />
 
-                    </div>
+                    </div> */}
 
                     <div className="desktop-Health-safety-sub-container">
                        
                         <div className="desktop-Healthy_safety-content-cards">
                         
-                                <iframe 
-                                            className="desktop-Health_safety-content-video-container"
-                                            width="100%" 
-                                            height="100%" 
-                                            src="https://www.youtube.com/embed/CSV8GtV7M2U" 
-                                            title="YouTube video player" frameborder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen="true">
-                                        </iframe>
-
-                                
+                            <iframe 
+                                className="desktop-Health_safety-content-video-container"
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube.com/embed/CSV8GtV7M2U?rel=0" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen="true">
+                            </iframe>
 
                         </div>
-                            
-                            
+
                     </div>
             </div>
-            
-            
+
         );   
     }
 
@@ -63,7 +60,8 @@ function HealthSafety() {
        
         return(
              <div className="desktop_Health_safety_main_container">
-                <div className="mobile-header-container" style={{"margin-top": "10%", "width": "80%"}}>
+
+                    {/* <div className="mobile-header-container" style={{"margin-top": "10%", "width": "80%"}}>
                         
                         <div style={{"display":"flex", "align-items": "center"}}>  
                             <img style={{"width": "30%", "margin-top": "-2%"}} src={ process.env.PUBLIC_URL + "/images/HealthSafety.png" }/>
@@ -75,26 +73,23 @@ function HealthSafety() {
 
                         <div className="desktop-header-line" />
 
-                    </div>
+                    </div> */}
 
-                    <div className="desktop-Health-safety-sub-container">
+                    <div className="desktop-Health-safety-sub-container" style={{"height": "350px", "margin-bottom": "20%"}}>
                        
-                        <div className="desktop-Healthy_safety-content-cards">
+                        <div className="desktop-Healthy_safety-content-cards" style={{"width": "100%", "height": "100%"}}>
                         
-                                <iframe 
-                                            className="desktop-Health_safety-content-video-container"
-                                            width="100%" 
-                                            height="100%" 
-                                            src="https://www.youtube.com/embed/CSV8GtV7M2U" 
-                                            title="YouTube video player" frameborder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen="true">
-                                        </iframe>
-
-                                
+                            <iframe 
+                                className="desktop-Health_safety-content-video-container"
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen="true">
+                            </iframe>
 
                         </div>
-                            
                             
                     </div>
             </div>

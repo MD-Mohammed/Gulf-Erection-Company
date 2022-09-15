@@ -1,4 +1,4 @@
-.desktop-clientpage-main-container
+/* .desktop-clientpage-main-container
 {
     background-color: #16262E;
     display: flex;
@@ -63,6 +63,59 @@
     border-radius: 5px;
     pointer-events: none;
     object-fit:scale-down;
+} */
+
+.desktop-clientpage-scroller-main-container{
+    background: #16262E;
+}
+
+.desktop-clientpage-scroller-track-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: white;
+    height: 350px;
+    width: 95%;
+    box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+.desktop-clientpage-scroller-track{
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 90%;
+    display: flex;
+    gap: 1%;
+    animation: auto-scroll-logo 70s linear infinite;
+}
+
+.desktop-clientpage-image-tiles{
+    width: 325px;
+    height: 100%;
+}
+
+.desktop-clientpage-scroller-logos{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.desktop-clientpage-scroller-track:active {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+@keyframes auto-scroll-logo {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-325px * 36));
+    }
 }
 
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
@@ -131,3 +184,8 @@
     border-radius: 5px;
     pointer-events: none;
 }
+
+.mobile-clientpage-scroller-main-container{
+    background: #16262E;
+}
+

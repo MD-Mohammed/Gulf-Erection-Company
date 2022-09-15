@@ -10,16 +10,16 @@ function ClientPage() {
     const [corouselwidth, setCorouselWidth]=useState(0);
     const corousel=useRef();
 
-    useEffect(() =>{
-        setCorouselWidth(corousel.current.scrollWidth - corousel.current.offsetWidth);
-    }, []);
+    // useEffect(() =>{
+    //     setCorouselWidth(corousel.current.scrollWidth - corousel.current.offsetWidth);
+    // }, []);
 
     function DesktopComponent() {
        
         return(
             <>
 
-                <div className="desktop-clientpage-main-container" id="desktop-clients-component">
+                {/* <div className="desktop-clientpage-main-container" id="desktop-clients-component">
 
                     <div className="desktop-header-container" style={{"width": "35%"}}>
                     
@@ -57,6 +57,46 @@ function ClientPage() {
 
                     </div>
                     
+                </div> */}
+
+                <div className="desktop-clientpage-scroller-main-container" id="desktop-clients-component">
+
+                    <div className="desktop-header-container" style={{"width": "35%", "margin-top": "0%"}}>
+                        
+                        <div style={{"display":"flex", "align-items": "center", "gap": "5%"}}>  
+                            <img style={{"height": "59%", "width": "8%", "margin-top": "-2%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
+                            
+                            <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white"}}>
+                                Successful Associations
+                            </h1>
+                        </div>
+
+                        <div className="desktop-header-line" />
+
+                    </div>
+
+                    <div style={{"display": "flex", "justify-content": "center", "align-items": "center"}}>
+
+                        <div className="desktop-clientpage-scroller-track-container">
+                            
+                                <div className="desktop-clientpage-scroller-track">
+
+                                    {
+                                        ClientLogos.map(image => {
+                                            return(
+                                                <div className="desktop-clientpage-image-tiles" >
+                                                    <img className="desktop-clientpage-scroller-logos" src={image} alt ="" />
+                                                </div>
+                                            );
+                                        })
+                                    }
+
+                                </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </>
         );
@@ -68,7 +108,7 @@ function MobileComponent() {
 
     return(
             <>
-                <div className="mobile-clientpage-main-container" id="mobile-clients-component">
+                {/* <div className="mobile-clientpage-main-container" id="mobile-clients-component">
 
                     <div className="mobile-header-container" style={{"margin-top": "10%", "width": "90%"}}>
                         
@@ -105,6 +145,48 @@ function MobileComponent() {
                         </div>
 
                     </div>
+
+                </div> */}
+
+                <div className="mobile-clientpage-scroller-main-container" id="desktop-clients-component">
+                    
+                    <div className="mobile-header-container" style={{"margin-top": "0%", "width": "90%"}}>
+                        
+                        <div style={{"display":"flex", "align-items": "center", "gap": "5%", "margin-top": "10%"}}>  
+                            <img style={{ "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/clients-icon.png" }/>
+                            
+                            <h3 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "color": "white", "margin-left": "-2%"}}>
+                                Our Clients
+                            </h3>
+                        </div>
+
+                        <div className="mobile-header-line" style={{"margin-top": "2%"}} />
+
+                    </div>
+
+                    <div style={{"display": "flex", "justify-content": "center", "align-items": "center", "margin-top": "10%"}}>
+
+                        <div className="desktop-clientpage-scroller-track-container" style={{"width": "90%", "height": "300px"}}>
+                            
+                                <div className="desktop-clientpage-scroller-track" style={{"gap": "0.75%"}}>
+
+                                    {
+                                        ClientLogos.map(image => {
+                                            return(
+                                                <div className="desktop-clientpage-image-tiles" style={{"width": "200px"}}>
+                                                    <img className="desktop-clientpage-scroller-logos" src={image} alt ="" />
+                                                </div>
+                                            );
+                                        })
+                                    }
+
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                    <div style={{"height": "50px"}}/>
 
                 </div>
 

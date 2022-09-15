@@ -13,12 +13,11 @@
 {
     height: 600px;
     border-radius: 10px;
-
    
 }
 
 .desktop-Healthy_safety-content-cards {
-    width: 100%;
+    width: 75%;
     height: 42.5%;
     background: white;
     display: flex;
@@ -28,6 +27,7 @@
     border-radius: 10px;
     box-shadow: -10px 10px 0px #FF4343;
     margin: 2%;
+    margin-bottom: 5%;
   }
   .desktop-Health-safety-sub-container
   {
