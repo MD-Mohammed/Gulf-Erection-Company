@@ -51,7 +51,7 @@ function ProjectPage() {
                                 
                                 <div style={{"display": "flex"}}>
 
-                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
+                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client:</h6>
 
                                     <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{props.ClientNameObject}</h6>
 
@@ -340,7 +340,7 @@ function ProjectPage() {
                                             <div>
                                                 <div style={{"display": "flex"}}>
 
-                                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client :</h6>
+                                                    <h6 style={{"text-align": "left", "margin-left": "5%"}}>Client:</h6>
 
                                                     <h6 style={{"text-align": "left", "margin-left": "5%", "color": "#FF4343"}}>{project.ClientName}</h6>
 
