@@ -11,6 +11,7 @@ function AboutUsPage() {
     const [Badge_A, setBadge_A] = useState(false);
     const [Badge_B, setBadge_B] = useState(false);
     const [Badge_C, setBadge_C] = useState(false);
+    const [Badge_D, setBadge_D] = useState(false);
 
     function DesktopComponent() {
 
@@ -207,9 +208,9 @@ function AboutUsPage() {
                                         <h2 className="desktop-aboutus-page-badge-text" style={{"margin-top": "2%"}}>ICV Certificate</h2>
                                     </div>
 
-                                    <div className="desktop-aboutus-page-badges" onClick={() => setBadge_C(true)}>
+                                    <div className="desktop-aboutus-page-badges" onClick={() => setBadge_D(true)}>
                                         <img  className="desktop-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
-                                        <h2 className="desktop-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Badge</h2>
+                                        <h2 className="desktop-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Electrical License</h2>
                                     </div>
 
                                 </div>
@@ -240,7 +241,7 @@ function AboutUsPage() {
                                 </div>
 
                                 <div className="desktop-abutus-page-sub-container-gridBox-text">
-                                    <h1>25+</h1>
+                                    <h1>140+</h1>
                                     <a style={{"font-weight": "200", "font-size": "110%"}}>Satisified clients</a>
                                 </div>
 
@@ -336,6 +337,32 @@ function AboutUsPage() {
 
                     }
 
+                    {
+                        Badge_D && 
+
+                        <div className="desktop-popup-modal">
+
+                            <div className="desktop-popup-main-container">
+
+                                <div className="desktop-popup-close-button-container">
+                                    <button className="desktop-popup-close-button" onClick={() => setBadge_D(false)}>
+                                        <span className="desktop-popus-close-icon">X</span>
+                                    </button>
+                                </div>
+
+                                <div className="desktop-popup-content-container">
+                                    <div className="desktop-aboutus-badge-main-container">
+                                        <div className="desktop-aboutus-certificate-container">
+                                            <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/electrical-license.jpg" }  />
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    }
+
 
                     {
                         ReadMore &&
@@ -371,35 +398,33 @@ function AboutUsPage() {
                                         <div className="desktop-aboutus-popup-people-container" style={{"margin-top": "2.5%"}}>
 
                                             <div className="desktop-aboutus-popup-people-image">
-                                                <img style={{"width": "80%", "height": "100%", "margin-top": "20%"}} src={ process.env.PUBLIC_URL + "/images/gs.jpg" } />
+                                                <img style={{"width": "80%", "height": "100%", "margin-top": "20%"}} src={ process.env.PUBLIC_URL + "/images/ibrahim.jpg" } />
                                             </div>
 
-                                            <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>George Sawaya</h2>
-                                            <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>General Manager</h5>
-                                            <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
+                                            <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>Ibrahim Sawaya</h2>
+                                            <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder</h5>
+                                            {/* <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
                                                 Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
                                                 Morbi venenatis nulla et est venenatis fringilla. 
                                                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                                                 In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
-                                            </p>
+                                            </p> */}
 
                                         </div>
 
                                         <div className="desktop-aboutus-popup-people-container">
 
                                             <div className="desktop-aboutus-popup-people-image">
-                                                <img style={{"width": "78%", "height": "100%", "margin-top": "35%"}} src={ process.env.PUBLIC_URL + "/images/ibrahim.jpg" } />
+                                                <img style={{"width": "78%", "height": "100%", "margin-top": "35%"}} src={ process.env.PUBLIC_URL + "/images/gs.jpg" } />
                                             </div>
 
-                                            <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>Ibrahim Sawaya</h2>
-                                            <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder and Managing Partner</h5>
+                                            <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>George Sawaya</h2>
+                                            <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>General Manager and Founder</h5>
                                             <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
-                                                Morbi venenatis nulla et est venenatis fringilla. 
-                                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                                In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
+                                                George Sawaya is the founder and general manager of Gulf Erection Company. Being a strong believer of building trust and 
+                                                relationships with his valuable clients, George has served with more than 35 years in the establishment of this company as a
+                                                promising leader.
                                             </p>
 
                                         </div>
@@ -412,13 +437,13 @@ function AboutUsPage() {
 
                                             <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>Elie Sawaya</h2>
                                             <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder</h5>
-                                            <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
+                                            {/* <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
                                                 Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
                                                 Morbi venenatis nulla et est venenatis fringilla. 
                                                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                                                 In hac habitasse platea dictumst. Maecenas vitae tincidunt eros, vitae aliquam tortor.
-                                            </p>
+                                            </p> */}
 
                                         </div>
 
@@ -599,9 +624,9 @@ function AboutUsPage() {
                                 <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>ICV<br/>Certificate</h2>
                             </div>
 
-                            <div className="mobile-aboutus-page-badges" onClick={() => setBadge_C(true)}>
+                            <div className="mobile-aboutus-page-badges" onClick={() => setBadge_D(true)}>
                                 <img  className="mobile-aboutus-page-badge-icon" src={ process.env.PUBLIC_URL + "/images/medal.png" } />
-                                <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Badge<br/> Cert</h2>
+                                <h2 className="mobile-aboutus-page-badge-text" style={{"margin-top": "2%"}}>Electrical<br/>License</h2>
                             </div>
 
                         </div>
@@ -627,7 +652,7 @@ function AboutUsPage() {
                             </div>
 
                             <div className="mobile-aboutus-page-sub-container-gridBox-text">
-                                <h2>25+</h2>
+                                <h2>140+</h2>
                                 <a style={{"font-weight": "200", "font-size": "95%", "text-align": "center"}}>Satisified clients</a>
                             </div>
 
@@ -716,6 +741,32 @@ function AboutUsPage() {
                                 <div className="desktop-aboutus-badge-main-container">
                                     <div className="mobile-aboutus-certificate-container">
                                         <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/ICV-Certificate.jpg" }  />
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
+
+                {
+                    Badge_D && 
+
+                    <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                        <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                            <div className="mobile-popup-close-button-container">
+                                <button className="mobile-popup-close-button" onClick={() => setBadge_D(false)}>
+                                    <span className="mobile-popus-close-icon">X</span>
+                                </button>
+                            </div>
+
+                            <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                                <div className="desktop-aboutus-badge-main-container">
+                                    <div className="mobile-aboutus-certificate-container">
+                                        <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/electrical-license.jpg" }  />
                                     </div>  
                                 </div>
                             </div>

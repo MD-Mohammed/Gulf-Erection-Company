@@ -148,7 +148,7 @@ function MobileComponent() {
 
                 </div> */}
 
-                <div className="mobile-clientpage-scroller-main-container" id="desktop-clients-component">
+                <div className="mobile-clientpage-scroller-main-container" id="mobile-clients-component">
                     
                     <div className="mobile-header-container" style={{"margin-top": "0%", "width": "90%"}}>
                         

@@ -4,6 +4,7 @@ import './ServicePage.css';
 import './main.css'
 
 import HealthSafety from './Health_safety';
+import Brochure from "../Data/GEC-Profile.pdf"
 
 function ServicePage() {
 
@@ -13,6 +14,8 @@ function ServicePage() {
     const [SteelStructureService, setSteelStructureService] = useState(false)
     const [GreenBuildingService, setGreenBuildingService] = useState(false)
     const [HSEService, setHSEService] = useState(false)
+    const [ElectricalLicense, setElectricalLicense] = useState(false)
+
 
     function DesktopComponent() {
 
@@ -83,7 +86,7 @@ function ServicePage() {
                                     <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/mep-service-icon.png" }/>
                                 </div>
 
-                                <h1 className="desktop-servicepage-card-header">Electromechanical Work</h1>
+                                <h1 className="desktop-servicepage-card-header">Electrical and Mechanical Work</h1>
 
                                 <div className="desktop-servicepage-card-text">
                                         <p className="desktop-servicepage-card-text">
@@ -333,7 +336,7 @@ function ServicePage() {
                                         <img style={{"height": "7.5%", "width": "7.5%", "margin-top": "-3%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
                                         
                                         <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
-                                            Electromechanical Project Services
+                                            Electrical and Mechanical Services
                                         </h1>
                                     </div>
 
@@ -370,12 +373,76 @@ function ServicePage() {
                                                 <li>Item 4</li>
                                                 <li>Item 5</li>
                                             </ul>
-                                            <br />
-                                            Being experienced professionals, we are able to understand your requirements from 
-                                            the objective level of the project while ensuring that you are compliant 
-                                            to the concerned authorities.
                                             <br /><br /><br /> 
                                         </p>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content-electrical-gallery-container">
+
+
+                                        <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "cover.jpg" }
+                                            />
+                                        </div>
+                                        <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "1.jpg" }
+                                            />
+                                        </div>
+                                        <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "2.jpg" }
+                                            />
+                                        </div>
+                                        <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "3.jpg" }
+                                            />
+                                        </div>
+                                        <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "4.jpg" }
+                                            />
+                                        </div>
+                                        <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "5.jpg" }
+                                            />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="desktop-popup-service-content-electrical-media-main-container">
+
+                                        <div className="desktop-popup-service-content-electrical-media-video-container">
+                        
+                                            <iframe 
+                                                className="desktop-popup-service-content-electrical-media-video"
+                                                width="100%" 
+                                                height="100%" 
+                                                src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                                title="YouTube video player" frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                allowfullscreen="true">
+                                            </iframe>
+
+                                        </div>
+
+                                        <div className="desktop-popup-service-content-electrical-media-buttons-container">
+
+                                            <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%", "text-align": "center"}}>
+                                                Being experienced professionals, we are able to understand your requirements from 
+                                                the objective level of the project while ensuring that you are compliant 
+                                                to the concerned authorities.
+                                            </p>
+
+                                            <button className="desktop-popup-service-content-electrical-media-button" onClick={() => setElectricalLicense(true)} style={{"margin-top": "10%"}}>View License</button>
+
+                                            <a href={Brochure} download="Gulf Erection Company - Electrical Service" className="desktop-popup-service-content-electrical-media-button" style={{"background": "#FF4343", "color": "white"}}>Download Electrical Service Brochure</a>
+
+                                        </div>
 
                                     </div>
 
@@ -384,6 +451,32 @@ function ServicePage() {
                             </div>
 
                         </div>
+
+                        {
+                            ElectricalLicense && 
+
+                            <div className="desktop-popup-modal">
+
+                                <div className="desktop-popup-main-container">
+
+                                    <div className="desktop-popup-close-button-container">
+                                        <button className="desktop-popup-close-button" onClick={() => setElectricalLicense(false)}>
+                                            <span className="desktop-popus-close-icon">X</span>
+                                        </button>
+                                    </div>
+
+                                    <div className="desktop-popup-content-container">
+                                        <div className="desktop-aboutus-badge-main-container">
+                                            <div className="desktop-aboutus-certificate-container">
+                                                <img className="desktop-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/electrical-license.jpg" }  />
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        }
 
                     </div>
 
@@ -534,6 +627,41 @@ function ServicePage() {
                                             structual and functional robustness.
                                             <br /><br /><br />
                                         </p>
+
+                                        <div className="desktop-popup-service-content-electrical-gallery-container">
+
+                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "cover.jpg" }
+                                                />
+                                            </div>
+                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "1.jpg" }
+                                                />
+                                            </div>
+                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "2.jpg" }
+                                                />
+                                            </div>
+                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "3.jpg" }
+                                                />
+                                            </div>
+                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "4.jpg" }
+                                                />
+                                            </div>
+                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
+                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "5.jpg" }
+                                                />
+                                            </div>
+
+                                        </div>
 
                                     </div>
 
@@ -700,7 +828,7 @@ function MobileComponent() {
                             <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/mep-service-icon.png" }/>
                         </div>
 
-                        <h1 className="mobile-servicepage-card-header">Electromechanical Work</h1>
+                        <h1 className="mobile-servicepage-card-header">Electrical and Mechanical Workl Work</h1>
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">
@@ -961,7 +1089,7 @@ function MobileComponent() {
                                     <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/service-icon.png" }/>
                                     
                                     <h4 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%"}}>
-                                        Electromechanical Project Services
+                                        Electrical and Mechanical Services
                                     </h4>
 
                                 </div>
@@ -1010,6 +1138,73 @@ function MobileComponent() {
 
                                     </div>
 
+                                    <div className="desktop-popup-service-content-electrical-gallery-container">
+
+                                        <div className="mobile-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "cover.jpg" }
+                                            />
+                                        </div>
+                                        <div className="mobile-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "1.jpg" }
+                                            />
+                                        </div>
+                                        <div className="mobile-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "2.jpg" }
+                                            />
+                                        </div>
+                                        <div className="mobile-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "3.jpg" }
+                                            />
+                                        </div>
+                                        <div className="mobile-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "4.jpg" }
+                                            />
+                                        </div>
+                                        <div className="mobile-popup-service-content-electrical-gallery-tiles">
+                                            <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
+                                                src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "5.jpg" }
+                                            />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="mobile-popup-service-content-electrical-media-main-container">
+
+                                        <div className="mobile-popup-service-content-electrical-media-video-container">
+                        
+                                            <iframe 
+                                                className="desktop-popup-service-content-electrical-media-video"
+                                                width="100%" 
+                                                height="100%" 
+                                                src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                                title="YouTube video player" frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                allowfullscreen="true">
+                                            </iframe>
+
+                                        </div>
+
+                                        <div className="mobile-popup-service-content-electrical-media-buttons-container">
+
+                                            <p className="desktop-content-style" style={{"font-size": "120%", "text-align": "center"}}>
+                                                Being experienced professionals, we are able to understand your requirements from 
+                                                the objective level of the project while ensuring that you are compliant 
+                                                to the concerned authorities.
+                                            </p>
+
+                                            <button className="mobile-popup-service-content-electrical-media-button" onClick={() => setElectricalLicense(true)} style={{"margin-top": "10%"}}>View License</button>
+
+                                            <a href={Brochure} download="Gulf Erection Company - Electrical Service" className="mobile-popup-service-content-electrical-media-button" style={{"background": "#FF4343", "color": "white"}}>Download Electrical Service Brochure</a>
+
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -1018,6 +1213,32 @@ function MobileComponent() {
 
                         
                     </div>
+
+                    {
+                        ElectricalLicense && 
+
+                        <div className="mobile-popup-modal" style={{"height": "auto", "align-items": "center"}}>
+
+                            <div className="mobile-popup-main-container" style={{"height": "auto", "border-radius": "20px"}}>
+
+                                <div className="mobile-popup-close-button-container">
+                                    <button className="mobile-popup-close-button" onClick={() => setElectricalLicense(false)}>
+                                        <span className="mobile-popus-close-icon">X</span>
+                                    </button>
+                                </div>
+
+                                <div className="mobile-aboutus-popup-content-container" style={{"margin-bottom": "15%"}}>
+                                    <div className="desktop-aboutus-badge-main-container">
+                                        <div className="mobile-aboutus-certificate-container">
+                                            <img className="mobile-aboutus-certificate-image" src={ process.env.PUBLIC_URL + "/images/electrical-license.jpg" }  />
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    }
 
                 </div>
 

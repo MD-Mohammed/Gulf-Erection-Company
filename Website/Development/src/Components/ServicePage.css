@@ -96,6 +96,84 @@
   height: 100%;
 }
 
+.desktop-popup-service-content-electrical-gallery-container{
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.desktop-popup-service-content-electrical-gallery-tiles{
+  width: 30%;
+  height: 400px;
+  filter: drop-shadow(-8px 8px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 2%;
+}
+
+.desktop-popup-service-content-electrical-gallery-tiles:last-child{
+  margin-bottom: 5%;
+}
+
+.desktop-popup-service-content-electrical-gallery-tiles-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.desktop-popup-service-content-electrical-media-main-container{
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.desktop-popup-service-content-electrical-media-video-container{
+  width: 55%;
+  height: 600px;
+  box-shadow: -10px 10px 0px #FF4343;
+  border-radius: 20px;
+}
+
+.desktop-popup-service-content-electrical-media-video{
+  border-radius: 20px;
+}
+
+.desktop-popup-service-content-electrical-media-buttons-container{
+  width: 43%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-popup-service-content-electrical-media-button{
+  margin-top: 4%;
+  border-radius: 10px;
+  width: 70%;
+  height: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 110%;
+  background: #16262E;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.desktop-popup-service-content-electrical-media-button:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.20));
+  text-decoration: none;
+}
+
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
 
 .mobile-service-page-main-container
@@ -192,4 +270,58 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.mobile-popup-service-content-electrical-gallery-tiles{
+  width: 95%;
+  height: 300px;
+  filter: drop-shadow(-8px 8px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 2%;
+}
+
+.mobile-popup-service-content-electrical-media-main-container{
+  margin-top: 10%;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-popup-service-content-electrical-media-video-container{
+  width: 90%;
+  height: 400px;
+  box-shadow: -10px 10px 0px #FF4343;
+  border-radius: 20px;
+}
+
+.mobile-popup-service-content-electrical-media-buttons-container{
+  width: 95%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-popup-service-content-electrical-media-button{
+  margin-top: 4%;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 110%;
+  background: #16262E;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.mobile-popup-service-content-electrical-media-button:active, .mobile-popup-service-content-electrical-media-button:focus{
+  opacity: 0.8;
+  text-decoration: none;
 }
