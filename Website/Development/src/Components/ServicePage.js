@@ -4,7 +4,7 @@ import './ServicePage.css';
 import './main.css'
 
 import HealthSafety from './Health_safety';
-import Brochure from "../Data/GEC-Profile.pdf"
+import ElectricalBrochure from "../Data/GEC-Electrical Brochure.pdf"
 
 function ServicePage() {
 
@@ -422,7 +422,7 @@ function ServicePage() {
                                                 className="desktop-popup-service-content-electrical-media-video"
                                                 width="100%" 
                                                 height="100%" 
-                                                src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                                src="https://www.youtube.com/embed/AvDvyD2Ds6I?rel=0" 
                                                 title="YouTube video player" frameborder="0" 
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                                 allowfullscreen="true">
@@ -440,7 +440,7 @@ function ServicePage() {
 
                                             <button className="desktop-popup-service-content-electrical-media-button" onClick={() => setElectricalLicense(true)} style={{"margin-top": "10%"}}>View License</button>
 
-                                            <a href={Brochure} download="Gulf Erection Company - Electrical Service" className="desktop-popup-service-content-electrical-media-button" style={{"background": "#FF4343", "color": "white"}}>Download Electrical Service Brochure</a>
+                                            <a href={ElectricalBrochure} download="Gulf Erection Company - Electrical Service" className="desktop-popup-service-content-electrical-media-button" style={{"background": "#FF4343", "color": "white"}}>Download Electrical Service Brochure</a>
 
                                         </div>
 
@@ -1181,7 +1181,7 @@ function MobileComponent() {
                                                 className="desktop-popup-service-content-electrical-media-video"
                                                 width="100%" 
                                                 height="100%" 
-                                                src="https://www.youtube.com/embed/CSV8GtV7M2U" 
+                                                src="https://www.youtube.com/embed/AvDvyD2Ds6I?rel=0" 
                                                 title="YouTube video player" frameborder="0" 
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                                 allowfullscreen="true">
@@ -1199,7 +1199,7 @@ function MobileComponent() {
 
                                             <button className="mobile-popup-service-content-electrical-media-button" onClick={() => setElectricalLicense(true)} style={{"margin-top": "10%"}}>View License</button>
 
-                                            <a href={Brochure} download="Gulf Erection Company - Electrical Service" className="mobile-popup-service-content-electrical-media-button" style={{"background": "#FF4343", "color": "white"}}>Download Electrical Service Brochure</a>
+                                            <a href={ElectricalBrochure} download="Gulf Erection Company - Electrical Service" className="mobile-popup-service-content-electrical-media-button" style={{"background": "#FF4343", "color": "white"}}>Download Electrical Service Brochure</a>
 
                                         </div>
 
