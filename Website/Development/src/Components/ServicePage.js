@@ -828,7 +828,7 @@ function MobileComponent() {
                             <img style={{"height": "100%", "width": "30%"}} src={ process.env.PUBLIC_URL + "/images/mep-service-icon.png" }/>
                         </div>
 
-                        <h1 className="mobile-servicepage-card-header">Electrical and Mechanical Workl Work</h1>
+                        <h1 className="mobile-servicepage-card-header">Electrical and Mechanical Work</h1>
 
                         <div className="mobile-servicepage-card-text">
                                 <p className="mobile-servicepage-card-text">

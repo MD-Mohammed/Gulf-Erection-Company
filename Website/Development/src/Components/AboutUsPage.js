@@ -819,15 +819,15 @@ function AboutUsPage() {
 
                                             <div className="mobile-aboutus-popup-people-text">
                                                 <h4 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>George Sawaya</h4>
-                                                <h6 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>General Manager</h6>
+                                                <h6 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder and General Manager</h6>
                                             </div>
 
                                         </div>
 
                                         <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "-2.5%", "text-align": "justify"}}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec.
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem. 
+                                            George Sawaya is the founder and general manager of Gulf Erection Company. Being a strong believer of building trust and 
+                                            relationships with his valuable clients, George has served with more than 35 years in the establishment of this company as a
+                                            promising leader.
                                         </p>
 
                                     </div>
@@ -842,15 +842,13 @@ function AboutUsPage() {
 
                                             <div className="mobile-aboutus-popup-people-text">
                                                 <h4 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Ibrahim Sawaya</h4>
-                                                <h6 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder and Managing Partner</h6>
+                                                <h6 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder</h6>
                                             </div>
 
                                         </div>
 
                                         <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "-2.5%", "text-align": "justify"}}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec.
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem. 
+
                                         </p>
 
                                     </div>
@@ -871,9 +869,7 @@ function AboutUsPage() {
                                         </div>
 
                                         <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "-2.5%", "text-align": "justify"}}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec.
-                                                Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem. 
+                                            
                                         </p>
 
                                     </div>

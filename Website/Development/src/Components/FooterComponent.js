@@ -49,7 +49,7 @@ function FooterComponent() {
                             </div>
 
                             <div className="mobile-footer-socialmedia-text">
-                                <a>+971 5000000000</a>
+                                <a>+971 564019195</a>
                             </div>
 
                         </div>
@@ -198,7 +198,7 @@ function FooterComponent() {
                             </div>
 
                             <div className="desktop-footer-socialmedia-text" style={{"width": "72.5%"}}>
-                                <a>+971 5000000000</a>
+                                <a>+971 564019195</a>
                             </div>
 
                         </div>
