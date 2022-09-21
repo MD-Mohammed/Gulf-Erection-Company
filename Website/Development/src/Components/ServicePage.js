@@ -598,7 +598,7 @@ function ServicePage() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+                                    <div className="desktop-popup-service-content" style={{"height": "300px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
                                             Keeping up with the demands of our environment and technological 
@@ -608,7 +608,7 @@ function ServicePage() {
                                             of the project.
                                             <br /><br />
 
-                                            These are the areas of expertise that we can enhance your sustainable 
+                                            {/* These are the areas of expertise that we can enhance your sustainable 
                                             concept of your project.
                                             <br /><br />
 
@@ -620,48 +620,13 @@ function ServicePage() {
                                                 <li>Item 5</li>
                                             </ul>
 
-                                            <br />
+                                            <br /> */}
                                             With continuous improvements and advancements in our methods of constructions 
                                             we will be able to refine the efficiency to achieve the goal of development that 
                                             should be as environment friendly as it could look visually appealing while ensuring 
                                             structual and functional robustness.
-                                            <br /><br /><br />
+                                            <br />
                                         </p>
-
-                                        <div className="desktop-popup-service-content-electrical-gallery-container">
-
-                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
-                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
-                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "cover.jpg" }
-                                                />
-                                            </div>
-                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
-                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
-                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "1.jpg" }
-                                                />
-                                            </div>
-                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
-                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
-                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "2.jpg" }
-                                                />
-                                            </div>
-                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
-                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
-                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "3.jpg" }
-                                                />
-                                            </div>
-                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
-                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
-                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "4.jpg" }
-                                                />
-                                            </div>
-                                            <div className="desktop-popup-service-content-electrical-gallery-tiles">
-                                                <img className="desktop-popup-service-content-electrical-gallery-tiles-image" 
-                                                    src={ process.env.PUBLIC_URL + "/Data/Project-Gallery/electrical-work/" + "5.jpg" }
-                                                />
-                                            </div>
-
-                                        </div>
 
                                     </div>
 
@@ -1381,7 +1346,7 @@ function MobileComponent() {
                                             of the project.
                                             <br /><br />
 
-                                            These are the areas of expertise that we can enhance your sustainable 
+                                            {/* These are the areas of expertise that we can enhance your sustainable 
                                             concept of your project.
                                             <br /><br />
 
@@ -1393,7 +1358,7 @@ function MobileComponent() {
                                                 <li>Item 5</li>
                                             </ul>
 
-                                            <br />
+                                            <br /> */}
                                             With continuous improvements and advancements in our methods of constructions 
                                             we will be able to refine the efficiency to achieve the goal of development that 
                                             should be as environment friendly as it could look visually appealing while ensuring 

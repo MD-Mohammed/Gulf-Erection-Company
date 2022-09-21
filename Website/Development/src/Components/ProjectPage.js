@@ -133,7 +133,7 @@ function ProjectPage() {
         
                                     </div>
         
-                                    <h6 style={{"text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{video.VideoTitle}</h6>
+                                    <h6 style={{"font-family": "'Ubuntu', sans-serif","text-align": "center", "color": "white" , "font-weight": "400", "margin-top": "5%"}}>{video.VideoTitle}</h6>
         
                                 </div>
     
@@ -184,11 +184,11 @@ function ProjectPage() {
                                 
                                 <div className="mobile-popup-header-container" style={{"width": "80%", "margin-left": "10%", "margin-right": "10%"}}>
                                     
-                                    <div style={{"display":"flex", "align-items": "center", "justify-content": "center", "gap": "5%"}}> 
+                                    <div style={{"display":"flex", "align-items": "center", "justify-content": "center", "gap": "5%", "margin-bottom": "10%"}}> 
 
                                         <img style={{"height": "7.5%", "width": "10%", "margin-top": "-4%"}} src={ process.env.PUBLIC_URL + "/images/gallery-icon.png" }/>
                                         
-                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%", "font-size": "175%", "color": "#EAC435"}}>
+                                        <h1 style={{"font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-left": "-2%", "font-size": "150%", "color": "#EAC435"}}>
                                             { GalleryName }
                                         </h1>
 
