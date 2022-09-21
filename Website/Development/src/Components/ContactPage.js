@@ -13,7 +13,7 @@ function ContactPage() {
     
     e.preventDefault();
 
-    emailjs.sendForm('service_6xof54p', 'template_bwkttvn', form.current, 'PgHd1TPJxOLJ575zs')
+    emailjs.sendForm('service_emxrpa4', 'template_2zpo91h', form.current, 'pdMQEBwkk7rnQHJA2')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
