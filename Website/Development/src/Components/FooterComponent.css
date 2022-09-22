@@ -172,14 +172,15 @@
 .mobile-footer-content-container{
     margin-top: 10%;
     height: 9%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .mobile-footer-content-logo-container{
-    height: 80%;
-    width: 90%;
+    height: 100px;
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -248,7 +249,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
 }
 
 .mobile-footer-socialmedia-container{
@@ -258,7 +258,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5%;
 }
 
 .mobile-footer-socialmedia-logo{
@@ -270,7 +269,7 @@
 }
 
 .mobile-footer-socialmedia-text{
-    height: 20%;
+    height: 40%;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
     color: white;

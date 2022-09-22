@@ -213,7 +213,7 @@ function ServicePage() {
                                             Here's our areas of expertise when we provide service as professional construction
                                             consultants.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Project Planning</li>
                                                 <li>Steel Structure Designing</li>
                                                 <li>Budgeting</li>
@@ -290,7 +290,7 @@ function ServicePage() {
                                             <br /><br />
                                             Here's what we can do for you to have your project serviced in professional hands.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Steel Stucture Building Construction</li>
                                                 <li>Pre Cast Building Construction</li>
                                                 <li>Showrooms and Warehouses Construction</li>
@@ -366,12 +366,21 @@ function ServicePage() {
                                             Here's what we are able to cater to your requirements in the area of electrical 
                                             and mechanical services.
                                             <br /><br />
-                                            <ul>
-                                                <li>Item 1</li>
-                                                <li>Item 2</li>
-                                                <li>Item 3</li>
-                                                <li>Item 4</li>
-                                                <li>Item 5</li>
+                                            <ul style={{"text-align": "left"}}>
+                                                <li>Mobilization</li>
+                                                <li>Coordination</li>
+                                                <li>Documentation Management</li>
+                                                <li>Communication</li>
+                                                <li>Scheduling</li>
+                                                <li>Scope and Change Control</li>
+                                                <li>Cost Control and Billing </li>
+                                                <li>Subcontractor Management</li>
+                                                <li>Materials Management </li>
+                                                <li>Tools Management</li>
+                                                <li>Labor Management</li>
+                                                <li>Safety Management</li>
+                                                <li>Quality Control</li>
+                                                <li>Project Closeout</li>
                                             </ul>
                                             <br /><br /><br /> 
                                         </p>
@@ -534,7 +543,7 @@ function ServicePage() {
                                             Here's our complete end to end service when it comes to steel structure 
                                             building projects.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Steel Structure Project Consultancy</li>
                                                 <li>Steel Structure Building Design</li>
                                                 <li>Steel Structure Authority Approvals</li>
@@ -612,7 +621,7 @@ function ServicePage() {
                                             concept of your project.
                                             <br /><br />
 
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Item 1</li>
                                                 <li>Item 2</li>
                                                 <li>Item 3</li>
@@ -695,7 +704,7 @@ function ServicePage() {
                                             Here's an overview of our practices that we ensure before we start off 
                                             with the work.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Identify and devise risks and their appropriate management plan</li>
                                                 <li>Ensure manadatory trainings that are specific to the site and job</li>
                                                 <li>Ensuring the workers have abundant access to the safety equipements and absolute proficiency and knowledge to use them</li>
@@ -919,7 +928,7 @@ function MobileComponent() {
                                             Here's our areas of expertise when we provide service as professional construction
                                             consultants.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Project Planning</li>
                                                 <li>Steel Structure Designing</li>
                                                 <li>Budgeting</li>
@@ -1002,7 +1011,7 @@ function MobileComponent() {
                                             <br /><br />
                                             Here's what we can do for you to have your project serviced in professional hands.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Steel Stucture Building Construction</li>
                                                 <li>Pre Cast Building Construction</li>
                                                 <li>Showrooms and Warehouses Construction</li>
@@ -1087,12 +1096,21 @@ function MobileComponent() {
                                             Here's what we are able to cater to your requirements in the area of electrical 
                                             and mechanical services.
                                             <br /><br />
-                                            <ul>
-                                                <li>Item 1</li>
-                                                <li>Item 2</li>
-                                                <li>Item 3</li>
-                                                <li>Item 4</li>
-                                                <li>Item 5</li>
+                                            <ul style={{"text-align": "left"}}>
+                                                <li>Mobilization</li>
+                                                <li>Coordination</li>
+                                                <li>Documentation Management</li>
+                                                <li>Communication</li>
+                                                <li>Scheduling</li>
+                                                <li>Scope and Change Control</li>
+                                                <li>Cost Control and Billing </li>
+                                                <li>Subcontractor Management</li>
+                                                <li>Materials Management </li>
+                                                <li>Tools Management</li>
+                                                <li>Labor Management</li>
+                                                <li>Safety Management</li>
+                                                <li>Quality Control</li>
+                                                <li>Project Closeout</li>
                                             </ul>
                                             <br />
                                             Being experienced professionals, we are able to understand your requirements from 
@@ -1265,7 +1283,7 @@ function MobileComponent() {
                                             Here's our complete end to end service when it comes to steel structure 
                                             building projects.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Steel Structure Project Consultancy</li>
                                                 <li>Steel Structure Building Design</li>
                                                 <li>Steel Structure Authority Approvals</li>
@@ -1350,7 +1368,7 @@ function MobileComponent() {
                                             concept of your project.
                                             <br /><br />
 
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Item 1</li>
                                                 <li>Item 2</li>
                                                 <li>Item 3</li>
@@ -1440,7 +1458,7 @@ function MobileComponent() {
                                             Here's an overview of our practices that we ensure before we start off 
                                             with the work.
                                             <br /><br />
-                                            <ul>
+                                            <ul style={{"text-align": "left"}}>
                                                 <li>Identify and devise risks and their appropriate management plan</li>
                                                 <li>Ensure manadatory trainings that are specific to the site and job</li>
                                                 <li>Ensuring the workers have abundant access to the safety equipements and absolute proficiency and knowledge to use them</li>

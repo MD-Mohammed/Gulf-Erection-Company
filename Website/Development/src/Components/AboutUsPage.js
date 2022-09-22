@@ -398,11 +398,11 @@ function AboutUsPage() {
                                         <div className="desktop-aboutus-popup-people-container" style={{"margin-top": "2.5%"}}>
 
                                             <div className="desktop-aboutus-popup-people-image">
-                                                <img style={{"width": "80%", "height": "100%", "margin-top": "20%"}} src={ process.env.PUBLIC_URL + "/images/ibrahim.jpg" } />
+                                                <img style={{"width": "100%", "height": "100%", "border-radius": "10px"}} src={ process.env.PUBLIC_URL + "/images/ibrahim.jpg" } />
                                             </div>
 
                                             <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>Ibrahim Sawaya</h2>
-                                            <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder</h5>
+                                            <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Managing Partner and Founder</h5>
                                             {/* <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend quis tellus vitae dapibus. 
                                                 Nam facilisis tellus eu molestie porta. Morbi cursus eros lorem, a fringilla felis tincidunt nec. 
@@ -416,13 +416,13 @@ function AboutUsPage() {
                                         <div className="desktop-aboutus-popup-people-container">
 
                                             <div className="desktop-aboutus-popup-people-image">
-                                                <img style={{"width": "78%", "height": "100%", "margin-top": "35%"}} src={ process.env.PUBLIC_URL + "/images/gs.jpg" } />
+                                                <img style={{"width": "100%", "height": "100%", "border-radius": "10px"}} src={ process.env.PUBLIC_URL + "/images/gs.jpg" } />
                                             </div>
 
                                             <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>George Sawaya</h2>
                                             <h5 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>General Manager and Founder</h5>
                                             <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "5%", "text-align": "justify"}}>
-                                                George Sawaya is the founder and general manager of Gulf Erection Company. Being a strong believer of building trust and 
+                                                George Sawaya is the managing partner and general manager of Gulf Erection Company. Being a strong believer of building trust and 
                                                 relationships with his valuable clients, George has served with more than 35 years in the establishment of this company as a
                                                 promising leader.
                                             </p>
@@ -432,7 +432,7 @@ function AboutUsPage() {
                                         <div className="desktop-aboutus-popup-people-container" style={{"margin-top": "5%"}}>
 
                                             <div className="desktop-aboutus-popup-people-image">
-                                                <img style={{"width": "80%", "height": "100%", "margin-top": "30%"}} src={ process.env.PUBLIC_URL + "/images/el.jpg" } />
+                                                <img style={{"width": "100%", "height": "100%", "border-radius": "10px"}} src={ process.env.PUBLIC_URL + "/images/el.jpg" } />
                                             </div>
 
                                             <h2 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400", "margin-top": "5%"}}>Elie Sawaya</h2>
@@ -549,7 +549,7 @@ function AboutUsPage() {
                                         <img style={{"height": "100%", "width": "100%", "border-radius": "10px", "object-fit": "cover"}} src={ process.env.PUBLIC_URL + "/images/we-do-image.jpg" } />
                                     </div>
 
-                                    <ul className="desktop-content-style" style={{"margin-top": "10%", "margin-left": "-5%", "line-height": "200%"}}>
+                                    <ul className="desktop-content-style" style={{"margin-top": "10%", "margin-left": "-5%", "line-height": "200%", "text-align": "left"}}>
                                         <li>Showrooms and facilities that includes workshops, car wash facilities and more.</li>
                                         <li>Multi storey car parking.</li>
                                         <li>Industrial plants and manufacturing factories.</li>
@@ -809,12 +809,12 @@ function AboutUsPage() {
 
                                 <div className="mobile-aboutus-popup-people-main-container">
 
-                                    <div className="mobile-aboutus-popup-people-container">
+                                    <div className="mobile-aboutus-popup-people-container" style={{"height": "400px", "margin-top": "10%"}}>
                                     
-                                        <div className="mobile-aboutus-popup-image-text-container">
+                                        <div className="mobile-aboutus-popup-image-text-container" >
 
                                             <div className="mobile-aboutus-popup-people-image">
-                                                <img style={{"width": "80%", "height": "100%", "margin-top": "20%"}} src={ process.env.PUBLIC_URL + "/images/gs.jpg" } />
+                                                <img style={{"width": "100%", "height": "100%", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/images/gs.jpg" } />
                                             </div>
 
                                             <div className="mobile-aboutus-popup-people-text">
@@ -825,24 +825,24 @@ function AboutUsPage() {
                                         </div>
 
                                         <p style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "200", "margin-left": "5%", "margin-right": "5%", "margin-top": "-2.5%", "text-align": "justify"}}>
-                                            George Sawaya is the founder and general manager of Gulf Erection Company. Being a strong believer of building trust and 
+                                            George Sawaya is the managing partner and general manager of Gulf Erection Company. Being a strong believer of building trust and 
                                             relationships with his valuable clients, George has served with more than 35 years in the establishment of this company as a
                                             promising leader.
                                         </p>
 
                                     </div>
 
-                                    <div className="mobile-aboutus-popup-people-container">
+                                    <div className="mobile-aboutus-popup-people-container" style={{"height": "200px"}}>
                                     
                                         <div className="mobile-aboutus-popup-image-text-container">
 
                                             <div className="mobile-aboutus-popup-people-image">
-                                                <img style={{"width": "80%", "height": "100%", "margin-top": "20%"}} src={ process.env.PUBLIC_URL + "/images/ibrahim.jpg" } />
+                                                <img style={{"width": "100%", "height": "100%", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/images/ibrahim.jpg" } />
                                             </div>
 
                                             <div className="mobile-aboutus-popup-people-text">
                                                 <h4 style={{"color": "#FF4343", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Ibrahim Sawaya</h4>
-                                                <h6 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Founder</h6>
+                                                <h6 style={{"color": "white", "font-family": "'Ubuntu', sans-serif", "font-weight": "400"}}>Managing Partner and Founder</h6>
                                             </div>
 
                                         </div>
@@ -853,12 +853,12 @@ function AboutUsPage() {
 
                                     </div>
 
-                                    <div className="mobile-aboutus-popup-people-container">
+                                    <div className="mobile-aboutus-popup-people-container" style={{"height": "200px", "margin-bottom": "10%"}}>
                                     
                                         <div className="mobile-aboutus-popup-image-text-container">
 
                                             <div className="mobile-aboutus-popup-people-image">
-                                                <img style={{"width": "80%", "height": "100%", "margin-top": "20%"}} src={ process.env.PUBLIC_URL + "/images/el.jpg" } />
+                                                <img style={{"width": "100%", "height": "100%", "border-radius": "20px"}} src={ process.env.PUBLIC_URL + "/images/el.jpg" } />
                                             </div>
 
                                             <div className="mobile-aboutus-popup-people-text">

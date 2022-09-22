@@ -54,7 +54,7 @@ function FooterComponent() {
 
                         </div>
 
-                        <div className="mobile-footer-socialmedia-container">
+                        <div className="mobile-footer-socialmedia-container" style={{"width": "50%"}}>
 
                             <div className="mobile-footer-socialmedia-logo">
                                 <img style={{"height": "80%", "width": "80%"}} src={ process.env.PUBLIC_URL + "/images/youtube-footer-icon.png" }  />
