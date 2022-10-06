@@ -354,7 +354,7 @@ function ServicePage() {
 
                                     </div>
 
-                                    <div className="desktop-popup-service-content" style={{"height": "400px"}}>
+                                    <div className="desktop-popup-service-content" style={{"height": "950px"}}>
 
                                         <p className="desktop-content-style" style={{"margin-top": "4%", "font-size": "120%"}}>
                                             Our project services package is only complete when we are able to provide you
@@ -367,19 +367,29 @@ function ServicePage() {
                                             and mechanical services.
                                             <br /><br />
                                             <ul style={{"text-align": "left"}}>
-                                                <li>Mobilization</li>
+                                                <li>Design and Engineering</li>
+                                                <li>Drawing Approvals</li>
+                                                <li>Authority Approvals</li>
                                                 <li>Coordination</li>
                                                 <li>Documentation Management</li>
                                                 <li>Communication</li>
                                                 <li>Scheduling</li>
                                                 <li>Scope and Change Control</li>
-                                                <li>Cost Control and Billing </li>
+                                                <li>Cost Control and Billing</li>
                                                 <li>Subcontractor Management</li>
-                                                <li>Materials Management </li>
+                                                <li>Materials Management</li>
                                                 <li>Tools Management</li>
                                                 <li>Labor Management</li>
                                                 <li>Safety Management</li>
                                                 <li>Quality Control</li>
+                                                <li>Site Execution</li>
+                                                <li>Conduits and wiring</li>
+                                                <li>Sub station work</li>
+                                                <li>HV and LV equipment installation</li>
+                                                <li>Installation of small power accessories, cables, etc.</li>
+                                                <li>Final Distribution Board</li>
+                                                <li>Inspection and approvals</li>
+                                                <li>Supply activation by ADDC</li>
                                                 <li>Project Closeout</li>
                                             </ul>
                                             <br /><br /><br /> 
@@ -1097,19 +1107,29 @@ function MobileComponent() {
                                             and mechanical services.
                                             <br /><br />
                                             <ul style={{"text-align": "left"}}>
-                                                <li>Mobilization</li>
+                                                <li>Design and Engineering</li>
+                                                <li>Drawing Approvals</li>
+                                                <li>Authority Approvals</li>
                                                 <li>Coordination</li>
                                                 <li>Documentation Management</li>
                                                 <li>Communication</li>
                                                 <li>Scheduling</li>
                                                 <li>Scope and Change Control</li>
-                                                <li>Cost Control and Billing </li>
+                                                <li>Cost Control and Billing</li>
                                                 <li>Subcontractor Management</li>
-                                                <li>Materials Management </li>
+                                                <li>Materials Management</li>
                                                 <li>Tools Management</li>
                                                 <li>Labor Management</li>
                                                 <li>Safety Management</li>
                                                 <li>Quality Control</li>
+                                                <li>Site Execution</li>
+                                                <li>Conduits and wiring</li>
+                                                <li>Sub station work</li>
+                                                <li>HV and LV equipment installation</li>
+                                                <li>Installation of small power accessories, cables, etc.</li>
+                                                <li>Final Distribution Board</li>
+                                                <li>Inspection and approvals</li>
+                                                <li>Supply activation by ADDC</li>
                                                 <li>Project Closeout</li>
                                             </ul>
                                             <br />
