@@ -14,6 +14,19 @@ function ProjectPage() {
     const[GalleryImages, setGalleryImages] = useState("")
     const[GalleryPath, setGalleryPath] = useState("")
 
+    function NavigationScrollToElement(ComponentName){
+        var element = document.getElementById(`${ComponentName}`);
+        var headerOffset = 100;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+
+    }
+
     function MobileComponent() {
 
         function ProjectCard(props) {
@@ -247,6 +260,12 @@ function ProjectPage() {
 
     function DesktopComponent() {
 
+        const[ShowMoreVideos, setShowMoreVideos] = useState(false)
+        const VideoDataDisplay = ShowMoreVideos ? ProjectVideos : ProjectVideos.slice(0,4)
+    
+        const[ShowMoreProjects, setShowMoreProjects] = useState(false)
+        const ProjectDataDisplay = ShowMoreProjects ? ProjectData : ProjectData.slice(0,8)
+
         function DesktopProjectVideo(props) {
 
             return(
@@ -284,7 +303,7 @@ function ProjectPage() {
                     <div className="desktop-projectpage-video-card-container">
                         
                     {
-                        ProjectVideos.map((video) => (
+                        VideoDataDisplay.map((video) => (
 
                             <div className="desktop-projectpage-video-cards">
 
@@ -308,12 +327,27 @@ function ProjectPage() {
                         ))
                     }
 
+                    <button className="desktop-projectpage-video-showmore-button" onClick={() => {
+                            setShowMoreVideos(!ShowMoreVideos)
+                            if ( ShowMoreVideos == true )
+                            {
+                                NavigationScrollToElement('desktop-projects-component')
+                            }
+                        }}>
+
+                        {
+                            ShowMoreVideos ? 
+                            <a>Show less videos</a> : <a>Show more videos</a>
+                        }
+                        
+                    </button>
+
                     </div>
 
                     <div className="desktop-projectpage-cards-main-container">
 
                         {
-                            ProjectData.map((project) => (
+                            ProjectDataDisplay.map((project) => (
                                 
                                 <div className="desktop-projectpage-cards-container">
 
@@ -376,6 +410,21 @@ function ProjectPage() {
 
                             ))
                         }
+
+                        <button style={{"margin-top": "0%", "margin-bottom": "3%"}} className="desktop-projectpage-video-showmore-button" onClick={() => {
+                                setShowMoreProjects(!ShowMoreProjects)
+                                if ( ShowMoreProjects == true )
+                                {
+                                    NavigationScrollToElement('desktop-projects-component')
+                                }
+                            }}>
+
+                            {
+                                ShowMoreProjects ? 
+                                <a>Show less projects</a> : <a>Show more projects</a>
+                            }
+                            
+                        </button>
 
                     </div>
 

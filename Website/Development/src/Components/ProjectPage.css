@@ -284,6 +284,30 @@
     align-items: center;
 }
 
+.desktop-projectpage-video-showmore-button, .desktop-projectpage-video-showmore-button:focus{
+    height: 50px;
+    background:#FF4343;
+    width: 50%;
+    margin-top: 4%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: none;
+    outline: none;
+}
+
+.desktop-projectpage-video-showmore-button:hover{
+    cursor: pointer;
+    filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
 
 .mobile-projectpage-cards-main-container
