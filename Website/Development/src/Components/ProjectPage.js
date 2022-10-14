@@ -29,6 +29,12 @@ function ProjectPage() {
 
     function MobileComponent() {
 
+        const[ShowMoreVideos, setShowMoreVideos] = useState(false)
+        const VideoDataDisplay = ShowMoreVideos ? ProjectVideos : ProjectVideos.slice(0,3)
+    
+        const[ShowMoreProjectsMobile, setShowMoreProjectsMobile] = useState(false)
+        const ProjectDataDisplay = ShowMoreProjectsMobile ? ProjectData : ProjectData.slice(0,3)
+
         function ProjectCard(props) {
 
             const[CardFlip, setCardFlip] = useState(false)
@@ -126,7 +132,7 @@ function ProjectPage() {
                     </div>
 
                     {
-                        ProjectVideos.map((video) => (
+                        VideoDataDisplay.map((video) => (
 
                             <div className="mobile-projectpage-videocard-main-container">
 
@@ -154,10 +160,26 @@ function ProjectPage() {
                         ))
                     }
 
-                    <div className="mobile-projectpage-cards-main-container">
+                    <button style={{"margin-top": "5%", "margin-bottom": "3%"}} className="mobile-projectpage-video-showmore-button" onClick={() => {
+                            setShowMoreVideos(!ShowMoreVideos)
+                            if ( ShowMoreVideos == true )
+                            {
+                                NavigationScrollToElement('mobile-projects-component')
+                            }
+                        }}>
 
                         {
-                            ProjectData.map((project) => (
+                            ShowMoreVideos ? 
+                            <a>Show less videos</a> : <a>Show more videos</a>
+                        }
+                        
+                    </button>
+
+
+                    <div className="mobile-projectpage-cards-main-container" id="mobile-projects-component-projects">
+
+                        {
+                            ProjectDataDisplay.map((project) => (
 
                                 <div className="mobile-projectpage-cards-container">
                                     
@@ -175,6 +197,21 @@ function ProjectPage() {
 
                             ))
                         }
+
+                        <button style={{"margin-top": "0%", "margin-bottom": "10%"}} className="mobile-projectpage-video-showmore-button" onClick={() => {
+                                setShowMoreProjectsMobile(!ShowMoreProjectsMobile)
+                                if ( ShowMoreProjectsMobile == true )
+                                {
+                                    NavigationScrollToElement('mobile-services-component')
+                                }
+                            }}>
+
+                            {
+                                ShowMoreProjectsMobile ? 
+                                <a>Show less projects</a> : <a>Show more projects</a>
+                            }
+                            
+                        </button>
 
                     </div>
                     
