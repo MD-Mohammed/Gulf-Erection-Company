@@ -66,13 +66,14 @@
     display: flex;
     flex-direction: column;
     height: 175px;
-    background-color: #EAC435;
+    background-color: #16262E;
     width: 22%;
     justify-content: center;
     align-content: center;
     align-items: center;
     border-radius: 10px; 
     flex-wrap: wrap;
+    color: white;
 }
 
 .desktop-aboutus-page-img-prop
@@ -348,12 +349,13 @@
 {
     display: flex;
     flex-direction: column;
-    background-color: #EAC435;
+    background-color: #16262E;
     justify-content: center;
     align-items: center;
     border-radius: 10px; 
     width: 40%;
     height: 150px;
+    color: white;
 }
 
 .mobile-aboutus-certificate-image{

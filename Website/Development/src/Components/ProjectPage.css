@@ -284,6 +284,31 @@
     align-items: center;
 }
 
+.desktop-projectpage-video-showmore-button, .desktop-projectpage-video-showmore-button:focus{
+    height: 50px;
+    background:#FF4343;
+    width: 50%;
+    margin-top: 4%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: none;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.desktop-projectpage-video-showmore-button:hover{
+    cursor: pointer;
+    filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+
 /* ++++++++++++++++++++++++++++++ Styling properties for Mobile ++++++++++++++++++++++++++++++++++++++ */
 
 .mobile-projectpage-cards-main-container
@@ -480,4 +505,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mobile-projectpage-video-showmore-button, .mobile-projectpage-video-showmore-button:focus{
+    height: 45px;
+    background:#FF4343;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: none;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mobile-projectpage-video-showmore-button:hover{
+    cursor: pointer;
+    filter: drop-shadow(-4px 4px 3px rgba(0, 0, 0, 0.25));
 }
